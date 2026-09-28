@@ -1,0 +1,1015 @@
+[gd_scene format=3 uid="uid://bhwp53rkajoy3"]
+
+[ext_resource type="Script" uid="uid://5dqjncucrk1u" path="res://scripts/checkpoint.gd" id="1_fdc70"]
+[ext_resource type="Script" uid="uid://cbxti3spdwbil" path="res://scripts/road_section.gd" id="1_h48hc"]
+[ext_resource type="PackedScene" uid="uid://03ci42s4h6wq" path="res://scenes/player_controller.tscn" id="1_m5iai"]
+[ext_resource type="Texture2D" uid="uid://x6cngcdbvw23" path="res://assets/textures/leftArrow.png" id="3_wpxch"]
+[ext_resource type="Texture2D" uid="uid://bv1ogix07y7c2" path="res://assets/textures/rightArrow.png" id="4_c5rgc"]
+[ext_resource type="Script" uid="uid://dwgo8cg5hal5g" path="res://scripts/directions_button.gd" id="4_h48hc"]
+[ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
+[ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
+[ext_resource type="Script" uid="uid://b1opmxo7u1xln" path="res://scenes/node_3d.gd" id="9_bcidj"]
+[ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://addons/1-1.wav" id="10_sgfvx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
+sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
+sky_horizon_color = Color(0.59055096, 0.6425719, 0.7334308, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.59055096, 0.6425719, 0.7334308, 1)
+
+[sub_resource type="Sky" id="Sky_m5iai"]
+sky_material = SubResource("ProceduralSkyMaterial_ad4kr")
+
+[sub_resource type="Environment" id="Environment_fdc70"]
+background_mode = 2
+sky = SubResource("Sky_m5iai")
+ambient_light_source = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slwpf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r8wru"]
+size = Vector3(0.001, 1, 126.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jdr38"]
+size = Vector3(0.001, 1, 126.200005)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c5rgc"]
+size = Vector3(0.001, 1, 63.7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h48hc"]
+size = Vector3(0.001, 1, 63.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1mogm"]
+size = Vector3(0.001, 1, 63.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8wyem"]
+size = Vector3(0.001, 1, 126)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5ba2d"]
+size = Vector3(0.001, 1, 126.200005)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bcidj"]
+size = Vector3(0.001, 1, 71.9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sakum"]
+size = Vector3(0.001, 1, 72.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0xego"]
+size = Vector3(0.001, 1, 127.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rymsp"]
+size = Vector3(0.001, 1, 126.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sgfvx"]
+size = Vector3(0.001, 1, 75.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_an3ep"]
+size = Vector3(0.001, 1, 75.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rniy1"]
+size = Vector3(0.001, 1, 126.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uvsgv"]
+size = Vector3(0.001, 1, 126.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5n8hj"]
+size = Vector3(0.001, 1, 74.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aw7wc"]
+size = Vector3(0.001, 1, 74.700005)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tmwtx"]
+size = Vector3(0.001, 1, 74.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4vm12"]
+size = Vector3(0.001, 1, 126.700005)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6cxk1"]
+size = Vector3(0.001, 1, 126.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c0fwb"]
+size = Vector3(0.001, 1, 79.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t4dbc"]
+size = Vector3(0.001, 1, 79.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtjyv"]
+size = Vector3(0.001, 1, 79.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jnexy"]
+size = Vector3(0.001, 1, 126.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_27mwr"]
+size = Vector3(0.001, 1, 126.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tsmfw"]
+size = Vector3(0.001, 1, 22.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_imgho"]
+size = Vector3(0.001, 1, 22.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q6neq"]
+size = Vector3(0.001, 1, 22.300001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uq3f1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wqlpf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_48sdk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vt3j5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m14ia"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wc36q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2kb2f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mp16a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ntwq1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g30va"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gowcq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kun8u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wm8sv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3gyim"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fpxm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sruvg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2h45r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3noei"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aw2mq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hreg7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nhlk2"]
+size = Vector3(18.5, 1, 18.300001)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hk511"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4xqv3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hk511"]
+
+[node name="KnoiseGame" type="Node3D" unique_id=1886624332]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=281765539]
+environment = SubResource("Environment_fdc70")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2141084607]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25000006, 0.50000006, -0.75000006, 0.4330126, 4.4703484e-08, 0.49999994, 0.86602545, 0, 19.300001, 19.6)
+
+[node name="Map" type="Node3D" parent="." unique_id=57915149]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 7.45)
+
+[node name="NYC MAP" type="CSGCombiner3D" parent="Map" unique_id=2127586965]
+use_collision = true
+collision_mask = 2
+
+[node name="42nd Street" type="CSGBox3D" parent="Map/NYC MAP" unique_id=1164975071]
+transform = Transform3D(1, 0, 0, 0, 0.099999964, 0, 0, 0, 1, 0, 0, 187.95001)
+use_collision = true
+size = Vector3(3, 1, 400)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="43rdStreet" type="CSGBox3D" parent="Map/NYC MAP" unique_id=378275211]
+transform = Transform3D(1, 0, 0, 0, 0.099999964, 0, 0, 0, 1, -128.3, 0, 187.95001)
+use_collision = true
+size = Vector3(3, 1, 400)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="LibertyAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=201468671]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, -10.549988)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="DiesalAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=610524575]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, 54.950016)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="JustAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=1945459350]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, 206.25002)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="GoldenAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=518024948]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, 129.15001)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="HeartAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=1793796709]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, 282.64996)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="JackAve1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=569814448]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, -64.149994, 0, 363.65)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="41stStreet1" type="CSGBox3D" parent="Map/NYC MAP" unique_id=159290035]
+transform = Transform3D(1, 0, 0, 0, 0.099999964, 0, 0, 0, 1, 128.29, 0, 22.200008)
+use_collision = true
+size = Vector3(3, 1, 68.5)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="LibertyAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=70980234]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 64.15002, 0, -10.549988)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="DiesalAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=153716681]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 64.15001, 0, 54.950016)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="GoldenAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=1313786672]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 65.600006, 0, 129.15004)
+use_collision = true
+size = Vector3(3, 1, 128.2)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="JustAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=572700846]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 64.15001, 0, 206.25002)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="HeartAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=428629980]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 64.15001, 0, 282.64996)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="JackAve2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=559961908]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.099999964, 0, 1, 0, -4.371139e-08, 64.15001, 0, 363.65)
+use_collision = true
+size = Vector3(3, 1, 125.3)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="41stStreet2" type="CSGBox3D" parent="Map/NYC MAP" unique_id=118885894]
+transform = Transform3D(1, 0, 0, 0, 0.099999964, 0, 0, 0, 1, 128.3, 0, 296.35)
+use_collision = true
+size = Vector3(3, 1, 183.2)
+material = SubResource("StandardMaterial3D_slwpf")
+metadata/_edit_lock_ = true
+
+[node name="Plain" type="CSGBox3D" parent="Map/NYC MAP" unique_id=157559342]
+transform = Transform3D(1, 0, 0, 0, 0.099999964, 0, 0, 0, 1, 0, -0.1, 187.95)
+use_collision = true
+size = Vector3(259.6, 1, 400)
+metadata/_edit_lock_ = true
+
+[node name="RoadSections" type="Node3D" parent="." unique_id=674348950]
+
+[node name="41st_Liberty" type="Area3D" parent="RoadSections" unique_id=1912452752 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, 17.825)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Liberty"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Liberty" unique_id=164797500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000076, 0, -46.315018)
+shape = SubResource("BoxShape3D_r8wru")
+
+[node name="42nd_Liberty" type="Area3D" parent="RoadSections" unique_id=131007383 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, 17.825)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Liberty"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Liberty" unique_id=1755629294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19998169, 0, -46.065002)
+shape = SubResource("BoxShape3D_jdr38")
+
+[node name="Liberty_41st" type="Area3D" parent="RoadSections" unique_id=1276472846 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.4, 0, 0)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Liberty_41st"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Liberty_41st" unique_id=1562868311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -14.565007)
+shape = SubResource("BoxShape3D_c5rgc")
+
+[node name="Liberty_42nd" type="Area3D" parent="RoadSections" unique_id=529971653 node_paths=PackedStringArray("player")]
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Liberty_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Liberty_42nd" unique_id=1056293800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, -14.765003)
+shape = SubResource("BoxShape3D_h48hc")
+
+[node name="Liberty_43rd" type="Area3D" parent="RoadSections" unique_id=150654831 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.3, 0, 0)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Liberty_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Liberty_43rd" unique_id=1256857868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -14.729999)
+shape = SubResource("BoxShape3D_1mogm")
+
+[node name="41st_Diesel" type="Area3D" parent="RoadSections" unique_id=1543826150 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, -47.775)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Diesel"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Diesel" unique_id=923232307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000076, 0, -46.16501)
+shape = SubResource("BoxShape3D_8wyem")
+
+[node name="42nd_Diesel" type="Area3D" parent="RoadSections" unique_id=314829767 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, -47.775)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Diesel"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Diesel" unique_id=155749926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20001602, 0, -45.975006)
+shape = SubResource("BoxShape3D_5ba2d")
+
+[node name="Diesel_42nd" type="Area3D" parent="RoadSections" unique_id=205090587 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -73.20001)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Diesel_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Diesel_42nd" unique_id=205841941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, -11.48999)
+shape = SubResource("BoxShape3D_bcidj")
+
+[node name="Diesel_43rd" type="Area3D" parent="RoadSections" unique_id=1514409605 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.2, 0, -73.20001)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Diesel_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Diesel_43rd" unique_id=919038967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09950256, 0, -11.48999)
+shape = SubResource("BoxShape3D_sakum")
+
+[node name="41st_Golden" type="Area3D" parent="RoadSections" unique_id=1725749688 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, -121.98)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Golden"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Golden" unique_id=2138451528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000458, 0, -46.615005)
+shape = SubResource("BoxShape3D_0xego")
+
+[node name="42nd_Golden" type="Area3D" parent="RoadSections" unique_id=1030849143 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, -121.98)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Golden"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Golden" unique_id=2053089456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1999588, 0, -46.075012)
+shape = SubResource("BoxShape3D_rymsp")
+
+[node name="Golden_42nd" type="Area3D" parent="RoadSections" unique_id=1101538147 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -161.09998)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Golden_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Golden_42nd" unique_id=100534449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, 0.73999023)
+shape = SubResource("BoxShape3D_sgfvx")
+
+[node name="Golden_43rd" type="Area3D" parent="RoadSections" unique_id=855503142 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.2, 0, -161.09998)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Golden_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Golden_43rd" unique_id=380792092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10949707, 0, 0.76000977)
+shape = SubResource("BoxShape3D_an3ep")
+
+[node name="41st_Just" type="Area3D" parent="RoadSections" unique_id=455357719 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0, -199.025)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Just"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Just" unique_id=1784133954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19999695, 0, -46.265007)
+shape = SubResource("BoxShape3D_rniy1")
+
+[node name="42nd_Just" type="Area3D" parent="RoadSections" unique_id=1809968032 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, -199.025)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Just"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Just" unique_id=764311633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19999695, 0, -46.075005)
+shape = SubResource("BoxShape3D_uvsgv")
+
+[node name="Just_41st" type="Area3D" parent="RoadSections" unique_id=1987549333 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.3, 0, -229.4)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Just_41st"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Just_41st" unique_id=1078208211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -7.60997)
+shape = SubResource("BoxShape3D_5n8hj")
+
+[node name="Just_42nd" type="Area3D" parent="RoadSections" unique_id=1120145534 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -229.4)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Just_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Just_42nd" unique_id=1983779681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, -7.6899414)
+shape = SubResource("BoxShape3D_aw7wc")
+
+[node name="Just_43rd" type="Area3D" parent="RoadSections" unique_id=1386524449 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.29, 0, -229.4)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Just_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Just_43rd" unique_id=1193577337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -7.539963)
+shape = SubResource("BoxShape3D_tmwtx")
+
+[node name="41st_Heart" type="Area3D" parent="RoadSections" unique_id=417610784 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20, 0, -275.377)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Heart"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Heart" unique_id=400636218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000122, 0, -44.212017)
+shape = SubResource("BoxShape3D_4vm12")
+
+[node name="42nd_Heart" type="Area3D" parent="RoadSections" unique_id=1230836827 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, -275.377)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Heart"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Heart" unique_id=1323191732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000122, 0, -46.125008)
+shape = SubResource("BoxShape3D_6cxk1")
+
+[node name="Heart_41st" type="Area3D" parent="RoadSections" unique_id=1193606282 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.3, 0, -300.3)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Heart_41st"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Heart_41st" unique_id=399534596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -15.460022)
+shape = SubResource("BoxShape3D_c0fwb")
+
+[node name="Heart_42nd" type="Area3D" parent="RoadSections" unique_id=2081244880 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -300.3)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Heart_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Heart_42nd" unique_id=1721777038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, -15.440002)
+shape = SubResource("BoxShape3D_t4dbc")
+
+[node name="Heart_43rd" type="Area3D" parent="RoadSections" unique_id=1737163092 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.29001, 0, -300.3)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Heart_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Heart_43rd" unique_id=1963575558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, -15.540009)
+shape = SubResource("BoxShape3D_dtjyv")
+
+[node name="41st_Jack" type="Area3D" parent="RoadSections" unique_id=392575683 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20, 0, -356.57703)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "41st_Jack"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/41st_Jack" unique_id=1021646509]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000122, 0, -44.11203)
+shape = SubResource("BoxShape3D_jnexy")
+
+[node name="42nd_Jack" type="Area3D" parent="RoadSections" unique_id=588216379 node_paths=PackedStringArray("player")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 110.34, 0, -356.57703)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "42nd_Jack"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/42nd_Jack" unique_id=2009633928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000122, 0, -46.075012)
+shape = SubResource("BoxShape3D_27mwr")
+
+[node name="Jack_41st" type="Area3D" parent="RoadSections" unique_id=1098941781 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.3, 0, -381.5)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Jack_41st"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Jack_41st" unique_id=1508628139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, 13.040009)
+shape = SubResource("BoxShape3D_tsmfw")
+
+[node name="Jack_42nd" type="Area3D" parent="RoadSections" unique_id=1045628698 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -381.5)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Jack_42nd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Jack_42nd" unique_id=414198648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00049997494, 0, 13.240021)
+shape = SubResource("BoxShape3D_imgho")
+
+[node name="Jack_43rd" type="Area3D" parent="RoadSections" unique_id=1066350658 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.3, 0, -381.5)
+collision_mask = 2
+script = ExtResource("1_h48hc")
+player = NodePath("../../PlayerController")
+road_name = "Jack_43rd"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadSections/Jack_43rd" unique_id=1215722722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00050354004, 0, 13.140015)
+shape = SubResource("BoxShape3D_q6neq")
+
+[node name="Intersections" type="Node3D" parent="." unique_id=1790978274]
+
+[node name="Checkpoint0" type="Area3D" parent="Intersections" unique_id=53247657 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, 17.999998)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Liberty_42nd", &"41st_Liberty", &"42nd_Liberty"]
+show_left = [true, true, false]
+show_right = [true, false, true]
+show_up = [false, true, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint0" unique_id=897487540]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_uq3f1")
+
+[node name="Checkpoint1" type="Area3D" parent="Intersections" unique_id=563403689 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -47.600002)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Liberty_42nd", &"41st_Diesel", &"42nd_Diesel", &"Diesel_42nd"]
+show_left = [true, true, true, true]
+show_right = [true, true, true, true]
+show_up = [true, true, true, true]
+show_down = [true, true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint1" unique_id=1111601432]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_wqlpf")
+
+[node name="Checkpoint2" type="Area3D" parent="Intersections" unique_id=1308822640 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -121.799995)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Diesel_42nd", &"41st_Golden", &"42nd_Golden", &"Golden_42nd"]
+show_left = [true, true, true, true]
+show_right = [true, true, true, true]
+show_up = [true, true, true, true]
+show_down = [true, true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint2" unique_id=1672296257]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_48sdk")
+
+[node name="Checkpoint3" type="Area3D" parent="Intersections" unique_id=1909552381 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.1, -198.85)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Golden_42nd", &"41st_Just", &"42nd_Just", &"Just_42nd"]
+show_left = [true, true, true, true]
+show_right = [true, true, true, true]
+show_up = [true, true, true, true]
+show_down = [true, true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint3" unique_id=865755629]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
+shape = SubResource("BoxShape3D_vt3j5")
+
+[node name="Checkpoint4" type="Area3D" parent="Intersections" unique_id=1917386998 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -275.2)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Just_42nd", &"41st_Heart", &"42nd_Heart", &"Heart_42nd"]
+show_left = [true, true, true, true]
+show_right = [true, true, true, true]
+show_up = [true, true, true, true]
+show_down = [true, true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint4" unique_id=550730505]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_m14ia")
+
+[node name="Checkpoint5" type="Area3D" parent="Intersections" unique_id=1729606922 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.1, -356.4)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Heart_42nd", &"41st_Jack", &"42nd_Jack", &"Jack_42nd"]
+show_left = [false, false, false, false]
+show_right = [false, false, false, false]
+show_up = [false, false, false, false]
+show_down = [false, false, false, false]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint5" unique_id=1879083837]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
+shape = SubResource("BoxShape3D_wc36q")
+
+[node name="Checkpoint6" type="Area3D" parent="Intersections" unique_id=1845340851 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, 17.999998)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"42nd_Liberty", &"Liberty_43rd"]
+show_left = [true, false]
+show_right = [false, true]
+show_up = [false, false]
+show_down = [true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint6" unique_id=209763126]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_2kb2f")
+
+[node name="Checkpoint7" type="Area3D" parent="Intersections" unique_id=1769777801 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -47.600002)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Liberty_43rd", &"42nd_Diesel", &"Diesel_43rd"]
+show_left = [true, true, false]
+show_right = [false, true, true]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint7" unique_id=1995424164]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099990845)
+shape = SubResource("BoxShape3D_mp16a")
+
+[node name="Checkpoint8" type="Area3D" parent="Intersections" unique_id=116872878 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -121.799995)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Diesel_43rd", &"42nd_Golden", &"Golden_43rd"]
+show_left = [true, true, false]
+show_right = [false, true, true]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint8" unique_id=174731862]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_ntwq1")
+
+[node name="Checkpoint9" type="Area3D" parent="Intersections" unique_id=1395093865 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, 0.1, -199)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Golden_43rd", &"42nd_Just", &"Just_43rd"]
+show_left = [true, true, false]
+show_right = [false, true, true]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint9" unique_id=95890236]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.675)
+shape = SubResource("BoxShape3D_g30va")
+
+[node name="Checkpoint10" type="Area3D" parent="Intersections" unique_id=406529593 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -275.18002)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Just_43rd", &"42nd_Heart", &"Heart_43rd"]
+show_left = [true, true, false]
+show_right = [false, true, true]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint10" unique_id=1516901843]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0)
+shape = SubResource("BoxShape3D_gowcq")
+
+[node name="Checkpoint11" type="Area3D" parent="Intersections" unique_id=443041415 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, 0.1, -356.4)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Heart_43rd", &"42nd_Jack", &"Jack_43rd"]
+show_left = [true, true, false]
+show_right = [false, true, true]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint11" unique_id=1357779298]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
+shape = SubResource("BoxShape3D_kun8u")
+
+[node name="Checkpoint12" type="Area3D" parent="Intersections" unique_id=837640579 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -199)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"41st_Just", &"Just_41st"]
+show_left = [false, true]
+show_right = [true, false]
+show_up = [false, false]
+show_down = [true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint12" unique_id=968448213]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.7)
+shape = SubResource("BoxShape3D_wm8sv")
+
+[node name="Checkpoint13" type="Area3D" parent="Intersections" unique_id=1817674053 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, -0.10000005, -275.2)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Just_41st", &"41st_Heart", &"Heart_41st"]
+show_left = [false, true, true]
+show_right = [true, true, false]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint13" unique_id=624536601]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_3gyim")
+
+[node name="Checkpoint14" type="Area3D" parent="Intersections" unique_id=1851962556 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -356.4)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Heart_41st", &"41st_Jack", &"Jack_41st"]
+show_left = [false, true, true]
+show_right = [true, true, false]
+show_up = [true, false, true]
+show_down = [true, true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint14" unique_id=831858351]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
+shape = SubResource("BoxShape3D_6fpxm")
+
+[node name="Checkpoint15" type="Area3D" parent="Intersections" unique_id=1812533632 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.40001, -0.10000005, 17.999998)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"41st_Liberty", &"Liberty_41st"]
+show_left = [false, true]
+show_right = [true, false]
+show_up = [false, false]
+show_down = [true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint15" unique_id=686758624]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_sruvg")
+
+[node name="Checkpoint16" type="Area3D" parent="Intersections" unique_id=557845682 node_paths=PackedStringArray("player", "direction_buttons")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.40001, -0.10000005, -47.600002)
+collision_mask = 2
+script = ExtResource("1_fdc70")
+player = NodePath("../../PlayerController")
+direction_buttons = NodePath("../../CanvasLayer/DirectionButtons")
+coming_from = [&"Liberty_41st", &"41st_Diesel"]
+show_left = [false, true]
+show_right = [true, false]
+show_up = [false, false]
+show_down = [true, true]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint16" unique_id=1139332760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.099998474)
+shape = SubResource("BoxShape3D_2h45r")
+
+[node name="DeadEnds" type="Node3D" parent="." unique_id=1089339235]
+
+[node name="deadEnd1" type="Area3D" parent="DeadEnds" unique_id=620670045]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -380.36)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd1" unique_id=1243899154]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 3.2999268)
+shape = SubResource("BoxShape3D_3noei")
+
+[node name="deadEnd2" type="Area3D" parent="DeadEnds" unique_id=765228615]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.19999695, 0.1, -381.25998)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd2" unique_id=2140208581]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.8, 0, 6.5)
+shape = SubResource("BoxShape3D_aw2mq")
+
+[node name="deadEnd3" type="Area3D" parent="DeadEnds" unique_id=1283177549]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.4, 0.1, -379.75998)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd3" unique_id=1021685504]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.39996338, 0, 0.5)
+shape = SubResource("BoxShape3D_hreg7")
+
+[node name="badEndingSpot" type="Area3D" parent="DeadEnds" unique_id=1225134023]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -121.759964)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/badEndingSpot" unique_id=2046775662]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.4125366, 0, 0.012420654)
+shape = SubResource("BoxShape3D_nhlk2")
+
+[node name="PlayerController" parent="." unique_id=799151962 instance=ExtResource("1_m5iai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 11.26655)
+collision_layer = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1094173507]
+
+[node name="DirectionButtons" type="Node3D" parent="CanvasLayer" unique_id=890871575]
+
+[node name="LeftButton" type="TextureButton" parent="CanvasLayer/DirectionButtons" unique_id=792553243 node_paths=PackedStringArray("player")]
+visible = false
+offset_left = 75.0
+offset_top = 286.0
+offset_right = 587.0
+offset_bottom = 798.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("3_wpxch")
+script = ExtResource("4_h48hc")
+player = NodePath("../../../PlayerController")
+direction = "left"
+
+[node name="RightButton" type="TextureButton" parent="CanvasLayer/DirectionButtons" unique_id=883990819 node_paths=PackedStringArray("player")]
+visible = false
+offset_left = 945.0
+offset_top = 289.0
+offset_right = 1457.0
+offset_bottom = 801.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("4_c5rgc")
+script = ExtResource("4_h48hc")
+player = NodePath("../../../PlayerController")
+direction = "right"
+
+[node name="UpButton" type="TextureButton" parent="CanvasLayer/DirectionButtons" unique_id=1909252134 node_paths=PackedStringArray("player")]
+visible = false
+offset_left = 500.0
+offset_top = 22.0
+offset_right = 1012.0
+offset_bottom = 534.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("5_h48hc")
+script = ExtResource("4_h48hc")
+player = NodePath("../../../PlayerController")
+direction = "up"
+
+[node name="DownButton" type="TextureButton" parent="CanvasLayer/DirectionButtons" unique_id=655026843 node_paths=PackedStringArray("player")]
+visible = false
+offset_left = 500.0
+offset_top = 494.0
+offset_right = 1012.0
+offset_bottom = 1006.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("6_1mogm")
+script = ExtResource("4_h48hc")
+player = NodePath("../../../PlayerController")
+direction = "down"
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1965800388 node_paths=PackedStringArray("player")]
+transform = Transform3D(222.05847, 0, 0, 0, 113.14164, -0.16056564, 0, 0.15997578, 113.558815, 0, 0, -4.833025)
+script = ExtResource("9_bcidj")
+player = NodePath("../PlayerController")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=588889289]
+transform = Transform3D(0.01933569, 0, 0, 0, 0.0442966, -3.637979e-12, 0, 1.4551915e-11, 0.04070411, 0, 5.6963254e-06, -0.02202946)
+visible = false
+layers = 2
+mesh = SubResource("BoxMesh_hk511")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Node3D/MeshInstance3D" unique_id=1665566263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, -2.3283064e-10, 1, 0, 0, 0)
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_4xqv3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/MeshInstance3D/RigidBody3D" unique_id=533214792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 1.1641532e-10, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_hk511")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node3D" unique_id=1892116433]
+transform = Transform3D(0.002765071, 0, 0, 0, 0.004157726, 0, 0, 0, 0.0025689902, 0, 0, 0)
+stream = ExtResource("10_sgfvx")
+
+[connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint2" to="Intersections/Checkpoint2" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint3" to="Intersections/Checkpoint3" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint4" to="Intersections/Checkpoint4" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint5" to="Intersections/Checkpoint5" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint6" to="Intersections/Checkpoint6" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint7" to="Intersections/Checkpoint7" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint8" to="Intersections/Checkpoint8" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint9" to="Intersections/Checkpoint9" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint10" to="Intersections/Checkpoint10" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint11" to="Intersections/Checkpoint11" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint12" to="Intersections/Checkpoint12" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint13" to="Intersections/Checkpoint13" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint14" to="Intersections/Checkpoint14" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint15" to="Intersections/Checkpoint15" method="_on_body_entered"]
+[connection signal="body_entered" from="Intersections/Checkpoint16" to="Intersections/Checkpoint16" method="_on_body_entered"]
+[connection signal="pressed" from="CanvasLayer/DirectionButtons/LeftButton" to="CanvasLayer/DirectionButtons/LeftButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/DirectionButtons/RightButton" to="CanvasLayer/DirectionButtons/RightButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/DirectionButtons/UpButton" to="CanvasLayer/DirectionButtons/UpButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/DirectionButtons/DownButton" to="CanvasLayer/DirectionButtons/DownButton" method="_on_pressed"]
+[connection signal="body_entered" from="Node3D/MeshInstance3D/RigidBody3D" to="Node3D" method="_on_rigid_body_3d_body_entered"]
