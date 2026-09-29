@@ -13,3 +13,7 @@ func _on_body_entered(body):
 	if body == player:
 		player.current_road = road_name
 		print("Player is on: ", road_name)
+
+
+func _on_rigid_body_3d_body_entered(body: Node) -> void:
+	pass # Replace with function body.

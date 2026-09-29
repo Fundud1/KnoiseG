@@ -6,9 +6,7 @@ const SPEED = 3.0
 var can_move = true
 
 var current_road = ""
-func _on_PlayerController_entered(body):
-	if body == player:
-		$AudioStreamPlayer.play()
+
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
@@ -32,3 +30,7 @@ func capture_mouse():
 	
 func release_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+
+func _on_rigid_body_3d_body_entered(body: Node) -> void:
+	pass # Replace with function body.

@@ -8,8 +8,9 @@
 [ext_resource type="Script" uid="uid://dwgo8cg5hal5g" path="res://scripts/directions_button.gd" id="4_h48hc"]
 [ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
 [ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
-[ext_resource type="Script" uid="uid://b1opmxo7u1xln" path="res://scenes/node_3d.gd" id="9_bcidj"]
+[ext_resource type="Script" uid="uid://c7a0kvy24gh0r" path="res://scenes/soundd.gd" id="10_aw7wc"]
 [ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://addons/1-1.wav" id="10_sgfvx"]
+[ext_resource type="Script" uid="uid://cd1i8bqe42r5f" path="res://scenes/rigid_body_3d.gd" id="11_c0fwb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
@@ -912,7 +913,7 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.4125366, 0, 0.012
 shape = SubResource("BoxShape3D_nhlk2")
 
 [node name="PlayerController" parent="." unique_id=799151962 instance=ExtResource("1_m5iai")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 11.26655)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1.9758759)
 collision_layer = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1094173507]
@@ -967,29 +968,32 @@ script = ExtResource("4_h48hc")
 player = NodePath("../../../PlayerController")
 direction = "down"
 
-[node name="Node3D" type="Node3D" parent="." unique_id=1965800388 node_paths=PackedStringArray("player")]
-transform = Transform3D(222.05847, 0, 0, 0, 113.14164, -0.16056564, 0, 0.15997578, 113.558815, 0, 0, -4.833025)
-script = ExtResource("9_bcidj")
-player = NodePath("../PlayerController")
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1892116433]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
+stream = ExtResource("10_sgfvx")
+area_mask = 3
+script = ExtResource("10_aw7wc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=588889289]
-transform = Transform3D(0.01933569, 0, 0, 0, 0.0442966, -3.637979e-12, 0, 1.4551915e-11, 0.04070411, 0, 5.6963254e-06, -0.02202946)
-visible = false
-layers = 2
+[node name="MeshInstance3D" type="MeshInstance3D" parent="AudioStreamPlayer3D" unique_id=588889289]
+physics_interpolation_mode = 1
+transform = Transform3D(4.293654, 0, 0, 0, 5.011794, 4.656613e-10, 0, 1.8626451e-09, 4.622315, 0, 0.0025883806, -1.1268415)
+layers = 3
 mesh = SubResource("BoxMesh_hk511")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="Node3D/MeshInstance3D" unique_id=1665566263]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, -2.3283064e-10, 1, 0, 0, 0)
+[node name="RigidBody3D" type="RigidBody3D" parent="AudioStreamPlayer3D/MeshInstance3D" unique_id=1665566263]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 1.1641532e-10, 0, -3.4924597e-10, 1, 0, 0, 1.1920929e-07)
 collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_4xqv3")
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("11_c0fwb")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/MeshInstance3D/RigidBody3D" unique_id=533214792]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 1.1641532e-10, 1, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AudioStreamPlayer3D/MeshInstance3D/RigidBody3D" unique_id=533214792]
+transform = Transform3D(1, 0, 0, 0, 1.0000004, -2.3283064e-10, 0, -4.656613e-10, 0.99999994, 0, -4.656613e-10, 0)
 shape = SubResource("BoxShape3D_hk511")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node3D" unique_id=1892116433]
-transform = Transform3D(0.002765071, 0, 0, 0, 0.004157726, 0, 0, 0, 0.0025689902, 0, 0, 0)
-stream = ExtResource("10_sgfvx")
+[node name="Collision1" type="Node3D" parent="." unique_id=1965800388]
+transform = Transform3D(222.05847, 0, 0, 0, 113.14164, -0.16056564, 0, 0.15997578, 113.558815, 0, 0, -4.833025)
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
@@ -1012,4 +1016,3 @@ stream = ExtResource("10_sgfvx")
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/RightButton" to="CanvasLayer/DirectionButtons/RightButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/UpButton" to="CanvasLayer/DirectionButtons/UpButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/DownButton" to="CanvasLayer/DirectionButtons/DownButton" method="_on_pressed"]
-[connection signal="body_entered" from="Node3D/MeshInstance3D/RigidBody3D" to="Node3D" method="_on_rigid_body_3d_body_entered"]
