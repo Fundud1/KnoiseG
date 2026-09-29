@@ -30,7 +30,3 @@ func capture_mouse():
 	
 func release_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-
-
-func _on_rigid_body_3d_body_entered(body: Node) -> void:
-	pass # Replace with function body.

@@ -8,9 +8,8 @@
 [ext_resource type="Script" uid="uid://dwgo8cg5hal5g" path="res://scripts/directions_button.gd" id="4_h48hc"]
 [ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
 [ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
-[ext_resource type="Script" uid="uid://c7a0kvy24gh0r" path="res://scenes/soundd.gd" id="10_aw7wc"]
+[ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
 [ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://addons/1-1.wav" id="10_sgfvx"]
-[ext_resource type="Script" uid="uid://cd1i8bqe42r5f" path="res://scenes/rigid_body_3d.gd" id="11_c0fwb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
@@ -156,11 +155,7 @@ size = Vector3(0.001, 1, 22.300001)
 [sub_resource type="BoxShape3D" id="BoxShape3D_nhlk2"]
 size = Vector3(18.5, 1, 18.300001)
 
-[sub_resource type="BoxMesh" id="BoxMesh_hk511"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4xqv3"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_hk511"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_iigmh"]
 
 [node name="KnoiseGame" type="Node3D" unique_id=1886624332]
 
@@ -968,32 +963,22 @@ script = ExtResource("4_h48hc")
 player = NodePath("../../../PlayerController")
 direction = "down"
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1892116433]
+[node name="Convo1" type="AudioStreamPlayer3D" parent="." unique_id=1892116433]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 stream = ExtResource("10_sgfvx")
-area_mask = 3
-script = ExtResource("10_aw7wc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="AudioStreamPlayer3D" unique_id=588889289]
-physics_interpolation_mode = 1
-transform = Transform3D(4.293654, 0, 0, 0, 5.011794, 4.656613e-10, 0, 1.8626451e-09, 4.622315, 0, 0.0025883806, -1.1268415)
-layers = 3
-mesh = SubResource("BoxMesh_hk511")
+[node name="Conversations" type="Node3D" parent="." unique_id=1903218441]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="AudioStreamPlayer3D/MeshInstance3D" unique_id=1665566263]
-transform = Transform3D(1, 0, 0, 0, 1.0000001, 1.1641532e-10, 0, -3.4924597e-10, 1, 0, 0, 1.1920929e-07)
-collision_layer = 2
-physics_material_override = SubResource("PhysicsMaterial_4xqv3")
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("11_c0fwb")
+[node name="convo1" type="Area3D" parent="Conversations" unique_id=1972995751 node_paths=PackedStringArray("player", "Convos")]
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Convo1")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AudioStreamPlayer3D/MeshInstance3D/RigidBody3D" unique_id=533214792]
-transform = Transform3D(1, 0, 0, 0, 1.0000004, -2.3283064e-10, 0, -4.656613e-10, 0.99999994, 0, -4.656613e-10, 0)
-shape = SubResource("BoxShape3D_hk511")
-
-[node name="Collision1" type="Node3D" parent="." unique_id=1965800388]
-transform = Transform3D(222.05847, 0, 0, 0, 113.14164, -0.16056564, 0, 0.15997578, 113.558815, 0, 0, -4.833025)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo1" unique_id=1489090339]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_iigmh")
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
@@ -1016,3 +1001,4 @@ transform = Transform3D(222.05847, 0, 0, 0, 113.14164, -0.16056564, 0, 0.1599757
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/RightButton" to="CanvasLayer/DirectionButtons/RightButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/UpButton" to="CanvasLayer/DirectionButtons/UpButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/DirectionButtons/DownButton" to="CanvasLayer/DirectionButtons/DownButton" method="_on_pressed"]
+[connection signal="body_entered" from="Conversations/convo1" to="Conversations/convo1" method="_on_body_entered"]
