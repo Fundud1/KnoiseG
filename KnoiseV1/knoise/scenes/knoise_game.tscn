@@ -9,7 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
 [ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
 [ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
-[ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://addons/1-1.wav" id="10_sgfvx"]
+[ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://assets/audios/1-1.wav" id="10_sgfvx"]
+[ext_resource type="Texture2D" uid="uid://ly8go68hrseh" path="res://scripts/Buildings Background 1.png" id="11_sgfvx"]
+[ext_resource type="Texture2D" uid="uid://dhaep0bs3dg8" path="res://assets/images/sprites/Buildings Background 2.png" id="12_c0fwb"]
+[ext_resource type="Texture2D" uid="uid://kiiepmw8vl13" path="res://assets/images/sprites/Buildings Background 3.png" id="13_5n8hj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
@@ -979,6 +982,32 @@ Convos = NodePath("../../Convo1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo1" unique_id=1489090339]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_iigmh")
+
+[node name="Buildings" type="Node3D" parent="." unique_id=2010083931]
+
+[node name="Building 1" type="Sprite3D" parent="Buildings" unique_id=1170105859]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -6.143)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 2" type="Sprite3D" parent="Buildings" unique_id=316817536]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -26.5)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 3" type="Sprite3D" parent="Buildings" unique_id=1259557700]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -6.143)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 4" type="Sprite3D" parent="Buildings" unique_id=1001588640]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -26.5)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 5" type="Sprite3D" parent="Buildings" unique_id=1101485245]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.28, 5.8, -33.674194)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 6" type="Sprite3D" parent="Buildings" unique_id=770004469]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -33.6)
+texture = ExtResource("11_sgfvx")
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
