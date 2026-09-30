@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @export var player: CharacterBody3D
-const SPEED = 3.0
+const SPEED = 5.5
 
 var can_move = true
 

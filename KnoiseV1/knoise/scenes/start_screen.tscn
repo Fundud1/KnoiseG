@@ -13,17 +13,17 @@ zoom = Vector2(1, 0.75)
 
 [node name="TrainAnnouncement" type="AudioStreamPlayer2D" parent="." unique_id=1123174234]
 stream = ExtResource("1_hm208")
-volume_db = -15.0
+volume_db = -10.0
 autoplay = true
 
 [node name="TrainAmbience" type="AudioStreamPlayer2D" parent="." unique_id=712774629]
 stream = ExtResource("2_5pab1")
-volume_db = -10.0
+volume_db = -5.0
 autoplay = true
 
 [node name="StartMusic" type="AudioStreamPlayer2D" parent="." unique_id=490094138]
 stream = ExtResource("2_he1sj")
-volume_db = -10.0
+volume_db = -5.0
 autoplay = true
 
 [node name="DialogueManager" parent="." unique_id=810447573 instance=ExtResource("2_o7i0r")]

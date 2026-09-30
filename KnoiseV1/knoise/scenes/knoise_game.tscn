@@ -231,9 +231,27 @@ size = Vector3(18.5, 1, 18.300001)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dj5l5"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lu454"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_mbuli"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_82hp8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3mq0c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_20hk1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lu454"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1vah5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_42cl1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b54pv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kpnx3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vabu3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3do5"]
 
 [node name="KnoiseGame" type="Node3D" unique_id=1886624332]
 
@@ -1549,214 +1567,205 @@ volume_db = 60.0
 unit_size = 0.3
 max_db = 2.64
 
-[node name="KnoiseAmbience" type="AudioStreamPlayer3D" parent="." unique_id=1875249595]
+[node name="KnoiseAmbience" type="AudioStreamPlayer3D" parent="Audios" unique_id=1875249595]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -18.007442)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience2" type="AudioStreamPlayer3D" parent="." unique_id=572520990]
+[node name="KnoiseAmbience2" type="AudioStreamPlayer3D" parent="Audios" unique_id=572520990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -74.4405)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience3" type="AudioStreamPlayer3D" parent="." unique_id=883987528]
+[node name="KnoiseAmbience3" type="AudioStreamPlayer3D" parent="Audios" unique_id=883987528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.35359, 0, 12.532974)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience4" type="AudioStreamPlayer3D" parent="." unique_id=116490172]
+[node name="KnoiseAmbience4" type="AudioStreamPlayer3D" parent="Audios" unique_id=116490172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.08655, 0, 11.788216)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience5" type="AudioStreamPlayer3D" parent="." unique_id=2143268019]
+[node name="KnoiseAmbience5" type="AudioStreamPlayer3D" parent="Audios" unique_id=2143268019]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5779, 0, -41.116886)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="." unique_id=1607028618]
+[node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="Audios" unique_id=1607028618]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.48384, 0, -108.01032)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience7" type="AudioStreamPlayer3D" parent="." unique_id=1089819790]
+[node name="KnoiseAmbience7" type="AudioStreamPlayer3D" parent="Audios" unique_id=1089819790]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.19211, 0, -77.92572)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience8" type="AudioStreamPlayer3D" parent="." unique_id=48855352]
+[node name="KnoiseAmbience8" type="AudioStreamPlayer3D" parent="Audios" unique_id=48855352]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.457, 0, -218.06917)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience9" type="AudioStreamPlayer3D" parent="." unique_id=1850095839]
+[node name="KnoiseAmbience9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1850095839]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.23639, 0, -251.77866)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience10" type="AudioStreamPlayer3D" parent="." unique_id=547096104]
+[node name="KnoiseAmbience10" type="AudioStreamPlayer3D" parent="Audios" unique_id=547096104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.84094, 0, -341.64734)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="KnoiseAmbience11" type="AudioStreamPlayer3D" parent="." unique_id=1349864175]
+[node name="KnoiseAmbience11" type="AudioStreamPlayer3D" parent="Audios" unique_id=1349864175]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.74559, 0, -313.7664)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.701
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
-[node name="convo1" type="Area3D" parent="." unique_id=1623809087 node_paths=PackedStringArray("player", "Convos")]
+[node name="CityAudios" type="Node3D" parent="." unique_id=339632329]
+
+[node name="cityAudio1" type="Area3D" parent="CityAudios" unique_id=1623809087 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo1" unique_id=732513702]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio1" unique_id=732513702]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_mbuli")
 
-[node name="convo2" type="Area3D" parent="." unique_id=1395751294 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio2" type="Area3D" parent="CityAudios" unique_id=1395751294 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience2")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience2")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo2" unique_id=637440797]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio2" unique_id=637440797]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_82hp8")
 
-[node name="convo3" type="Area3D" parent="." unique_id=533059056 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio3" type="Area3D" parent="CityAudios" unique_id=533059056 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience3")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo3" unique_id=1895787813]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio3" unique_id=1895787813]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_3mq0c")
 
-[node name="convo4" type="Area3D" parent="." unique_id=1096073563 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio4" type="Area3D" parent="CityAudios" unique_id=1096073563 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience4")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo4" unique_id=1202730738]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio4" unique_id=1202730738]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_20hk1")
 
-[node name="convo5" type="Area3D" parent="." unique_id=82116153 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio5" type="Area3D" parent="CityAudios" unique_id=82116153 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience5")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo5" unique_id=958791945]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio5" unique_id=958791945]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_lu454")
 
-[node name="convo6" type="Area3D" parent="." unique_id=1449316575 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio6" type="Area3D" parent="CityAudios" unique_id=1449316575 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience6")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo6" unique_id=915742150]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio6" unique_id=915742150]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_1vah5")
 
-[node name="convo7" type="Area3D" parent="." unique_id=456375649 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio7" type="Area3D" parent="CityAudios" unique_id=456375649 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience7")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience7")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo7" unique_id=1366498296]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio7" unique_id=1366498296]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_42cl1")
 
-[node name="convo8" type="Area3D" parent="." unique_id=174958768 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio8" type="Area3D" parent="CityAudios" unique_id=174958768 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience8")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo8" unique_id=1182988474]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio8" unique_id=1182988474]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_b54pv")
 
-[node name="convo9" type="Area3D" parent="." unique_id=1929055770 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio9" type="Area3D" parent="CityAudios" unique_id=1929055770 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience9")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience9")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo9" unique_id=336768710]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio9" unique_id=336768710]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_kpnx3")
 
-[node name="convo10" type="Area3D" parent="." unique_id=482580679 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio10" type="Area3D" parent="CityAudios" unique_id=482580679 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience10")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience10")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo10" unique_id=1466943749]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio10" unique_id=1466943749]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_vabu3")
 
-[node name="convo11" type="Area3D" parent="." unique_id=1233483070 node_paths=PackedStringArray("player", "Convos")]
+[node name="cityAudio11" type="Area3D" parent="CityAudios" unique_id=1233483070 node_paths=PackedStringArray("player", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
 collision_mask = 2
 script = ExtResource("10_bcidj")
-player = NodePath("../PlayerController")
-Convos = NodePath("../KnoiseAmbience11")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/KnoiseAmbience11")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="convo11" unique_id=430215000]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio11" unique_id=430215000]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
-shape = SubResource("BoxShape3D_lu454")
+shape = SubResource("BoxShape3D_e3do5")
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
@@ -1803,14 +1812,14 @@ shape = SubResource("BoxShape3D_lu454")
 [connection signal="body_entered" from="Conversations/convo22" to="Conversations/convo22" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo23" to="Conversations/convo23" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo24" to="Conversations/convo24" method="_on_body_entered"]
-[connection signal="body_entered" from="convo1" to="convo1" method="_on_body_entered"]
-[connection signal="body_entered" from="convo2" to="convo2" method="_on_body_entered"]
-[connection signal="body_entered" from="convo3" to="convo3" method="_on_body_entered"]
-[connection signal="body_entered" from="convo4" to="convo4" method="_on_body_entered"]
-[connection signal="body_entered" from="convo5" to="convo5" method="_on_body_entered"]
-[connection signal="body_entered" from="convo6" to="convo6" method="_on_body_entered"]
-[connection signal="body_entered" from="convo7" to="convo7" method="_on_body_entered"]
-[connection signal="body_entered" from="convo8" to="convo8" method="_on_body_entered"]
-[connection signal="body_entered" from="convo9" to="convo9" method="_on_body_entered"]
-[connection signal="body_entered" from="convo10" to="convo10" method="_on_body_entered"]
-[connection signal="body_entered" from="convo11" to="convo11" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio1" to="CityAudios/cityAudio1" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio2" to="CityAudios/cityAudio2" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio3" to="CityAudios/cityAudio3" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio4" to="CityAudios/cityAudio4" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio5" to="CityAudios/cityAudio5" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio6" to="CityAudios/cityAudio6" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio7" to="CityAudios/cityAudio7" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio8" to="CityAudios/cityAudio8" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio9" to="CityAudios/cityAudio9" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio10" to="CityAudios/cityAudio10" method="_on_body_entered"]
+[connection signal="body_entered" from="CityAudios/cityAudio11" to="CityAudios/cityAudio11" method="_on_body_entered"]

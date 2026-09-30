@@ -13,10 +13,12 @@ zoom = Vector2(1, 0.75)
 
 [node name="subwayDoors" type="AudioStreamPlayer2D" parent="." unique_id=146912203]
 stream = ExtResource("1_wa1fl")
+volume_db = 5.0
 autoplay = true
 
 [node name="subwayLeave" type="AudioStreamPlayer2D" parent="." unique_id=31964594]
 stream = ExtResource("2_n8xhf")
+volume_db = 5.0
 autoplay = true
 
 [node name="Black" type="Sprite2D" parent="." unique_id=958613599]
