@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://5akfs7mhgo81"]
+
+[ext_resource type="AudioStream" uid="uid://dg4bmua158ahq" path="res://assets/audios/trainAnnounce.wav" id="1_hm208"]
+[ext_resource type="AudioStream" uid="uid://x42pl0ee6p2c" path="res://assets/audios/trainStop.wav" id="2_5pab1"]
+[ext_resource type="AudioStream" uid="uid://qte1noojy68l" path="res://assets/audios/hipHop.mp3" id="2_he1sj"]
+[ext_resource type="PackedScene" uid="uid://bvren6jb6bi4i" path="res://scenes/textbox.tscn" id="2_o7i0r"]
+[ext_resource type="Texture2D" uid="uid://cjxxivqe46rsq" path="res://assets/images/internet/LIRRtrain.jpg" id="4_r2jwc"]
+
+[node name="StartScreen" type="Node2D" unique_id=730923510]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=166740158]
+zoom = Vector2(1, 0.75)
+
+[node name="TrainAnnouncement" type="AudioStreamPlayer2D" parent="." unique_id=1123174234]
+stream = ExtResource("1_hm208")
+volume_db = -15.0
+autoplay = true
+
+[node name="TrainAmbience" type="AudioStreamPlayer2D" parent="." unique_id=712774629]
+stream = ExtResource("2_5pab1")
+volume_db = -10.0
+autoplay = true
+
+[node name="StartMusic" type="AudioStreamPlayer2D" parent="." unique_id=490094138]
+stream = ExtResource("2_he1sj")
+volume_db = -10.0
+autoplay = true
+
+[node name="DialogueManager" parent="." unique_id=810447573 instance=ExtResource("2_o7i0r")]
+
+[node name="LirRtrain" type="Sprite2D" parent="." unique_id=366842350]
+position = Vector2(2.0000272, -1.5000157)
+scale = Vector2(1.1386718, 1.1601561)
+texture = ExtResource("4_r2jwc")

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bvren6jb6bi4i"]
+
+[ext_resource type="Script" uid="uid://br845wc57fhux" path="res://scripts/dialogueManager.gd" id="1_3xmdk"]
+[ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="2_g5d5p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2h45r"]
+font = ExtResource("2_g5d5p")
+font_size = 64
+
+[node name="DialogueManager" type="CanvasLayer" unique_id=810447573]
+process_mode = 3
+script = ExtResource("1_3xmdk")
+
+[node name="DialogueBox" type="Control" parent="." unique_id=419483851]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="DialogueBox" unique_id=107146031]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.739)
+
+[node name="DialogueText" type="Label" parent="DialogueBox" unique_id=492451363]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = -15.0
+offset_right = -76.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is the dialoge text!"
+label_settings = SubResource("LabelSettings_2h45r")
+vertical_alignment = 1
+autowrap_mode = 3

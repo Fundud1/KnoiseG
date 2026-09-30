@@ -6,7 +6,12 @@ const SPEED = 3.0
 var can_move = true
 
 var current_road = ""
+func _ready() -> void:
+	capture_mouse()
 
+#create function to  handle mouse capturing
+#instead of using the input map we just manually type it with code
+#At the same time this is to get out of the game
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):

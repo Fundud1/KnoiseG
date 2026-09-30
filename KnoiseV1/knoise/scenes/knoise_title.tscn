@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b3vj47ncnil4k"]
+
+[ext_resource type="AudioStream" uid="uid://bl445n8s7od2r" path="res://assets/audios/subwayDoor.mp3" id="1_wa1fl"]
+[ext_resource type="Texture2D" uid="uid://driy3b44b8mf4" path="res://assets/images/internet/black.jpg" id="2_2g210"]
+[ext_resource type="AudioStream" uid="uid://c61wf4ujrt1kw" path="res://assets/audios/subwayLeave.wav" id="2_n8xhf"]
+[ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="3_n8xhf"]
+[ext_resource type="Script" uid="uid://bl865ys1nibb7" path="res://scripts/buttonStart.gd" id="5_7bmts"]
+
+[node name="KnoiseTitle" type="Node2D" unique_id=2001513462]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1836797636]
+zoom = Vector2(1, 0.75)
+
+[node name="subwayDoors" type="AudioStreamPlayer2D" parent="." unique_id=146912203]
+stream = ExtResource("1_wa1fl")
+autoplay = true
+
+[node name="subwayLeave" type="AudioStreamPlayer2D" parent="." unique_id=31964594]
+stream = ExtResource("2_n8xhf")
+autoplay = true
+
+[node name="Black" type="Sprite2D" parent="." unique_id=958613599]
+position = Vector2(-13, 13)
+texture = ExtResource("2_2g210")
+
+[node name="Title" type="Label" parent="." unique_id=1434182040]
+offset_left = -538.0
+offset_top = -382.0
+offset_right = 214.0
+offset_bottom = -195.0
+theme_override_colors/font_color = Color(0.66564804, 0.2805537, 0.068270564, 1)
+theme_override_fonts/font = ExtResource("3_n8xhf")
+theme_override_font_sizes/font_size = 256
+text = "KNOISE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Names" type="Label" parent="." unique_id=94719208]
+offset_left = -452.0
+offset_top = -208.0
+offset_right = 516.0
+offset_bottom = -21.0
+theme_override_colors/font_color = Color(0.29365832, 0.08787788, 0.92819905, 1)
+theme_override_fonts/font = ExtResource("3_n8xhf")
+theme_override_font_sizes/font_size = 128
+text = "Developed by JJK"
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=264183025]
+offset_left = -110.0
+offset_top = -23.0
+offset_right = 325.0
+offset_bottom = 67.0
+theme_override_colors/font_hover_pressed_color = Color(0.7638052, 0.21903193, 0, 1)
+theme_override_fonts/font = ExtResource("3_n8xhf")
+theme_override_font_sizes/font_size = 112
+text = "Start -->"
+script = ExtResource("5_7bmts")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]

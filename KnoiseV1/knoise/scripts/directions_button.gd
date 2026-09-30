@@ -29,6 +29,7 @@ func _on_pressed() -> void:
 		player.rotate_y(deg_to_rad(180))
 
 	player.can_move = true
+	player.capture_mouse()
 	#declare each children in the parent "DirectionsButtons" as "button"
 	#and for each button in this parent do this: [hide]
 	for button in get_parent().get_children():

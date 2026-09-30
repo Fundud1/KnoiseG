@@ -36,7 +36,7 @@ func _on_body_entered(body):
 		#-1 means the road wasn't found so checks for errors
 		#if a road is found
 		if road_number != -1:
-
+			player.release_mouse()
 			player.can_move = false
 
 			# Hide all buttons first
