@@ -24,7 +24,20 @@
 [ext_resource type="AudioStream" uid="uid://brl764kehxv43" path="res://assets/audios/10.wav" id="22_gowcq"]
 [ext_resource type="AudioStream" uid="uid://bkerll8x6g5w6" path="res://assets/audios/11.wav" id="23_kun8u"]
 [ext_resource type="AudioStream" uid="uid://c805oda3x2gps" path="res://assets/audios/12.wav" id="24_wm8sv"]
+[ext_resource type="AudioStream" uid="uid://bdyuvoaf336bo" path="res://assets/audios/13.wav" id="25_r8wru"]
 [ext_resource type="AudioStream" uid="uid://bgb2aifdmmj7c" path="res://assets/audios/cityCrowd.wav" id="25_vt3j5"]
+[ext_resource type="AudioStream" uid="uid://bfdct5cnjpfdq" path="res://assets/audios/14.wav" id="26_jdr38"]
+[ext_resource type="AudioStream" uid="uid://gv6yuhdedxc8" path="res://assets/audios/15.wav" id="27_8wyem"]
+[ext_resource type="AudioStream" uid="uid://bva2rw88vfd3i" path="res://assets/audios/16.wav" id="28_5ba2d"]
+[ext_resource type="AudioStream" uid="uid://c4v1umadpb0cb" path="res://assets/audios/17.wav" id="29_0xego"]
+[ext_resource type="AudioStream" uid="uid://q2w2770rr247" path="res://assets/audios/18.wav" id="30_rymsp"]
+[ext_resource type="AudioStream" uid="uid://cakqkb3gx83l5" path="res://assets/audios/26.wav" id="31_rniy1"]
+[ext_resource type="AudioStream" uid="uid://cd2btknyu4h7m" path="res://assets/audios/19.wav" id="32_uvsgv"]
+[ext_resource type="AudioStream" uid="uid://0mhh86bb1vsx" path="res://assets/audios/20.wav" id="33_4vm12"]
+[ext_resource type="AudioStream" uid="uid://cj7rp1un6ofjn" path="res://assets/audios/21.wav" id="34_6cxk1"]
+[ext_resource type="AudioStream" uid="uid://dbc8epm16ij03" path="res://assets/audios/22.wav" id="35_jnexy"]
+[ext_resource type="AudioStream" uid="uid://cda6ill88463t" path="res://assets/audios/23-1.wav" id="36_27mwr"]
+[ext_resource type="AudioStream" uid="uid://rueco0jn0v7c" path="res://assets/audios/25.wav" id="37_3noei"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
@@ -193,6 +206,34 @@ size = Vector3(18.5, 1, 18.300001)
 [sub_resource type="BoxShape3D" id="BoxShape3D_iqf7v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v2wyr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_70w3k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1dv5r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_505kg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4io3v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eyw41"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4wa4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r6plf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pfpkh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tiyeh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kyik1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jajnh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dj5l5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lu454"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_82hp8"]
 
 [node name="KnoiseGame" type="Node3D" unique_id=1886624332]
 
@@ -1004,6 +1045,7 @@ direction = "down"
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 
 [node name="convo1" type="Area3D" parent="Conversations" unique_id=1972995751 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1014,7 +1056,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_iigmh")
 
 [node name="convo2" type="Area3D" parent="Conversations" unique_id=162468806 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4477147, -0.024297949, -17.184532)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4477147, -0.03256087, -23.02842)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1134,6 +1176,138 @@ Convos = NodePath("../../Audios/Convo12")
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_v2wyr")
 
+[node name="convo13" type="Area3D" parent="Conversations" unique_id=140713968 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.00345, -0.562176, -397.59457)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo13")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo13" unique_id=2032154943]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243637, 0, 0, 0, 1.9270269, -13.256241, 1.4792194, 109.7626)
+shape = SubResource("BoxShape3D_70w3k")
+
+[node name="convo14" type="Area3D" parent="Conversations" unique_id=290019616 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.20676, -0.35568178, -251.55313)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo14")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo14" unique_id=21602025]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_1dv5r")
+
+[node name="convo15" type="Area3D" parent="Conversations" unique_id=971782440 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13584614, -0.40399826, -285.72464)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo15")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo15" unique_id=1715143274]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_505kg")
+
+[node name="convo16" type="Area3D" parent="Conversations" unique_id=2131302836 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.51752, -0.29515293, -208.7446)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo16")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo16" unique_id=982476719]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_4io3v")
+
+[node name="convo17" type="Area3D" parent="Conversations" unique_id=2066964832 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.65618, -0.4605716, -325.73572)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo17")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo17" unique_id=253823128]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_eyw41")
+
+[node name="convo18" type="Area3D" parent="Conversations" unique_id=397852707 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.671373, 0.03399512, 24.042759)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo12")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo18" unique_id=434890335]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_g4wa4")
+
+[node name="convo19" type="Area3D" parent="Conversations" unique_id=276167279 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.3222, -0.380358, -269.00513)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo19")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo19" unique_id=151899018]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_r6plf")
+
+[node name="convo20" type="Area3D" parent="Conversations" unique_id=1086959375 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.835567, -0.27248272, -192.71126)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo20")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo20" unique_id=989641309]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_pfpkh")
+
+[node name="convo21" type="Area3D" parent="Conversations" unique_id=725965037 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.42119, 0.033840634, 23.933506)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo21")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo21" unique_id=1065015519]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_tiyeh")
+
+[node name="convo22" type="Area3D" parent="Conversations" unique_id=1684751719 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.859715, -0.3804695, -269.08408)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo22")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo22" unique_id=1331896707]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_kyik1")
+
+[node name="convo23" type="Area3D" parent="Conversations" unique_id=1434993212 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.299635, -0.058456417, -41.34285)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo23")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo23" unique_id=1849019562]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_jajnh")
+
+[node name="convo24" type="Area3D" parent="Conversations" unique_id=1638777402 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.95813, -0.16366325, -115.749565)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/Convo25")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo24" unique_id=1291426016]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_dj5l5")
+
 [node name="Buildings" type="Node3D" parent="." unique_id=2010083931]
 
 [node name="Building 1" type="Sprite3D" parent="Buildings" unique_id=1170105859]
@@ -1189,57 +1363,400 @@ texture = ExtResource("11_sgfvx")
 [node name="Convo1" type="AudioStreamPlayer3D" parent="Audios" unique_id=1892116433]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 stream = ExtResource("10_sgfvx")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo2" type="AudioStreamPlayer3D" parent="Audios" unique_id=1621176836]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -60.114307)
 stream = ExtResource("14_48sdk")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo3" type="AudioStreamPlayer3D" parent="Audios" unique_id=1398629844]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.1395, -9.313226e-10, -63.102158)
 stream = ExtResource("15_vt3j5")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo4" type="AudioStreamPlayer3D" parent="Audios" unique_id=1848561977]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.10352, -9.313226e-10, -144.91629)
 stream = ExtResource("16_m14ia")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1059411569]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -95.24284)
 stream = ExtResource("17_wc36q")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo6" type="AudioStreamPlayer3D" parent="Audios" unique_id=782251237]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.83652115, -9.313226e-10, -22.476192)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.83652115, -9.313226e-10, -31.647673)
 stream = ExtResource("18_2kb2f")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo7" type="AudioStreamPlayer3D" parent="Audios" unique_id=1911931974]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 1.2994499, -9.313226e-10, -93.53737)
 stream = ExtResource("19_mp16a")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo8" type="AudioStreamPlayer3D" parent="Audios" unique_id=1412209064]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -146.13062)
 stream = ExtResource("20_ntwq1")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1525439834]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -218.93404)
 stream = ExtResource("21_g30va")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo10" type="AudioStreamPlayer3D" parent="Audios" unique_id=2043185183]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.15150642, -9.313226e-10, -217.47597)
 stream = ExtResource("22_gowcq")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
 
 [node name="Convo11" type="AudioStreamPlayer3D" parent="Audios" unique_id=1116441418]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -259.96274)
 stream = ExtResource("23_kun8u")
+attenuation_model = 1
+volume_db = 60.0
 unit_size = 0.3
 max_db = 2.64
 
 [node name="Convo12" type="AudioStreamPlayer3D" parent="Audios" unique_id=1688632993]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -29.739738, -9.313226e-10, -356.32205)
 stream = ExtResource("24_wm8sv")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.1
+
+[node name="Convo13" type="AudioStreamPlayer3D" parent="Audios" unique_id=1141523376]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.23865, -9.313226e-10, -294.8155)
+stream = ExtResource("25_r8wru")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo14" type="AudioStreamPlayer3D" parent="Audios" unique_id=1360049485]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36235, -9.313226e-10, -257.47525)
+stream = ExtResource("26_jdr38")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo15" type="AudioStreamPlayer3D" parent="Audios" unique_id=937738459]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.51186466, -9.313226e-10, -291.62607)
+stream = ExtResource("27_8wyem")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo16" type="AudioStreamPlayer3D" parent="Audios" unique_id=707817988]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -127.94262, -9.313226e-10, -214.97612)
+stream = ExtResource("28_5ba2d")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo17" type="AudioStreamPlayer3D" parent="Audios" unique_id=185545122]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36127, -9.313226e-10, -332.08292)
+stream = ExtResource("29_0xego")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo18" type="AudioStreamPlayer3D" parent="Audios" unique_id=84311009]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 26.662926, -9.313226e-10, 18.100088)
+stream = ExtResource("30_rymsp")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo26" type="AudioStreamPlayer3D" parent="Audios" unique_id=529620743]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -50.70317, -9.313226e-10, -199.16724)
+stream = ExtResource("31_rniy1")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo19" type="AudioStreamPlayer3D" parent="Audios" unique_id=1649856140]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 69.740395, -9.313226e-10, -275.1888)
+stream = ExtResource("32_uvsgv")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo20" type="AudioStreamPlayer3D" parent="Audios" unique_id=1161550967]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 60.783714, -9.313226e-10, -198.41068)
+stream = ExtResource("33_4vm12")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo21" type="AudioStreamPlayer3D" parent="Audios" unique_id=415102155]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 103.351204, -9.313226e-10, 17.829153)
+stream = ExtResource("34_6cxk1")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo22" type="AudioStreamPlayer3D" parent="Audios" unique_id=1470362800]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -11.222839, -9.313226e-10, -274.55444)
+stream = ExtResource("35_jnexy")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo23" type="AudioStreamPlayer3D" parent="Audios" unique_id=1896444036]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -24.424854, -9.313226e-10, -47.1241)
+stream = ExtResource("36_27mwr")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo25" type="AudioStreamPlayer3D" parent="Audios" unique_id=493942366]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 72.500786, -9.313226e-10, -121.72415)
+stream = ExtResource("37_3noei")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
 
 [node name="KnoiseAmbience" type="AudioStreamPlayer3D" parent="." unique_id=1875249595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -18.007442)
 stream = ExtResource("25_vt3j5")
-volume_db = -15.0
+volume_db = -15.701
+pitch_scale = 1.04
 autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience2" type="AudioStreamPlayer3D" parent="." unique_id=572520990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -74.4405)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience3" type="AudioStreamPlayer3D" parent="." unique_id=883987528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.35359, 0, 12.532974)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience4" type="AudioStreamPlayer3D" parent="." unique_id=116490172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.08655, 0, 11.788216)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience5" type="AudioStreamPlayer3D" parent="." unique_id=2143268019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5779, 0, -41.116886)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="." unique_id=1607028618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.48384, 0, -108.01032)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience7" type="AudioStreamPlayer3D" parent="." unique_id=1089819790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.19211, 0, -77.92572)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience8" type="AudioStreamPlayer3D" parent="." unique_id=48855352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.457, 0, -218.06917)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience9" type="AudioStreamPlayer3D" parent="." unique_id=1850095839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.23639, 0, -251.77866)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience10" type="AudioStreamPlayer3D" parent="." unique_id=547096104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.84094, 0, -341.64734)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience11" type="AudioStreamPlayer3D" parent="." unique_id=1349864175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.74559, 0, -313.7664)
+stream = ExtResource("25_vt3j5")
+volume_db = -15.701
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="convo1" type="Area3D" parent="." unique_id=1623809087 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo1" unique_id=732513702]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo2" type="Area3D" parent="." unique_id=1395751294 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo2" unique_id=637440797]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_82hp8")
+
+[node name="convo3" type="Area3D" parent="." unique_id=533059056 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo3" unique_id=1895787813]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo4" type="Area3D" parent="." unique_id=1096073563 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo4" unique_id=1202730738]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo5" type="Area3D" parent="." unique_id=82116153 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo5" unique_id=958791945]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo6" type="Area3D" parent="." unique_id=1449316575 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo6" unique_id=915742150]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo7" type="Area3D" parent="." unique_id=456375649 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo7" unique_id=1366498296]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo8" type="Area3D" parent="." unique_id=174958768 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo8" unique_id=1182988474]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo9" type="Area3D" parent="." unique_id=1929055770 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience9")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo9" unique_id=336768710]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo10" type="Area3D" parent="." unique_id=482580679 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience10")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo10" unique_id=1466943749]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
+
+[node name="convo11" type="Area3D" parent="." unique_id=1233483070 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../PlayerController")
+Convos = NodePath("../KnoiseAmbience11")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="convo11" unique_id=430215000]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_lu454")
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
@@ -1274,3 +1791,26 @@ autoplay = true
 [connection signal="body_entered" from="Conversations/convo10" to="Conversations/convo10" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo11" to="Conversations/convo11" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo12" to="Conversations/convo12" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo13" to="Conversations/convo13" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo14" to="Conversations/convo14" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo15" to="Conversations/convo15" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo16" to="Conversations/convo16" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo17" to="Conversations/convo17" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo18" to="Conversations/convo18" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo19" to="Conversations/convo19" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo20" to="Conversations/convo20" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo21" to="Conversations/convo21" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo22" to="Conversations/convo22" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo23" to="Conversations/convo23" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo24" to="Conversations/convo24" method="_on_body_entered"]
+[connection signal="body_entered" from="convo1" to="convo1" method="_on_body_entered"]
+[connection signal="body_entered" from="convo2" to="convo2" method="_on_body_entered"]
+[connection signal="body_entered" from="convo3" to="convo3" method="_on_body_entered"]
+[connection signal="body_entered" from="convo4" to="convo4" method="_on_body_entered"]
+[connection signal="body_entered" from="convo5" to="convo5" method="_on_body_entered"]
+[connection signal="body_entered" from="convo6" to="convo6" method="_on_body_entered"]
+[connection signal="body_entered" from="convo7" to="convo7" method="_on_body_entered"]
+[connection signal="body_entered" from="convo8" to="convo8" method="_on_body_entered"]
+[connection signal="body_entered" from="convo9" to="convo9" method="_on_body_entered"]
+[connection signal="body_entered" from="convo10" to="convo10" method="_on_body_entered"]
+[connection signal="body_entered" from="convo11" to="convo11" method="_on_body_entered"]
