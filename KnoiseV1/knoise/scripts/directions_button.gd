@@ -4,6 +4,7 @@ extends TextureButton
 @export var player: CharacterBody3D
 @export var direction = ""
 
+@export var dead_end_text: Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,6 +28,10 @@ func _on_pressed() -> void:
 
 	elif direction == "down":
 		player.rotate_y(deg_to_rad(180))
+	
+	#if dead end text exists, do this code
+	if dead_end_text:
+		dead_end_text.hide() #hide the text
 
 	player.can_move = true
 	player.capture_mouse()
