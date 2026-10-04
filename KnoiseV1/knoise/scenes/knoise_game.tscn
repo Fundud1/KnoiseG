@@ -9,14 +9,23 @@
 [ext_resource type="Script" uid="uid://dwgo8cg5hal5g" path="res://scripts/directions_button.gd" id="4_h48hc"]
 [ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
 [ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
+[ext_resource type="Texture2D" uid="uid://dec5poal0253f" path="res://assets/images/sprites/KnoiseG Person 1.png" id="9_3noei"]
+[ext_resource type="Texture2D" uid="uid://cuiyxmomtvd0d" path="res://assets/images/sprites/KnoiseG Person 2.png" id="10_aw2mq"]
 [ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
 [ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://assets/audios/1-1.wav" id="10_sgfvx"]
+[ext_resource type="Texture2D" uid="uid://vyocclqonih6" path="res://assets/images/sprites/KnoiseG Person 4.png" id="11_8olnv"]
 [ext_resource type="Texture2D" uid="uid://ly8go68hrseh" path="res://scripts/Buildings Background 1.png" id="11_sgfvx"]
+[ext_resource type="Texture2D" uid="uid://dkblauawwy4t6" path="res://assets/images/sprites/KnoiseG Person 5.png" id="12_7c1mp"]
 [ext_resource type="Texture2D" uid="uid://dhaep0bs3dg8" path="res://assets/images/sprites/Buildings Background 2.png" id="12_c0fwb"]
 [ext_resource type="Texture2D" uid="uid://kiiepmw8vl13" path="res://assets/images/sprites/Buildings Background 3.png" id="13_5n8hj"]
+[ext_resource type="Texture2D" uid="uid://dfdvw0dpobbgw" path="res://assets/images/sprites/KnoiseG Person 3.png" id="13_r17a8"]
+[ext_resource type="Texture2D" uid="uid://cr6gtgo0c6qqh" path="res://assets/images/sprites/KnoiseG Person 6.png" id="14_4ej0g"]
 [ext_resource type="AudioStream" uid="uid://djnla4ouq80rb" path="res://assets/audios/2.wav" id="14_48sdk"]
+[ext_resource type="Texture2D" uid="uid://dwxwnihejgc4k" path="res://assets/images/sprites/KnoiseG Person 7.png" id="15_d0215"]
 [ext_resource type="AudioStream" uid="uid://rfttns7mpfm0" path="res://assets/audios/3.wav" id="15_vt3j5"]
+[ext_resource type="Texture2D" uid="uid://dqdqrhcixe8pb" path="res://assets/images/sprites/KnoiseG Person 8.png" id="16_iqf7v"]
 [ext_resource type="AudioStream" uid="uid://de2rba6ovgdf5" path="res://assets/audios/4.wav" id="16_m14ia"]
+[ext_resource type="Texture2D" uid="uid://cy7vvnx2orbpq" path="res://assets/images/sprites/KnoiseG Person 9.png" id="17_v2wyr"]
 [ext_resource type="AudioStream" uid="uid://cseoqlrygpjid" path="res://assets/audios/5.wav" id="17_wc36q"]
 [ext_resource type="AudioStream" uid="uid://bduyqpcsc6yn8" path="res://assets/audios/6.wav" id="18_2kb2f"]
 [ext_resource type="AudioStream" uid="uid://wx6jfga4kl2w" path="res://assets/audios/7.wav" id="19_mp16a"]
@@ -2183,6 +2192,340 @@ texture = ExtResource("13_5n8hj")
 transform = Transform3D(-2.015636e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.015636e-08, 121.80501, 5.8, -108.254425)
 texture = ExtResource("11_sgfvx")
 
+[node name="People" type="Node3D" parent="." unique_id=912984898]
+
+[node name="Person1" type="Sprite3D" parent="People" unique_id=1209015144]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -1.1292194)
+texture = ExtResource("9_3noei")
+
+[node name="Person2" type="Sprite3D" parent="People" unique_id=896135506]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -0.83333623)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person3" type="Sprite3D" parent="People" unique_id=1961924084]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -1.1292194)
+texture = ExtResource("11_8olnv")
+
+[node name="Person19" type="Sprite3D" parent="People" unique_id=1427291145]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.297071, 0.8, -5.754099)
+texture = ExtResource("11_8olnv")
+
+[node name="Person4" type="Sprite3D" parent="People" unique_id=5570704]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -1.650134)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person5" type="Sprite3D" parent="People" unique_id=1571940036]
+transform = Transform3D(-0.085536435, 0, -0.051802695, 0, 0.1, 0, 0.051802695, 0, -0.085536435, -2.433, 0.8, -5.083639)
+texture = ExtResource("13_r17a8")
+
+[node name="Person6" type="Sprite3D" parent="People" unique_id=38713939]
+transform = Transform3D(-0.085536435, 0, -0.051802695, 0, 0.1, 0, 0.051802695, 0, -0.085536435, -3.366943, 0.8, -4.787756)
+texture = ExtResource("14_4ej0g")
+
+[node name="Person7" type="Sprite3D" parent="People" unique_id=136098327]
+transform = Transform3D(-0.0649448, 0, 0.07604062, 0, 0.1, 0, -0.07604062, 0, -0.0649448, 3.3535361, 0.8, -5.083639)
+texture = ExtResource("15_d0215")
+
+[node name="Person8" type="Sprite3D" parent="People" unique_id=1526133542]
+transform = Transform3D(-0.064944796, 0, 0.07604061, 0, 0.099999994, 0, -0.07604061, 0, -0.064944796, 2.5238104, 0.8, -5.6045537)
+texture = ExtResource("16_iqf7v")
+
+[node name="Person9" type="Sprite3D" parent="People" unique_id=888457518]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -10.7585)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person27" type="Sprite3D" parent="People" unique_id=993853295]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.356645, 0.8, -14.152894)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person10" type="Sprite3D" parent="People" unique_id=419084025]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -10.462617)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person20" type="Sprite3D" parent="People" unique_id=1874802766]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -32.011547)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person21" type="Sprite3D" parent="People" unique_id=1258725804]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -31.715664)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person22" type="Sprite3D" parent="People" unique_id=2054745890]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -19.255716)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person23" type="Sprite3D" parent="People" unique_id=1885195111]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -18.959833)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person24" type="Sprite3D" parent="People" unique_id=742746915]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, 6.0455613, 0.8, -9.916187)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person82" type="Sprite3D" parent="People" unique_id=855573848]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, 2.0907693, 0.8, -12.90191)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person25" type="Sprite3D" parent="People" unique_id=2140369329]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 5.1116185, 0.8, -9.620304)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person26" type="Sprite3D" parent="People" unique_id=515619462]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 2.787065, 0.8, -7.740837)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person11" type="Sprite3D" parent="People" unique_id=2045149575]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -10.7585)
+texture = ExtResource("11_8olnv")
+
+[node name="Person83" type="Sprite3D" parent="People" unique_id=518814616]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.7950473, 0.8, -15.077374)
+texture = ExtResource("11_8olnv")
+
+[node name="Person18" type="Sprite3D" parent="People" unique_id=76122673]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, -5.877867, 0.8, -5.4218616)
+texture = ExtResource("11_8olnv")
+
+[node name="Person12" type="Sprite3D" parent="People" unique_id=1792507163]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -11.279415)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person79" type="Sprite3D" parent="People" unique_id=25546556]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 5.958156, 0.8, -12.368417)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person80" type="Sprite3D" parent="People" unique_id=134551410]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 4.2000737, 0.8, -13.506613)
+texture = ExtResource("11_8olnv")
+
+[node name="Person81" type="Sprite3D" parent="People" unique_id=959118834]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 3.370348, 0.8, -14.027528)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person13" type="Sprite3D" parent="People" unique_id=106783441]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.352676, 0.8, -2.5015788)
+texture = ExtResource("11_8olnv")
+
+[node name="Person14" type="Sprite3D" parent="People" unique_id=1932969010]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 4.52295, 0.8, -3.0224934)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person28" type="Sprite3D" parent="People" unique_id=566500106]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -31.682184)
+texture = ExtResource("11_8olnv")
+
+[node name="Person29" type="Sprite3D" parent="People" unique_id=1057460837]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.297071, 0.8, -36.307064)
+texture = ExtResource("11_8olnv")
+
+[node name="Person30" type="Sprite3D" parent="People" unique_id=1869063381]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -32.2031)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person31" type="Sprite3D" parent="People" unique_id=1213120642]
+transform = Transform3D(-0.0649448, 0, 0.07604062, 0, 0.1, 0, -0.07604062, 0, -0.0649448, 3.3535361, 0.8, -35.636604)
+texture = ExtResource("15_d0215")
+
+[node name="Person32" type="Sprite3D" parent="People" unique_id=475685164]
+transform = Transform3D(-0.064944796, 0, 0.07604061, 0, 0.099999994, 0, -0.07604061, 0, -0.064944796, 2.5238104, 0.8, -36.15752)
+texture = ExtResource("16_iqf7v")
+
+[node name="Person33" type="Sprite3D" parent="People" unique_id=210940482]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, 6.0455613, 0.8, -40.469154)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person34" type="Sprite3D" parent="People" unique_id=1405745074]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 5.1116185, 0.8, -40.17327)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person35" type="Sprite3D" parent="People" unique_id=265725094]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 2.787065, 0.8, -38.2938)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person36" type="Sprite3D" parent="People" unique_id=1155176719]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -41.311466)
+texture = ExtResource("11_8olnv")
+
+[node name="Person37" type="Sprite3D" parent="People" unique_id=2017154098]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -41.832382)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person38" type="Sprite3D" parent="People" unique_id=583159882]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.352676, 0.8, -33.054543)
+texture = ExtResource("11_8olnv")
+
+[node name="Person39" type="Sprite3D" parent="People" unique_id=784211906]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 4.52295, 0.8, -33.57546)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person62" type="Sprite3D" parent="People" unique_id=149118304]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -16.362946)
+texture = ExtResource("11_8olnv")
+
+[node name="Person66" type="Sprite3D" parent="People" unique_id=472128536]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.297071, 0.8, -20.987827)
+texture = ExtResource("11_8olnv")
+
+[node name="Person67" type="Sprite3D" parent="People" unique_id=600498917]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -16.883862)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person68" type="Sprite3D" parent="People" unique_id=1113568144]
+transform = Transform3D(-0.0649448, 0, 0.07604062, 0, 0.1, 0, -0.07604062, 0, -0.0649448, 3.3535361, 0.8, -20.317368)
+texture = ExtResource("15_d0215")
+
+[node name="Person69" type="Sprite3D" parent="People" unique_id=200910393]
+transform = Transform3D(-0.064944796, 0, 0.07604061, 0, 0.099999994, 0, -0.07604061, 0, -0.064944796, 2.5238104, 0.8, -20.838284)
+texture = ExtResource("16_iqf7v")
+
+[node name="Person70" type="Sprite3D" parent="People" unique_id=8227537]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, 6.0455613, 0.8, -25.149918)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person71" type="Sprite3D" parent="People" unique_id=13684914]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 5.1116185, 0.8, -24.854034)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person72" type="Sprite3D" parent="People" unique_id=2141678229]
+transform = Transform3D(-0.08703557, 0, 0.04924236, 0, 0.1, 0, -0.04924236, 0, -0.08703557, 2.787065, 0.8, -22.974564)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person73" type="Sprite3D" parent="People" unique_id=346411242]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -25.99223)
+texture = ExtResource("11_8olnv")
+
+[node name="Person74" type="Sprite3D" parent="People" unique_id=824068008]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 2.5238104, 0.8, -26.513145)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person77" type="Sprite3D" parent="People" unique_id=206934158]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.4246225, 0.8, -28.216127)
+texture = ExtResource("11_8olnv")
+
+[node name="Person78" type="Sprite3D" parent="People" unique_id=2011475212]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 4.594897, 0.8, -28.737043)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person75" type="Sprite3D" parent="People" unique_id=1415707324]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 5.352676, 0.8, -17.735306)
+texture = ExtResource("11_8olnv")
+
+[node name="Person76" type="Sprite3D" parent="People" unique_id=1744797358]
+transform = Transform3D(-0.09966374, 0, 0.00819386, 0, 0.099999994, 0, -0.00819386, 0, -0.09966374, 4.52295, 0.8, -18.256222)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person15" type="Sprite3D" parent="People" unique_id=1057027530]
+transform = Transform3D(-0.055919293, 0, -0.082903765, 0, 0.1, 0, 0.082903765, 0, -0.055919293, -5.0047297, 0.8, -7.0752635)
+texture = ExtResource("11_8olnv")
+
+[node name="Person16" type="Sprite3D" parent="People" unique_id=1544395661]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -4.5830564, 0.8, -3.0224934)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person17" type="Sprite3D" parent="People" unique_id=184666764]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -2.9027302, 0.8, -7.454193)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person52" type="Sprite3D" parent="People" unique_id=1133010470]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -4.8231783, 0.8, -13.533333)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person53" type="Sprite3D" parent="People" unique_id=386349528]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -4.7468233, 0.8, -16.927727)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person54" type="Sprite3D" parent="People" unique_id=1063311934]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -4.8231783, 0.8, -22.030548)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person55" type="Sprite3D" parent="People" unique_id=1303998444]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -5.757121, 0.8, -21.734665)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person56" type="Sprite3D" parent="People" unique_id=690714590]
+transform = Transform3D(-0.055919293, 0, -0.082903765, 0, 0.1, 0, 0.082903765, 0, -0.055919293, -7.394908, 0.8, -9.850096)
+texture = ExtResource("11_8olnv")
+
+[node name="Person57" type="Sprite3D" parent="People" unique_id=1051098957]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -5.292908, 0.8, -10.229026)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person40" type="Sprite3D" parent="People" unique_id=292467880]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -24.44393)
+texture = ExtResource("9_3noei")
+
+[node name="Person41" type="Sprite3D" parent="People" unique_id=920634451]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -24.148046)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person42" type="Sprite3D" parent="People" unique_id=1222951145]
+transform = Transform3D(-0.085536435, 0, -0.051802695, 0, 0.1, 0, 0.051802695, 0, -0.085536435, -2.433, 0.8, -28.398348)
+texture = ExtResource("13_r17a8")
+
+[node name="Person43" type="Sprite3D" parent="People" unique_id=703372433]
+transform = Transform3D(-0.085536435, 0, -0.051802695, 0, 0.1, 0, 0.051802695, 0, -0.085536435, -3.366943, 0.8, -28.102465)
+texture = ExtResource("14_4ej0g")
+
+[node name="Person44" type="Sprite3D" parent="People" unique_id=59724529]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -34.07321)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person45" type="Sprite3D" parent="People" unique_id=917368984]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.356645, 0.8, -37.467606)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person46" type="Sprite3D" parent="People" unique_id=446798599]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -33.77733)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person47" type="Sprite3D" parent="People" unique_id=948977510]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -42.570427)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person48" type="Sprite3D" parent="People" unique_id=1145137294]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, -5.877867, 0.8, -28.736574)
+texture = ExtResource("11_8olnv")
+
+[node name="Person49" type="Sprite3D" parent="People" unique_id=1397392794]
+transform = Transform3D(-0.055919293, 0, -0.082903765, 0, 0.1, 0, 0.082903765, 0, -0.055919293, -5.0047297, 0.8, -30.389975)
+texture = ExtResource("11_8olnv")
+
+[node name="Person50" type="Sprite3D" parent="People" unique_id=1420274136]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -4.5830564, 0.8, -26.337206)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person58" type="Sprite3D" parent="People" unique_id=604974558]
+transform = Transform3D(-0.085536435, 0, -0.051802695, 0, 0.1, 0, 0.051802695, 0, -0.085536435, -4.8283315, 0.8, -33.397957)
+texture = ExtResource("14_4ej0g")
+
+[node name="Person59" type="Sprite3D" parent="People" unique_id=1672693994]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -3.8943887, 0.8, -39.3687)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person60" type="Sprite3D" parent="People" unique_id=120335038]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -3.8180337, 0.8, -42.763092)
+texture = ExtResource("17_v2wyr")
+
+[node name="Person61" type="Sprite3D" parent="People" unique_id=1502816963]
+transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -4.8283315, 0.8, -39.072815)
+texture = ExtResource("10_aw2mq")
+
+[node name="Person63" type="Sprite3D" parent="People" unique_id=1820340567]
+transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, -7.339256, 0.8, -34.032066)
+texture = ExtResource("11_8olnv")
+
+[node name="Person64" type="Sprite3D" parent="People" unique_id=318719663]
+transform = Transform3D(-0.055919293, 0, -0.082903765, 0, 0.1, 0, 0.082903765, 0, -0.055919293, -6.4661183, 0.8, -35.685463)
+texture = ExtResource("11_8olnv")
+
+[node name="Person65" type="Sprite3D" parent="People" unique_id=1512151082]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -6.0444446, 0.8, -31.632694)
+texture = ExtResource("12_7c1mp")
+
+[node name="Person51" type="Sprite3D" parent="People" unique_id=82802608]
+transform = Transform3D(0.07071068, 0, 0.07071068, 0, 0.099999994, 0, -0.07071068, 0, 0.07071068, -2.9027302, 0.8, -30.768904)
+texture = ExtResource("12_7c1mp")
+
 [node name="Audios" type="Node3D" parent="." unique_id=1680836133]
 
 [node name="Convo1" type="AudioStreamPlayer3D" parent="Audios" unique_id=1892116433]
@@ -2539,6 +2882,10 @@ Convos = NodePath("../../Audios/KnoiseAmbience8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CityAudios/cityAudio8" unique_id=1182988474]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_b54pv")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="CityAudios/cityAudio8" unique_id=646969861]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -23.316582)
 shape = SubResource("BoxShape3D_b54pv")
 
 [node name="cityAudio9" type="Area3D" parent="CityAudios" unique_id=1929055770 node_paths=PackedStringArray("player", "Convos")]
