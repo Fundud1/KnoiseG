@@ -1364,11 +1364,7 @@ shape = SubResource("BoxShape3D_dj5l5")
 [node name="Buildings" type="Node3D" parent="." unique_id=2010083931]
 
 [node name="Building 1" type="Sprite3D" parent="Buildings" unique_id=1170105859]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -7.4038644)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 20" type="Sprite3D" parent="Buildings" unique_id=579138544]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -135.753)
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -8.887546)
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 2" type="Sprite3D" parent="Buildings" unique_id=316817536]
@@ -1383,9 +1379,69 @@ texture = ExtResource("12_c0fwb")
 transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -27.760864)
 texture = ExtResource("13_5n8hj")
 
+[node name="Building 5" type="Sprite3D" parent="Buildings" unique_id=1101485245]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.28, 5.8, -32.604828)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 6" type="Sprite3D" parent="Buildings" unique_id=770004469]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -34.860863)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 7" type="Sprite3D" parent="Buildings" unique_id=509589252]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -62.404392)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 8" type="Sprite3D" parent="Buildings" unique_id=229472694]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -80.03366)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 9" type="Sprite3D" parent="Buildings" unique_id=134385011]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -63.139)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 10" type="Sprite3D" parent="Buildings" unique_id=268920270]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -80.03366)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 11" type="Sprite3D" parent="Buildings" unique_id=1015793739]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.28, 5.8, -87.207855)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 12" type="Sprite3D" parent="Buildings" unique_id=278833031]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -87.13366)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 13" type="Sprite3D" parent="Buildings" unique_id=1809590200]
+transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, 7.28, 5.8, -107.2)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 14" type="Sprite3D" parent="Buildings" unique_id=2034179646]
+transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.8, -107)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 15" type="Sprite3D" parent="Buildings" unique_id=1754492612]
+transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.6456537, -156.555)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 16" type="Sprite3D" parent="Buildings" unique_id=392058993]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -135.84831)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 17" type="Sprite3D" parent="Buildings" unique_id=811549411]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -155.196)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 18" type="Sprite3D" parent="Buildings" unique_id=881042031]
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -7.272, 5.8, -175.462)
+texture = ExtResource("11_sgfvx")
+
 [node name="Building 19" type="Sprite3D" parent="Buildings" unique_id=115233364]
 transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8258257, -175.54955)
 texture = ExtResource("13_5n8hj")
+
+[node name="Building 20" type="Sprite3D" parent="Buildings" unique_id=579138544]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -135.753)
+texture = ExtResource("11_sgfvx")
 
 [node name="Building 21" type="Sprite3D" parent="Buildings" unique_id=1073059193]
 transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -220.863)
@@ -1394,6 +1450,30 @@ texture = ExtResource("13_5n8hj")
 [node name="Building 22" type="Sprite3D" parent="Buildings" unique_id=145416650]
 transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 17.6, 5.8, -185.75)
 texture = ExtResource("13_5n8hj")
+
+[node name="Building 23" type="Sprite3D" parent="Buildings" unique_id=1416830643]
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -7.28, 5.881, -221.103)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 24" type="Sprite3D" parent="Buildings" unique_id=1765118402]
+transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.8, -240.29622)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 25" type="Sprite3D" parent="Buildings" unique_id=1396874561]
+transform = Transform3D(5.485445e-09, 0, -0.46, 0, 0.46, 0, 0.46, 0, 5.485445e-09, 7.27, 5.8, -241.05038)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 26" type="Sprite3D" parent="Buildings" unique_id=664802614]
+transform = Transform3D(0.0012442746, 0.00050824316, 0.46112186, 0.0011719407, 0.46112207, -0.00051141786, -0.46112064, 0.0011733209, 0.0012429731, -7.28, 5.8, -260.5075)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 27" type="Sprite3D" parent="Buildings" unique_id=753495487]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -260)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 28" type="Sprite3D" parent="Buildings" unique_id=476484705]
+transform = Transform3D(0.46108943, -0.0056335507, 0, 0.0056334734, 0.4610831, 0.0024144277, -2.9497067e-05, -0.0024142477, 0.4611175, 37.104, 5.575, -186)
+texture = ExtResource("11_sgfvx")
 
 [node name="Building 29" type="Sprite3D" parent="Buildings" unique_id=1361300923]
 transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 56.76411, 5.8, -185.75)
@@ -1406,78 +1486,6 @@ texture = ExtResource("13_5n8hj")
 [node name="Building 31" type="Sprite3D" parent="Buildings" unique_id=1635065049]
 transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, 96.03392, 5.8, -185.75)
 texture = ExtResource("13_5n8hj")
-
-[node name="Building 5" type="Sprite3D" parent="Buildings" unique_id=1101485245]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.28, 5.8, -32.604828)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 56" type="Sprite3D" parent="Buildings" unique_id=1689160107]
-transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, 121.62925, 5.8, -6.448274)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 57" type="Sprite3D" parent="Buildings" unique_id=555037128]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.62925, 5.8, -24.528122)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 58" type="Sprite3D" parent="Buildings" unique_id=1355121940]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.63925, 5.8, -31.702316)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 6" type="Sprite3D" parent="Buildings" unique_id=770004469]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -34.860863)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 63" type="Sprite3D" parent="Buildings" unique_id=1616341678]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -121.54351, 5.8, -8.567108)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 64" type="Sprite3D" parent="Buildings" unique_id=1886990482]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -121.54351, 5.8, -25.602058)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 65" type="Sprite3D" parent="Buildings" unique_id=1349443386]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -121.553505, 5.8, -32.850952)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 7" type="Sprite3D" parent="Buildings" unique_id=509589252]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -59.676662)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 8" type="Sprite3D" parent="Buildings" unique_id=229472694]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -80.03366)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings" unique_id=1010844441]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.805, 5.8, -108.254425)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 18" type="Sprite3D" parent="Buildings" unique_id=881042031]
-transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -7.272, 5.8, -175.462)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 23" type="Sprite3D" parent="Buildings" unique_id=1416830643]
-transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -7.28, 5.881, -221.103)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 28" type="Sprite3D" parent="Buildings" unique_id=476484705]
-transform = Transform3D(0.46108943, -0.0056335507, 0, 0.0056334734, 0.4610831, 0.0024144277, -2.9497067e-05, -0.0024142477, 0.4611175, 37.104, 5.575, -186)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 26" type="Sprite3D" parent="Buildings" unique_id=664802614]
-transform = Transform3D(0.0012442746, 0.00050824316, 0.46112186, 0.0011719407, 0.46112207, -0.00051141786, -0.46112064, 0.0011733209, 0.0012429731, -7.28, 5.8, -260.5075)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 9" type="Sprite3D" parent="Buildings" unique_id=134385011]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -61.456154)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 17" type="Sprite3D" parent="Buildings" unique_id=811549411]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -155.196)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 27" type="Sprite3D" parent="Buildings" unique_id=753495487]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -260)
-texture = ExtResource("12_c0fwb")
 
 [node name="Building 32" type="Sprite3D" parent="Buildings" unique_id=1587454625]
 transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 111.74, 5.8, -186)
@@ -1507,148 +1515,36 @@ texture = ExtResource("11_sgfvx")
 transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 111.74, 5.8, -210.89479)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 50" type="Sprite3D" parent="Buildings" unique_id=624597436]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 17.6, 5.8, -52.877186)
+[node name="Building 39" type="Sprite3D" parent="Buildings" unique_id=744032552]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 121.97959, 5.8, -260.41223)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 50" unique_id=1692921847]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 52" type="Sprite3D" parent="Buildings/Building 50" unique_id=225495804]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 53" type="Sprite3D" parent="Buildings/Building 50" unique_id=643640300]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings/Building 50" unique_id=1320367904]
-transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 55" type="Sprite3D" parent="Buildings/Building 50" unique_id=36314902]
-transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 203.64552, 0, -0.5421829)
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 39" unique_id=469177146]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 53" type="Sprite3D" parent="Buildings" unique_id=1046352810]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 17.6, 5.8, -116.84677)
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 39" unique_id=2143905146]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 53" unique_id=1901924108]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 52" type="Sprite3D" parent="Buildings/Building 53" unique_id=1971879244]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 53" type="Sprite3D" parent="Buildings/Building 53" unique_id=872911606]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings/Building 53" unique_id=194050650]
-transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 55" type="Sprite3D" parent="Buildings/Building 53" unique_id=150859525]
-transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 203.64552, 0, -0.5421829)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings" unique_id=1199261722]
-transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.21466, 5.8, -41.755363)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 51" unique_id=1643965612]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 52" type="Sprite3D" parent="Buildings/Building 51" unique_id=1532633947]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 53" type="Sprite3D" parent="Buildings/Building 51" unique_id=119426072]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings/Building 51" unique_id=1459782775]
-transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 55" type="Sprite3D" parent="Buildings/Building 51" unique_id=1376305756]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 204.15344, 0, -0.5421448)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 55" type="Sprite3D" parent="Buildings" unique_id=437409753]
-transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.27729, 5.8, 3.5504227)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 55" unique_id=537577335]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 52" type="Sprite3D" parent="Buildings/Building 55" unique_id=769950508]
-transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 53" type="Sprite3D" parent="Buildings/Building 55" unique_id=1792521495]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings/Building 55" unique_id=229275359]
-transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 55" type="Sprite3D" parent="Buildings/Building 55" unique_id=21356817]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 204.15344, 0, -0.5421448)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 48" type="Sprite3D" parent="Buildings" unique_id=1840184484]
-transform = Transform3D(-0.46112382, 0, -4.0312724e-08, 0, 0.46112382, 0, 4.0312724e-08, 0, -0.46112382, 111.62954, 5.8, -126.536224)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 48" unique_id=447551316]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 48" unique_id=1311368180]
-transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1.0000001, 0, 8.7422784e-08, 0, -1.0000001, 129.26263, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 52" type="Sprite3D" parent="Buildings/Building 48" unique_id=1809319259]
-transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1.0000001, 0, 8.7422784e-08, 0, -1.0000001, 170.093, 0, 0)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 53" type="Sprite3D" parent="Buildings/Building 48" unique_id=508245443]
-transform = Transform3D(0.9999256, -0.012217005, 0, 0.012216837, 0.9999119, 0.005235965, -6.396779e-05, -0.0052355747, 0.99998647, 42.296673, -0.48793983, -0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 54" type="Sprite3D" parent="Buildings/Building 48" unique_id=731460834]
-transform = Transform3D(1.0000001, 0, -2.1316282e-14, 0, 1.0000001, 0, 2.1316282e-14, 0, 1.0000001, 204.33472, -1.30439, -0.6412964)
-texture = ExtResource("12_c0fwb")
 
 [node name="Building 40" type="Sprite3D" parent="Buildings" unique_id=1828602847]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -111.30848, 5.8, -210.64479)
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -113.899216, 5.8, -210.64479)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 41" type="Sprite3D" parent="Buildings" unique_id=985366264]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -72.14436, 5.8, -210.64479)
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -74.1761, 5.8, -210.64479)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 42" type="Sprite3D" parent="Buildings" unique_id=733754925]
-transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -51.702408, 5.8, -210.64479)
+transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -53.736816, 5.8, -210.64479)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 43" type="Sprite3D" parent="Buildings" unique_id=1496012487]
 transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -32.874557, 5.8, -210.64479)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 67" type="Sprite3D" parent="Buildings" unique_id=1565137325]
-transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -32.874557, 5.8, -210.64479)
-texture = ExtResource("13_5n8hj")
-
 [node name="Building 44" type="Sprite3D" parent="Buildings" unique_id=1913908655]
-transform = Transform3D(0.46108943, -0.0056335507, 0, 0.0056334734, 0.4610831, 0.0024144277, -2.9497067e-05, -0.0024142477, 0.4611175, -91.804474, 5.575, -210.89479)
+transform = Transform3D(0.46108943, -0.0056335507, 0, 0.0056334734, 0.4610831, 0.0024144277, -2.9497067e-05, -0.0024142477, 0.4611175, -93.97611, 5.575, -210.89479)
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 45" type="Sprite3D" parent="Buildings" unique_id=164469661]
@@ -1679,6 +1575,186 @@ texture = ExtResource("11_sgfvx")
 transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
 texture = ExtResource("12_c0fwb")
 
+[node name="Building 47" type="Sprite3D" parent="Buildings" unique_id=30284232]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 121.97959, 5.8, -175.62984)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 47" unique_id=125467815]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 47" unique_id=1034098652]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings" unique_id=1840184484]
+transform = Transform3D(-0.46112382, 0, -4.0312724e-08, 0, 0.46112382, 0, 4.0312724e-08, 0, -0.46112382, 111.62954, 5.8, -126.536224)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 48" unique_id=447551316]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 48" unique_id=1311368180]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1.0000001, 0, 8.7422784e-08, 0, -1.0000001, 129.26263, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings/Building 48" unique_id=1809319259]
+transform = Transform3D(-1.0000001, 0, -8.7422784e-08, 0, 1.0000001, 0, 8.7422784e-08, 0, -1.0000001, 170.093, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings/Building 48" unique_id=508245443]
+transform = Transform3D(0.9999256, -0.012217005, 0, 0.012216837, 0.9999119, 0.005235965, -6.396779e-05, -0.0052355747, 0.99998647, 42.296673, -0.48793983, -0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings/Building 48" unique_id=731460834]
+transform = Transform3D(1.0000001, 0, -2.1316282e-14, 0, 1.0000001, 0, 2.1316282e-14, 0, 1.0000001, 204.33472, -1.30439, -0.6412964)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings" unique_id=407504458]
+transform = Transform3D(0.46112373, 0, 0, 0, 0.46112373, 0, 0, 0, 0.46112373, 111.374146, 5.8, -270.3791)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 49" unique_id=136271747]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 49" unique_id=1219545449]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 49" unique_id=1835692145]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 49" unique_id=1894203619]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 49" unique_id=2129355590]
+transform = Transform3D(1.0000002, 1.4210856e-14, 0, 1.4210858e-14, 1.0000002, 0, -7.105428e-15, 1.5285487e-14, 1.0000004, -203.52676, -3.4332275e-05, 0.54211426)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings" unique_id=624597436]
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 17.6, 5.8, -52.877186)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 50" unique_id=1692921847]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings/Building 50" unique_id=225495804]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings/Building 50" unique_id=643640300]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings/Building 50" unique_id=1320367904]
+transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 55" type="Sprite3D" parent="Buildings/Building 50" unique_id=36314902]
+transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 203.64552, 0, -0.5421829)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings" unique_id=1199261722]
+transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.21466, 5.8, -41.755363)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 51" unique_id=1643965612]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings/Building 51" unique_id=1532633947]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings/Building 51" unique_id=119426072]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings/Building 51" unique_id=1459782775]
+transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 55" type="Sprite3D" parent="Buildings/Building 51" unique_id=1376305756]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 204.15344, 0, -0.5421448)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings" unique_id=951428302]
+transform = Transform3D(-2.0156364e-08, 0, -0.46112388, 0, 0.46112388, 0, 0.46112388, 0, -2.0156364e-08, 121.97959, 5.8, -102.45712)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 52" unique_id=2115063169]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 52" unique_id=105644032]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings" unique_id=1046352810]
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 17.6, 5.8, -116.84677)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 53" unique_id=1901924108]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings/Building 53" unique_id=1971879244]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings/Building 53" unique_id=872911606]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings/Building 53" unique_id=194050650]
+transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 55" type="Sprite3D" parent="Buildings/Building 53" unique_id=150859525]
+transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 203.64552, 0, -0.5421829)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 55" type="Sprite3D" parent="Buildings" unique_id=437409753]
+transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.27729, 5.8, 3.5504227)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 55" unique_id=537577335]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 84.931885, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 52" type="Sprite3D" parent="Buildings/Building 55" unique_id=769950508]
+transform = Transform3D(-1, 0, -8.7422784e-08, 0, 1, 0, 8.7422784e-08, 0, -1, 129.26263, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 53" type="Sprite3D" parent="Buildings/Building 55" unique_id=1792521495]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 170.093, 0, 0)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings/Building 55" unique_id=229275359]
+transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.99991196, 0.0052359654, -6.39678e-05, -0.005235575, 0.9999866, 42.29665, -0.4879408, -0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 55" type="Sprite3D" parent="Buildings/Building 55" unique_id=21356817]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 203.61234, 0, -0.5355334)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 56" type="Sprite3D" parent="Buildings" unique_id=1689160107]
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, 121.62925, 5.8, -6.448274)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 57" type="Sprite3D" parent="Buildings" unique_id=555037128]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.62925, 5.8, -24.528122)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 58" type="Sprite3D" parent="Buildings" unique_id=1355121940]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.63925, 5.8, -31.702316)
+texture = ExtResource("13_5n8hj")
+
 [node name="Building 59" type="Sprite3D" parent="Buildings" unique_id=1283790355]
 transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, -125.69566)
 texture = ExtResource("13_5n8hj")
@@ -1706,6 +1782,90 @@ texture = ExtResource("11_sgfvx")
 [node name="Building 51" type="Sprite3D" parent="Buildings/Building 59" unique_id=24125264]
 transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
 texture = ExtResource("12_c0fwb")
+
+[node name="Building 60" type="Sprite3D" parent="Buildings" unique_id=1594625801]
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, -52.170387)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 60" unique_id=1150036768]
+transform = Transform3D(1.0000002, 1.3362997e-21, 0, 1.3362995e-21, 1.0000002, 1.694066e-21, 0, 0, 1.0000002, -88.15784, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 60" unique_id=1612812057]
+transform = Transform3D(1.0000002, 1.3362997e-21, 0, 1.3362995e-21, 1.0000002, 1.694066e-21, 0, 0, 1.0000002, -132.37225, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 60" unique_id=1682034355]
+transform = Transform3D(1.0000002, 1.3362997e-21, 0, 1.3362995e-21, 1.0000002, 1.694066e-21, 0, 0, 1.0000002, -176.86081, -3.0517578e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 60" unique_id=914723181]
+transform = Transform3D(1.0000005, 2.3984148e-12, -9.154918e-10, 2.4016349e-12, 0.9999867, 0.005235966, 9.1548474e-10, -0.005235966, 0.99998665, -43.765816, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 60" unique_id=570974517]
+transform = Transform3D(1.0000002, 1.4210856e-14, 0, 1.4210858e-14, 1.0000002, 0, -7.105428e-15, 1.5285487e-14, 1.0000004, -221.62689, -3.4332275e-05, 0.54211426)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 61" type="Sprite3D" parent="Buildings" unique_id=1504815653]
+transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -111.39782, 5.8, -43.12685)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 61" unique_id=451990223]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 61" unique_id=150878325]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 61" unique_id=2083012666]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 61" unique_id=432987236]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 61" unique_id=1865808039]
+transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 62" type="Sprite3D" parent="Buildings" unique_id=1685572860]
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, 1.3356018)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 62" unique_id=1117860827]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 62" unique_id=949105772]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 62" unique_id=1409969103]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 62" unique_id=648463924]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 62" unique_id=652796633]
+transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 63" type="Sprite3D" parent="Buildings" unique_id=1616341678]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -121.54351, 5.8, -8.567108)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 64" type="Sprite3D" parent="Buildings" unique_id=1886990482]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -121.54351, 5.8, -25.602058)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 65" type="Sprite3D" parent="Buildings" unique_id=1349443386]
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -121.553505, 5.8, -32.850956)
+texture = ExtResource("11_sgfvx")
 
 [node name="Building 66" type="Sprite3D" parent="Buildings" unique_id=2103736974]
 transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -119.05587, 5.8, -116.918434)
@@ -1735,6 +1895,10 @@ texture = ExtResource("11_sgfvx")
 transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
 texture = ExtResource("12_c0fwb")
 
+[node name="Building 67" type="Sprite3D" parent="Buildings" unique_id=1565137325]
+transform = Transform3D(-0.46112388, 0, -4.031273e-08, 0, 0.46112388, 0, 4.031273e-08, 0, -0.46112388, -32.874535, 5.8, -210.6448)
+texture = ExtResource("13_5n8hj")
+
 [node name="Building 68" type="Sprite3D" parent="Buildings" unique_id=2071027894]
 transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -113.94917, 5.8, -270.44653)
 texture = ExtResource("13_5n8hj")
@@ -1760,7 +1924,7 @@ transform = Transform3D(1.0000002, 1.4210855e-14, 0, 1.4210858e-14, 1.0000002, 0
 texture = ExtResource("12_c0fwb")
 
 [node name="Building 69" type="Sprite3D" parent="Buildings" unique_id=1513554183]
-transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -113.504944, 5.8, -279.37778)
+transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -113.504944, 5.8, -279.37845)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 47" type="Sprite3D" parent="Buildings/Building 69" unique_id=513524427]
@@ -1783,173 +1947,241 @@ texture = ExtResource("11_sgfvx")
 transform = Transform3D(1.0000004, 1.4210855e-14, -7.1054274e-15, 1.421086e-14, 1.0000004, 0, -7.1054274e-15, 1.528549e-14, 1.0000005, -205.89636, -3.4332275e-05, 0.5422363)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 60" type="Sprite3D" parent="Buildings" unique_id=1594625801]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, -52.170387)
+[node name="Building 70" type="Sprite3D" parent="Buildings" unique_id=425089766]
+transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -113.504944, 5.8, -346.9484)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 60" unique_id=1150036768]
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 70" unique_id=1398799779]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 60" unique_id=1612812057]
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 70" unique_id=299757966]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 49" type="Sprite3D" parent="Buildings/Building 60" unique_id=1682034355]
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 70" unique_id=340224218]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 60" unique_id=914723181]
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 70" unique_id=1212528645]
 transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
 texture = ExtResource("11_sgfvx")
 
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 60" unique_id=570974517]
-transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 70" unique_id=234352183]
+transform = Transform3D(1.0000004, 1.4210855e-14, -7.1054274e-15, 1.421086e-14, 1.0000004, 0, -7.1054274e-15, 1.528549e-14, 1.0000005, -205.89636, -3.4332275e-05, 0.5422363)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 62" type="Sprite3D" parent="Buildings" unique_id=1685572860]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, 1.3356018)
+[node name="Building 71" type="Sprite3D" parent="Buildings" unique_id=707345689]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, -124.05559, 5.8, -260.41223)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 62" unique_id=1117860827]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 62" unique_id=949105772]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 49" type="Sprite3D" parent="Buildings/Building 62" unique_id=1409969103]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 62" unique_id=648463924]
-transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 62" unique_id=652796633]
-transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 61" type="Sprite3D" parent="Buildings" unique_id=1504815653]
-transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -111.397804, 5.8, -43.126854)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 61" unique_id=451990223]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 61" unique_id=150878325]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 49" type="Sprite3D" parent="Buildings/Building 61" unique_id=2083012666]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 61" unique_id=432987236]
-transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 61" unique_id=1865808039]
-transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 49" type="Sprite3D" parent="Buildings" unique_id=407504458]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, 111.374146, 5.8, -270.3791)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 49" unique_id=136271747]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 49" unique_id=1219545449]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 49" type="Sprite3D" parent="Buildings/Building 49" unique_id=1835692145]
-transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 49" unique_id=1894203619]
-transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 49" unique_id=2129355590]
-transform = Transform3D(1.0000002, 1.4210856e-14, 0, 1.4210858e-14, 1.0000002, 0, -7.105428e-15, 1.5285487e-14, 1.0000004, -203.52676, -3.4332275e-05, 0.54211426)
-texture = ExtResource("12_c0fwb")
-
-[node name="Building 10" type="Sprite3D" parent="Buildings" unique_id=268920270]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -80.03366)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 11" type="Sprite3D" parent="Buildings" unique_id=1015793739]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.28, 5.8, -87.207855)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 12" type="Sprite3D" parent="Buildings" unique_id=278833031]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -87.13366)
-texture = ExtResource("11_sgfvx")
-
-[node name="Building 13" type="Sprite3D" parent="Buildings" unique_id=1809590200]
-transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, 7.28, 5.8, -107.2)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 14" type="Sprite3D" parent="Buildings" unique_id=2034179646]
-transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.8, -107)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 15" type="Sprite3D" parent="Buildings" unique_id=1754492612]
-transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.6456537, -156.555)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 24" type="Sprite3D" parent="Buildings" unique_id=1765118402]
-transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.8, -240.29622)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 25" type="Sprite3D" parent="Buildings" unique_id=1396874561]
-transform = Transform3D(5.485445e-09, 0, -0.46, 0, 0.46, 0, 0.46, 0, 5.485445e-09, 7.27, 5.8, -241.05038)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 39" type="Sprite3D" parent="Buildings" unique_id=744032552]
-transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 121.97959, 5.8, -260.41223)
-texture = ExtResource("13_5n8hj")
-
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 39" unique_id=469177146]
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 71" unique_id=1390844464]
 transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 39" unique_id=2143905146]
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 71" unique_id=842786952]
 transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings" unique_id=30284232]
-transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 121.97959, 5.8, -175.62984)
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 71" unique_id=794896901]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 47" unique_id=125467815]
+[node name="Building 72" type="Sprite3D" parent="Buildings" unique_id=116122153]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, -124.05559, 5.8, -328.59625)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 72" unique_id=1362674927]
+transform = Transform3D(1, 0, 1.4210855e-14, 0, 1, 0, -1.4210855e-14, 0, 1, 84.199036, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 72" unique_id=1313262017]
+transform = Transform3D(1, 0, 1.0658141e-14, 0, 1, 0, -1.0658141e-14, 0, 1, -15.427124, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 72" unique_id=869749208]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 72" unique_id=1688913150]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 73" type="Sprite3D" parent="Buildings" unique_id=1859929474]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, -7.28, 5.8, -328.596)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 73" unique_id=73346388]
 transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 47" unique_id=1034098652]
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 73" unique_id=2053942789]
+transform = Transform3D(1, 0, 1.7763568e-14, 0, 1, 0, -1.7763568e-14, 0, 1, -18.28125, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 73" unique_id=361493618]
 transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 52" type="Sprite3D" parent="Buildings" unique_id=951428302]
-transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 121.97959, 5.8, -102.45712)
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 73" unique_id=1383356476]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 52" unique_id=2115063169]
+[node name="Building 74" type="Sprite3D" parent="Buildings" unique_id=2019435554]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 7.978697, 5.8, -328.59625)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 74" unique_id=1859877441]
 transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 84.87146, 0, 0.5259094)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 52" unique_id=105644032]
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 74" unique_id=778199683]
+transform = Transform3D(1, 0, 1.0658141e-14, 0, 1, 0, -1.0658141e-14, 0, 1, -15.427124, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 74" unique_id=1808962670]
 transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 16" type="Sprite3D" parent="Buildings" unique_id=392058993]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, -135.84831)
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 74" unique_id=478127791]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
 texture = ExtResource("13_5n8hj")
+
+[node name="Building 75" type="Sprite3D" parent="Buildings" unique_id=1108834516]
+transform = Transform3D(-0.46112376, 0, -4.031272e-08, 0, 0.46112376, 0, 4.031272e-08, 0, -0.46112376, -113.505, 5.8, -365)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 75" unique_id=811987981]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 75" unique_id=103176570]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 75" unique_id=754475992]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 75" unique_id=1565437424]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 75" unique_id=221905774]
+transform = Transform3D(1.0000005, 1.4210855e-14, -7.1054274e-15, 1.4210861e-14, 1.0000005, 0, 0, 1.5285494e-14, 1.0000005, -208.36934, -3.4332275e-05, 0.54229736)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 76" type="Sprite3D" parent="Buildings" unique_id=2146976770]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, -124.05559, 5.8, -375.8)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 77" type="Sprite3D" parent="Buildings" unique_id=1364504190]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, -7.28, 5.8, -375.8)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 78" type="Sprite3D" parent="Buildings" unique_id=938432802]
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, 7.28, 5.8, -375.8)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 79" type="Sprite3D" parent="Buildings" unique_id=1459693784]
+transform = Transform3D(0.46112376, 0, 8.062544e-08, 0, 0.46112376, 0, -8.062544e-08, 0, 0.46112376, 113.505, 5.8, -365.775)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 79" unique_id=380170666]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 79" unique_id=1481453294]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 79" unique_id=2142483583]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 79" unique_id=449528487]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 79" unique_id=903631501]
+transform = Transform3D(1.0000005, 1.4210855e-14, -7.1054274e-15, 1.4210861e-14, 1.0000005, 0, 0, 1.5285494e-14, 1.0000005, -208.36934, -3.4332275e-05, 0.54229736)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 80" type="Sprite3D" parent="Buildings" unique_id=1411668148]
+transform = Transform3D(0.46112376, 0, 8.062544e-08, 0, 0.46112376, 0, -8.062544e-08, 0, 0.46112376, 113.505, 5.8, -346.948)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 80" unique_id=992079120]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 80" unique_id=1891855820]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 80" unique_id=744173786]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 80" unique_id=1219167163]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 80" unique_id=776963094]
+transform = Transform3D(1.0000004, 1.4210855e-14, -7.1054274e-15, 1.421086e-14, 1.0000004, 0, -7.1054274e-15, 1.528549e-14, 1.0000005, -205.89636, -3.4332275e-05, 0.5422363)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 81" type="Sprite3D" parent="Buildings" unique_id=1230117845]
+transform = Transform3D(-2.0156364e-08, 0, -0.46112388, 0, 0.46112388, 0, 0.46112388, 0, -2.0156364e-08, 124.05601, 5.8, -328.596)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 81" unique_id=1144488565]
+transform = Transform3D(1, 0, 1.4210855e-14, 0, 1, 0, -1.4210855e-14, 0, 1, 84.199036, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 81" unique_id=852410571]
+transform = Transform3D(1, 0, 1.0658141e-14, 0, 1, 0, -1.0658141e-14, 0, 1, -15.427124, 0, 0.5259094)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 81" unique_id=331660244]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 81" unique_id=1585348814]
+transform = Transform3D(0.9975629, 0, 0, 0, 0.9975629, 0, 0, 0, 0.9975629, 43.777832, 0, 0.27127075)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 82" type="Sprite3D" parent="Buildings" unique_id=747294468]
+transform = Transform3D(0.46112376, 0, 8.062544e-08, 0, 0.46112376, 0, -8.062544e-08, 0, 0.46112376, 113.505, 5.8, -279.378)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 47" type="Sprite3D" parent="Buildings/Building 82" unique_id=1918197102]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 48" type="Sprite3D" parent="Buildings/Building 82" unique_id=292539331]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 49" type="Sprite3D" parent="Buildings/Building 82" unique_id=1867333481]
+transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 50" type="Sprite3D" parent="Buildings/Building 82" unique_id=55857879]
+transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
+texture = ExtResource("11_sgfvx")
+
+[node name="Building 51" type="Sprite3D" parent="Buildings/Building 82" unique_id=973762135]
+transform = Transform3D(1.0000004, 1.4210855e-14, -7.1054274e-15, 1.421086e-14, 1.0000004, 0, -7.1054274e-15, 1.528549e-14, 1.0000005, -205.89636, -3.4332275e-05, 0.5422363)
+texture = ExtResource("12_c0fwb")
+
+[node name="Building 83" type="Sprite3D" parent="Buildings" unique_id=1169981737]
+transform = Transform3D(-2.0156362e-08, 0, -0.46112382, 0, 0.46112382, 0, 0.46112382, 0, -2.0156362e-08, 124.056, 5.8, -375.8)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 84" type="Sprite3D" parent="Buildings" unique_id=1010844441]
+transform = Transform3D(-2.015636e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.015636e-08, 121.80501, 5.8, -108.254425)
+texture = ExtResource("11_sgfvx")
 
 [node name="Audios" type="Node3D" parent="." unique_id=1680836133]
 
