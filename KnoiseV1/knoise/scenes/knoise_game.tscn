@@ -1393,7 +1393,7 @@ transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.4611
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 6" type="Sprite3D" parent="Buildings" unique_id=770004469]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -34.860863)
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.282, 5.8, -33.0567)
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 7" type="Sprite3D" parent="Buildings" unique_id=509589252]
