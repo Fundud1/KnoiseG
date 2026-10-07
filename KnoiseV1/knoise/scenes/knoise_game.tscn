@@ -1151,11 +1151,11 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_gwokd")
 
 [node name="convo5" type="Area3D" parent="Conversations" unique_id=992997037 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1972506, -139.50395)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.18230405, -128.93312)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
-Convos = NodePath("../../Audios/Convo8")
+Convos = NodePath("../../Audios/Convo10")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo5" unique_id=1602947705]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
@@ -1166,7 +1166,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29829454, -210.96648)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
-Convos = NodePath("../../Audios/Convo10")
+Convos = NodePath("../../Audios/Convo8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo6" unique_id=1671490175]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
@@ -1199,7 +1199,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.735214, -0.126207, -89.25
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
-Convos = NodePath("../../Audios/Convo5")
+Convos = NodePath("../../Audios/Convo9")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo9" unique_id=935249509]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
@@ -1221,7 +1221,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.14848, -0.3016397, -213.3
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
-Convos = NodePath("../../Audios/Convo9")
+Convos = NodePath("../../Audios/Convo5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo11" unique_id=1927404490]
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
@@ -1373,7 +1373,7 @@ shape = SubResource("BoxShape3D_dj5l5")
 [node name="Buildings" type="Node3D" parent="." unique_id=2010083931]
 
 [node name="Building 1" type="Sprite3D" parent="Buildings" unique_id=1170105859]
-transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, -7.272, 5.8, -8.887546)
+transform = Transform3D(-2.0156362e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.0156362e-08, -7.272, 5.8, -8.887546)
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 2" type="Sprite3D" parent="Buildings" unique_id=316817536]
@@ -2557,7 +2557,7 @@ volume_db = 60.0
 unit_size = 0.1
 
 [node name="Convo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1059411569]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -95.24284)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -166.73314)
 stream = ExtResource("17_wc36q")
 attenuation_model = 1
 volume_db = 60.0
@@ -2578,21 +2578,21 @@ volume_db = 60.0
 unit_size = 0.1
 
 [node name="Convo8" type="AudioStreamPlayer3D" parent="Audios" unique_id=1412209064]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -146.13062)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -219.82466)
 stream = ExtResource("20_ntwq1")
 attenuation_model = 1
 volume_db = 60.0
 unit_size = 0.1
 
 [node name="Convo9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1525439834]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -218.93404)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -95.644325)
 stream = ExtResource("21_g30va")
 attenuation_model = 1
 volume_db = 60.0
 unit_size = 0.1
 
 [node name="Convo10" type="AudioStreamPlayer3D" parent="Audios" unique_id=2043185183]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.15150642, -9.313226e-10, -217.47597)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.15150642, -9.313226e-10, -136.79982)
 stream = ExtResource("22_gowcq")
 attenuation_model = 1
 volume_db = 60.0
