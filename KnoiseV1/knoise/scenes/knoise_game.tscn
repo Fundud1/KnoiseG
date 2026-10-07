@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bhwp53rkajoy3"]
 
+[ext_resource type="Script" uid="uid://ipi6g3rspvsu" path="res://scripts/timer.gd" id="1_7c1mp"]
 [ext_resource type="Script" uid="uid://5dqjncucrk1u" path="res://scripts/checkpoint.gd" id="1_fdc70"]
 [ext_resource type="Script" uid="uid://cbxti3spdwbil" path="res://scripts/road_section.gd" id="1_h48hc"]
 [ext_resource type="PackedScene" uid="uid://03ci42s4h6wq" path="res://scenes/player_controller.tscn" id="1_m5iai"]
@@ -58,6 +59,7 @@
 [ext_resource type="Texture2D" uid="uid://b0qoyhbrgo4l3" path="res://assets/textures/42nd_Street_Sign.png" id="41_3noei"]
 [ext_resource type="Texture2D" uid="uid://wbax2ag3yynd" path="res://assets/textures/43rd_Street_Sign.png" id="42_aw2mq"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="49_3noei"]
+[ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="60_r17a8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
@@ -278,6 +280,7 @@ size = Vector3(18.5, 1, 18.300001)
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3do5"]
 
 [node name="KnoiseGame" type="Node3D" unique_id=1886624332]
+script = ExtResource("1_7c1mp")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=281765539]
 environment = SubResource("Environment_fdc70")
@@ -3152,6 +3155,154 @@ text = "DEAD END"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Clock" type="Node3D" parent="UI/CanvasText" unique_id=1780394311]
+
+[node name="9_00AM" type="Label" parent="UI/CanvasText/Clock" unique_id=886399329]
+offset_left = 906.0
+offset_top = -4.0
+offset_right = 1146.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "9:00 AM"
+
+[node name="9_30AM" type="Label" parent="UI/CanvasText/Clock" unique_id=2117770876]
+visible = false
+offset_left = 906.0
+offset_top = -4.0
+offset_right = 1146.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "9:30 AM"
+
+[node name="10_00AM" type="Label" parent="UI/CanvasText/Clock" unique_id=825823571]
+visible = false
+offset_left = 886.0
+offset_top = -4.0
+offset_right = 1148.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "10:00 AM"
+
+[node name="10_30AM" type="Label" parent="UI/CanvasText/Clock" unique_id=1994696534]
+visible = false
+offset_left = 887.0
+offset_top = -4.0
+offset_right = 1149.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "10:30 AM"
+
+[node name="11_00AM" type="Label" parent="UI/CanvasText/Clock" unique_id=452284862]
+visible = false
+offset_left = 906.0
+offset_top = -4.0
+offset_right = 1149.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "11:00 AM"
+
+[node name="11_30AM" type="Label" parent="UI/CanvasText/Clock" unique_id=504742787]
+visible = false
+offset_left = 905.0
+offset_top = -4.0
+offset_right = 1149.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "11:30 AM"
+
+[node name="12_00PM" type="Label" parent="UI/CanvasText/Clock" unique_id=1657821948]
+visible = false
+offset_left = 893.0
+offset_top = -4.0
+offset_right = 1149.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "12:00 PM"
+
+[node name="12_30PM" type="Label" parent="UI/CanvasText/Clock" unique_id=1477974000]
+visible = false
+offset_left = 893.0
+offset_top = -4.0
+offset_right = 1149.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "12:30 PM"
+
+[node name="1_00PM" type="Label" parent="UI/CanvasText/Clock" unique_id=1834084927]
+visible = false
+offset_left = 931.0
+offset_top = -4.0
+offset_right = 1171.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "1:00 PM"
+
+[node name="1_30PM" type="Label" parent="UI/CanvasText/Clock" unique_id=1890018633]
+visible = false
+offset_left = 929.0
+offset_top = -4.0
+offset_right = 1169.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "1:30 PM"
+
+[node name="2_00PM" type="Label" parent="UI/CanvasText/Clock" unique_id=1027959515]
+visible = false
+offset_left = 914.0
+offset_top = -4.0
+offset_right = 1154.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.8720461, 0.3641341, 0, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.892, 1)
+theme_override_colors/font_outline_color = Color(1, 0.45977044, 0.3701221, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "2:00 PM"
+
+[node name="Timer" type="Timer" parent="." unique_id=1102054219]
+wait_time = 120.0
+autostart = true
+
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint2" to="Intersections/Checkpoint2" method="_on_body_entered"]
@@ -3208,3 +3359,4 @@ vertical_alignment = 1
 [connection signal="pressed" from="UI/CanvasArrows/DirectionButtons/RightButton" to="UI/CanvasArrows/DirectionButtons/RightButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/CanvasArrows/DirectionButtons/UpButton" to="UI/CanvasArrows/DirectionButtons/UpButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/CanvasArrows/DirectionButtons/DownButton" to="UI/CanvasArrows/DirectionButtons/DownButton" method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
