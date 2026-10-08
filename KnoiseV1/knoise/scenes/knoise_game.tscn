@@ -36,7 +36,6 @@
 [ext_resource type="AudioStream" uid="uid://bkerll8x6g5w6" path="res://assets/audios/11.wav" id="23_kun8u"]
 [ext_resource type="AudioStream" uid="uid://c805oda3x2gps" path="res://assets/audios/12.wav" id="24_wm8sv"]
 [ext_resource type="AudioStream" uid="uid://bdyuvoaf336bo" path="res://assets/audios/13.wav" id="25_r8wru"]
-[ext_resource type="AudioStream" uid="uid://bgb2aifdmmj7c" path="res://assets/audios/cityCrowd.wav" id="25_vt3j5"]
 [ext_resource type="AudioStream" uid="uid://bfdct5cnjpfdq" path="res://assets/audios/14.wav" id="26_jdr38"]
 [ext_resource type="AudioStream" uid="uid://gv6yuhdedxc8" path="res://assets/audios/15.wav" id="27_8wyem"]
 [ext_resource type="AudioStream" uid="uid://bva2rw88vfd3i" path="res://assets/audios/16.wav" id="28_5ba2d"]
@@ -58,6 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://cbestkjdmlced" path="res://assets/textures/41st_Street_Sign.png" id="40_27mwr"]
 [ext_resource type="Texture2D" uid="uid://b0qoyhbrgo4l3" path="res://assets/textures/42nd_Street_Sign.png" id="41_3noei"]
 [ext_resource type="Texture2D" uid="uid://wbax2ag3yynd" path="res://assets/textures/43rd_Street_Sign.png" id="42_aw2mq"]
+[ext_resource type="AudioStream" uid="uid://cq2kk482fpuoj" path="res://assets/audios/citysounds.wav" id="44_r17a8"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="49_3noei"]
 [ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="60_r17a8"]
 
@@ -2315,6 +2315,7 @@ texture = ExtResource("12_7c1mp")
 
 [node name="Person28" type="Sprite3D" parent="People" unique_id=566500106]
 transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -31.682184)
+visible = false
 texture = ExtResource("11_8olnv")
 
 [node name="Person29" type="Sprite3D" parent="People" unique_id=1057460837]
@@ -2721,78 +2722,100 @@ unit_size = 0.3
 max_db = 2.64
 
 [node name="KnoiseAmbience" type="AudioStreamPlayer3D" parent="Audios" unique_id=1875249595]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -18.007442)
-stream = ExtResource("25_vt3j5")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.909373, 0, -18.007442)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.4
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience2" type="AudioStreamPlayer3D" parent="Audios" unique_id=572520990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9387846, 0, -74.4405)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience3" type="AudioStreamPlayer3D" parent="Audios" unique_id=883987528]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.35359, 0, 12.532974)
-stream = ExtResource("25_vt3j5")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.35359, 0, 9.735966)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience4" type="AudioStreamPlayer3D" parent="Audios" unique_id=116490172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.08655, 0, 11.788216)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience5" type="AudioStreamPlayer3D" parent="Audios" unique_id=2143268019]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5779, 0, -41.116886)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="Audios" unique_id=1607028618]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.48384, 0, -108.01032)
-stream = ExtResource("25_vt3j5")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.48384, 0, -105.95707)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience7" type="AudioStreamPlayer3D" parent="Audios" unique_id=1089819790]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.19211, 0, -77.92572)
-stream = ExtResource("25_vt3j5")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.81091, 0, -77.92572)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience8" type="AudioStreamPlayer3D" parent="Audios" unique_id=48855352]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.457, 0, -218.06917)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1850095839]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.23639, 0, -251.77866)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience10" type="AudioStreamPlayer3D" parent="Audios" unique_id=547096104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.84094, 0, -341.64734)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience11" type="AudioStreamPlayer3D" parent="Audios" unique_id=1349864175]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.74559, 0, -313.7664)
-stream = ExtResource("25_vt3j5")
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
