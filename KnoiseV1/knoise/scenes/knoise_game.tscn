@@ -5,11 +5,7 @@
 [ext_resource type="Script" uid="uid://cbxti3spdwbil" path="res://scripts/road_section.gd" id="1_h48hc"]
 [ext_resource type="PackedScene" uid="uid://03ci42s4h6wq" path="res://scenes/player_controller.tscn" id="1_m5iai"]
 [ext_resource type="Script" uid="uid://n566o63bp6dh" path="res://scripts/deadEnds.gd" id="3_27mwr"]
-[ext_resource type="Texture2D" uid="uid://x6cngcdbvw23" path="res://assets/textures/leftArrow.png" id="3_wpxch"]
-[ext_resource type="Texture2D" uid="uid://bv1ogix07y7c2" path="res://assets/textures/rightArrow.png" id="4_c5rgc"]
 [ext_resource type="Script" uid="uid://dwgo8cg5hal5g" path="res://scripts/directions_button.gd" id="4_h48hc"]
-[ext_resource type="Texture2D" uid="uid://2r0hpy05qhqm" path="res://assets/textures/upArrow.png" id="5_h48hc"]
-[ext_resource type="Texture2D" uid="uid://bxvvm8nh03txj" path="res://assets/textures/downArrow.png" id="6_1mogm"]
 [ext_resource type="Texture2D" uid="uid://dec5poal0253f" path="res://assets/images/sprites/KnoiseG Person 1.png" id="9_3noei"]
 [ext_resource type="Texture2D" uid="uid://cuiyxmomtvd0d" path="res://assets/images/sprites/KnoiseG Person 2.png" id="10_aw2mq"]
 [ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
@@ -59,11 +55,15 @@
 [ext_resource type="Texture2D" uid="uid://wbax2ag3yynd" path="res://assets/textures/43rd_Street_Sign.png" id="42_aw2mq"]
 [ext_resource type="AudioStream" uid="uid://cq2kk482fpuoj" path="res://assets/audios/citysounds.wav" id="44_r17a8"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="49_3noei"]
+[ext_resource type="Texture2D" uid="uid://bs7d0qb7dr6xs" path="res://assets/images/sprites/Left_Arrow.png" id="54_r17a8"]
+[ext_resource type="Texture2D" uid="uid://c11w3v8wvrrtu" path="res://assets/images/sprites/Right_Arrow.png" id="56_4ej0g"]
+[ext_resource type="Texture2D" uid="uid://bwvx1q6i57f24" path="res://assets/images/sprites/Up_Arrow.png" id="57_d0215"]
+[ext_resource type="Texture2D" uid="uid://vuwta2ftdm5n" path="res://assets/images/sprites/Down_Arrow.png" id="58_iqf7v"]
 [ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="60_r17a8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
-sky_top_color = Color(0.39894977, 0.60703367, 0.9704693, 1)
-sky_horizon_color = Color(0.59055096, 0.6425719, 0.7334308, 1)
+sky_top_color = Color(0.24587935, 0.49070817, 0.9217726, 1)
+sky_horizon_color = Color(0.76345104, 0.3160013, 0.016874352, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0.59055096, 0.6425719, 0.7334308, 1)
 
@@ -73,7 +73,7 @@ sky_material = SubResource("ProceduralSkyMaterial_ad4kr")
 [sub_resource type="Environment" id="Environment_fdc70"]
 background_mode = 2
 background_color = Color(0.21099019, 0.19912398, 0.40582466, 1)
-background_energy_multiplier = 0.25
+background_energy_multiplier = 1.24
 sky = SubResource("Sky_m5iai")
 ambient_light_source = 1
 glow_enabled = true
@@ -3114,12 +3114,12 @@ texture = ExtResource("42_aw2mq")
 
 [node name="LeftButton" type="TextureButton" parent="UI/CanvasArrows/DirectionButtons" unique_id=792553243 node_paths=PackedStringArray("player", "dead_end_text")]
 visible = false
-offset_left = 75.0
-offset_top = 286.0
-offset_right = 587.0
-offset_bottom = 798.0
-scale = Vector2(0.25, 0.25)
-texture_normal = ExtResource("3_wpxch")
+offset_left = 60.000004
+offset_top = 289.0
+offset_right = 1871.0
+offset_bottom = 2049.0
+scale = Vector2(0.075, 0.075)
+texture_normal = ExtResource("54_r17a8")
 script = ExtResource("4_h48hc")
 player = NodePath("../../../../PlayerController")
 direction = "left"
@@ -3127,12 +3127,12 @@ dead_end_text = NodePath("../../../CanvasText/DeadEndTEXT")
 
 [node name="RightButton" type="TextureButton" parent="UI/CanvasArrows/DirectionButtons" unique_id=883990819 node_paths=PackedStringArray("player", "dead_end_text")]
 visible = false
-offset_left = 945.0
+offset_left = 950.0
 offset_top = 289.0
-offset_right = 1457.0
-offset_bottom = 801.0
-scale = Vector2(0.25, 0.25)
-texture_normal = ExtResource("4_c5rgc")
+offset_right = 2761.0
+offset_bottom = 2049.0
+scale = Vector2(0.075, 0.075)
+texture_normal = ExtResource("56_4ej0g")
 script = ExtResource("4_h48hc")
 player = NodePath("../../../../PlayerController")
 direction = "right"
@@ -3140,12 +3140,12 @@ dead_end_text = NodePath("../../../CanvasText/DeadEndTEXT")
 
 [node name="UpButton" type="TextureButton" parent="UI/CanvasArrows/DirectionButtons" unique_id=1909252134 node_paths=PackedStringArray("player", "dead_end_text")]
 visible = false
-offset_left = 500.0
-offset_top = 22.0
-offset_right = 1012.0
-offset_bottom = 534.0
-scale = Vector2(0.25, 0.25)
-texture_normal = ExtResource("5_h48hc")
+offset_left = 492.0
+offset_top = 10.0
+offset_right = 2252.0
+offset_bottom = 1821.0
+scale = Vector2(0.075, 0.075)
+texture_normal = ExtResource("57_d0215")
 script = ExtResource("4_h48hc")
 player = NodePath("../../../../PlayerController")
 direction = "up"
@@ -3153,18 +3153,19 @@ dead_end_text = NodePath("../../../CanvasText/DeadEndTEXT")
 
 [node name="DownButton" type="TextureButton" parent="UI/CanvasArrows/DirectionButtons" unique_id=655026843 node_paths=PackedStringArray("player", "dead_end_text")]
 visible = false
-offset_left = 500.0
+offset_left = 492.0
 offset_top = 494.0
-offset_right = 1012.0
-offset_bottom = 1006.0
-scale = Vector2(0.25, 0.25)
-texture_normal = ExtResource("6_1mogm")
+offset_right = 2252.0
+offset_bottom = 2305.0
+scale = Vector2(0.075, 0.075)
+texture_normal = ExtResource("58_iqf7v")
 script = ExtResource("4_h48hc")
 player = NodePath("../../../../PlayerController")
 direction = "down"
 dead_end_text = NodePath("../../../CanvasText/DeadEndTEXT")
 
 [node name="CanvasText" type="CanvasLayer" parent="UI" unique_id=972283638]
+visible = false
 
 [node name="DeadEndTEXT" type="Label" parent="UI/CanvasText" unique_id=586648132]
 offset_left = 336.0
