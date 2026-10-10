@@ -54,12 +54,17 @@
 [ext_resource type="Texture2D" uid="uid://b0qoyhbrgo4l3" path="res://assets/textures/42nd_Street_Sign.png" id="41_3noei"]
 [ext_resource type="Texture2D" uid="uid://wbax2ag3yynd" path="res://assets/textures/43rd_Street_Sign.png" id="42_aw2mq"]
 [ext_resource type="AudioStream" uid="uid://cq2kk482fpuoj" path="res://assets/audios/citysounds.wav" id="44_r17a8"]
+[ext_resource type="AudioStream" uid="uid://bcysmjmy8wiox" path="res://assets/audios/Official NBA Horn SFX - Rambie.mp3" id="45_4ej0g"]
+[ext_resource type="AudioStream" uid="uid://b8ej2ssekrk41" path="res://assets/audios/test.mp3" id="46_70w3k"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="49_3noei"]
 [ext_resource type="Texture2D" uid="uid://bs7d0qb7dr6xs" path="res://assets/images/sprites/Left_Arrow.png" id="54_r17a8"]
 [ext_resource type="Texture2D" uid="uid://c11w3v8wvrrtu" path="res://assets/images/sprites/Right_Arrow.png" id="56_4ej0g"]
 [ext_resource type="Texture2D" uid="uid://bwvx1q6i57f24" path="res://assets/images/sprites/Up_Arrow.png" id="57_d0215"]
 [ext_resource type="Texture2D" uid="uid://vuwta2ftdm5n" path="res://assets/images/sprites/Down_Arrow.png" id="58_iqf7v"]
 [ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="60_r17a8"]
+[ext_resource type="Texture2D" uid="uid://de66y02mmswrq" path="res://assets/images/sprites/Cloud_1.png" id="62_d0215"]
+[ext_resource type="Texture2D" uid="uid://bfgwfkyvxsjjg" path="res://assets/images/sprites/Cloud_2.png" id="63_v2wyr"]
+[ext_resource type="Texture2D" uid="uid://dm2lt2l15q4il" path="res://assets/images/sprites/Cloud_3.png" id="64_70w3k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ad4kr"]
 sky_top_color = Color(0.24587935, 0.49070817, 0.9217726, 1)
@@ -208,6 +213,22 @@ size = Vector3(0.001, 1, 22.300001)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nhlk2"]
 size = Vector3(18.5, 1, 18.300001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mqjf0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uqbc0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h05kn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_12pes"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_db0mv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m7x4v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kxdhd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g5pv7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iigmh"]
 
@@ -1106,6 +1127,97 @@ shape = SubResource("BoxShape3D_nhlk2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 12.894864)
 collision_layer = 2
 
+[node name="Special Conversations" type="Node3D" parent="." unique_id=2107535161]
+visible = false
+
+[node name="specialConvo1" type="Area3D" parent="Special Conversations" unique_id=268883062 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo1" unique_id=401384841]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_mqjf0")
+
+[node name="specialConvo2" type="Area3D" parent="Special Conversations" unique_id=575050572 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo2" unique_id=1565270092]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_uqbc0")
+
+[node name="specialConvo3" type="Area3D" parent="Special Conversations" unique_id=1880960081 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo3" unique_id=1951774222]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_h05kn")
+
+[node name="specialConvo4" type="Area3D" parent="Special Conversations" unique_id=946397512 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo4" unique_id=1259292929]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_12pes")
+
+[node name="specialConvo5" type="Area3D" parent="Special Conversations" unique_id=1695207139 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo5" unique_id=312683549]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_db0mv")
+
+[node name="specialConvo6" type="Area3D" parent="Special Conversations" unique_id=1448235370 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo6" unique_id=1997613201]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_m7x4v")
+
+[node name="specialConvo7" type="Area3D" parent="Special Conversations" unique_id=80189180 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo7" unique_id=1271880068]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_kxdhd")
+
+[node name="specialConvo8" type="Area3D" parent="Special Conversations" unique_id=1129951290 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/SPConvo8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo8" unique_id=544048961]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_g5pv7")
+
 [node name="Conversations" type="Node3D" parent="." unique_id=1903218441]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 
@@ -1620,7 +1732,7 @@ transform = Transform3D(0.9999256, -0.012217005, 0, 0.012216837, 0.9999119, 0.00
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 54" type="Sprite3D" parent="Buildings/Building 48" unique_id=731460834]
-transform = Transform3D(1.0000001, 0, -2.1316282e-14, 0, 1.0000001, 0, 2.1316282e-14, 0, 1.0000001, 204.33472, -1.30439, -0.6412964)
+transform = Transform3D(1.0000001, 0, -2.842171e-14, 0, 1.0000001, 0, 2.842171e-14, 0, 1.0000001, 204.69936, -1.30439, -0.64126587)
 texture = ExtResource("12_c0fwb")
 
 [node name="Building 49" type="Sprite3D" parent="Buildings" unique_id=407504458]
@@ -1732,7 +1844,7 @@ transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 203.6
 texture = ExtResource("12_c0fwb")
 
 [node name="Building 55" type="Sprite3D" parent="Buildings" unique_id=437409753]
-transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.27729, 5.8, 3.5504227)
+transform = Transform3D(-0.4610894, 0, 0.005633581, 0, 0.46112382, 0, -0.005633581, 0, -0.4610894, 111.27729, 5.8, 15.193882)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 51" type="Sprite3D" parent="Buildings/Building 55" unique_id=537577335]
@@ -1752,7 +1864,7 @@ transform = Transform3D(0.9999257, -0.012217006, -7.704469e-15, 0.012216838, 0.9
 texture = ExtResource("11_sgfvx")
 
 [node name="Building 55" type="Sprite3D" parent="Buildings/Building 55" unique_id=21356817]
-transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 203.61234, 0, -0.5355334)
+transform = Transform3D(1.0000005, 0, 0, 0, 1.0000006, 0, 0, 0, 1.0000005, 203.48428, 0, -0.53396225)
 texture = ExtResource("12_c0fwb")
 
 [node name="Building 56" type="Sprite3D" parent="Buildings" unique_id=1689160107]
@@ -1768,7 +1880,7 @@ transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.4611
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 59" type="Sprite3D" parent="Buildings" unique_id=1283790355]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, -125.69566)
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.273735, 5.8, -125.69566)
 texture = ExtResource("13_5n8hj")
 
 [node name="Building 47" type="Sprite3D" parent="Buildings/Building 59" unique_id=689349753]
@@ -1843,27 +1955,27 @@ texture = ExtResource("11_sgfvx")
 transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
 texture = ExtResource("12_c0fwb")
 
-[node name="Building 62" type="Sprite3D" parent="Buildings" unique_id=1685572860]
-transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, 1.3356018)
+[node name="BuildingGroup" type="Sprite3D" parent="Buildings" unique_id=1685572860]
+transform = Transform3D(0.46112376, 0, 0, 0, 0.46112376, 0, 0, 0, 0.46112376, -17.43293, 5.8, 14.070881)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 47" type="Sprite3D" parent="Buildings/Building 62" unique_id=1117860827]
+[node name="Building 47" type="Sprite3D" parent="Buildings/BuildingGroup" unique_id=1117860827]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -84.9319, -1.4305115e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 48" type="Sprite3D" parent="Buildings/Building 62" unique_id=949105772]
+[node name="Building 48" type="Sprite3D" parent="Buildings/BuildingGroup" unique_id=949105772]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -129.26263, -2.193451e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 49" type="Sprite3D" parent="Buildings/Building 62" unique_id=1409969103]
+[node name="Building 49" type="Sprite3D" parent="Buildings/BuildingGroup" unique_id=1409969103]
 transform = Transform3D(1.0000001, 1.3362996e-21, 0, 1.3362995e-21, 1.0000001, 1.6940659e-21, 0, 0, 1.0000001, -170.09302, -2.9563904e-05, -3.0517578e-05)
 texture = ExtResource("13_5n8hj")
 
-[node name="Building 50" type="Sprite3D" parent="Buildings/Building 62" unique_id=648463924]
+[node name="Building 50" type="Sprite3D" parent="Buildings/BuildingGroup" unique_id=648463924]
 transform = Transform3D(1.0000002, 2.3984148e-12, -9.154917e-10, 2.4016344e-12, 0.9999866, 0.005235965, 9.154846e-10, -0.0052359654, 0.99998647, -42.296677, -0.4879465, 0.5421448)
 texture = ExtResource("11_sgfvx")
 
-[node name="Building 51" type="Sprite3D" parent="Buildings/Building 62" unique_id=652796633]
+[node name="Building 51" type="Sprite3D" parent="Buildings/BuildingGroup" unique_id=652796633]
 transform = Transform3D(1.0000001, 1.4210855e-14, 0, 1.4210856e-14, 1.0000001, 0, -7.1054274e-15, 1.5285487e-14, 1.0000002, -204.15347, -3.4332275e-05, 0.54211426)
 texture = ExtResource("12_c0fwb")
 
@@ -2194,6 +2306,22 @@ texture = ExtResource("13_5n8hj")
 [node name="Building 84" type="Sprite3D" parent="Buildings" unique_id=1010844441]
 transform = Transform3D(-2.015636e-08, 0, 0.46112382, 0, 0.46112382, 0, -0.46112382, 0, -2.015636e-08, 121.80501, 5.8, -108.254425)
 texture = ExtResource("11_sgfvx")
+
+[node name="Building 54" type="Sprite3D" parent="Buildings" unique_id=1999598207]
+transform = Transform3D(-2.0107239e-08, 0, 0.46, 0, 0.46, 0, -0.46, 0, -2.0107239e-08, -7.28, 5.8, 3.9143257)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 62" type="Sprite3D" parent="Buildings" unique_id=1875747625]
+transform = Transform3D(-2.0107239e-08, 0, -0.46, 0, 0.46, 0, 0.46, 0, -2.0107239e-08, -121.67999, 5.8, 4.007555)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 85" type="Sprite3D" parent="Buildings" unique_id=211801788]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 7.27, 5.8, 3.8624344)
+texture = ExtResource("13_5n8hj")
+
+[node name="Building 86" type="Sprite3D" parent="Buildings" unique_id=1016467163]
+transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.46112376, 0, -2.0156358e-08, 121.63925, 5.8, 5.281284)
+texture = ExtResource("13_5n8hj")
 
 [node name="People" type="Node3D" parent="." unique_id=912984898]
 
@@ -2665,14 +2793,6 @@ volume_db = 60.0
 unit_size = 0.3
 max_db = 2.64
 
-[node name="Convo26" type="AudioStreamPlayer3D" parent="Audios" unique_id=529620743]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -50.70317, -9.313226e-10, -199.16724)
-stream = ExtResource("31_rniy1")
-attenuation_model = 1
-volume_db = 60.0
-unit_size = 0.3
-max_db = 2.64
-
 [node name="Convo19" type="AudioStreamPlayer3D" parent="Audios" unique_id=1649856140]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 69.740395, -9.313226e-10, -275.1888)
 stream = ExtResource("32_uvsgv")
@@ -2716,6 +2836,14 @@ max_db = 2.64
 [node name="Convo25" type="AudioStreamPlayer3D" parent="Audios" unique_id=493942366]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 72.500786, -9.313226e-10, -121.72415)
 stream = ExtResource("37_3noei")
+attenuation_model = 1
+volume_db = 60.0
+unit_size = 0.3
+max_db = 2.64
+
+[node name="Convo26" type="AudioStreamPlayer3D" parent="Audios" unique_id=529620743]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -50.70317, -9.313226e-10, -199.16724)
+stream = ExtResource("31_rniy1")
 attenuation_model = 1
 volume_db = 60.0
 unit_size = 0.3
@@ -2819,6 +2947,45 @@ unit_size = 4.0
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
+
+[node name="NBA Buzzer" type="AudioStreamPlayer3D" parent="Audios" unique_id=1671386673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.766586, -198.02774)
+stream = ExtResource("45_4ej0g")
+attenuation_model = 3
+volume_db = -3.0
+unit_size = 100.0
+
+[node name="SPConvo1" type="AudioStreamPlayer3D" parent="Audios" unique_id=145770940]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo2" type="AudioStreamPlayer3D" parent="Audios" unique_id=538989931]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo3" type="AudioStreamPlayer3D" parent="Audios" unique_id=248634040]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo4" type="AudioStreamPlayer3D" parent="Audios" unique_id=594279357]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1275539593]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo6" type="AudioStreamPlayer3D" parent="Audios" unique_id=1005152066]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo7" type="AudioStreamPlayer3D" parent="Audios" unique_id=777260199]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
+
+[node name="SPConvo8" type="AudioStreamPlayer3D" parent="Audios" unique_id=464770989]
+stream = ExtResource("46_70w3k")
+volume_db = -10.0
 
 [node name="CityAudios" type="Node3D" parent="." unique_id=339632329]
 
@@ -3165,9 +3332,9 @@ direction = "down"
 dead_end_text = NodePath("../../../CanvasText/DeadEndTEXT")
 
 [node name="CanvasText" type="CanvasLayer" parent="UI" unique_id=972283638]
-visible = false
 
 [node name="DeadEndTEXT" type="Label" parent="UI/CanvasText" unique_id=586648132]
+visible = false
 offset_left = 336.0
 offset_top = 122.0
 offset_right = 824.0
@@ -3178,6 +3345,32 @@ theme_override_font_sizes/font_size = 128
 text = "DEAD END"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PrimeTimeText" type="Label" parent="UI/CanvasText" unique_id=1157420284]
+visible = false
+offset_left = 428.0
+offset_top = 15.0
+offset_right = 729.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0.24508628, 0.00026933968, 0.71693397, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0.8652415, 0.38606024, 0.04352849, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "PRIME TIME"
+
+[node name="PrimeTimeDescription" type="Label" parent="UI/CanvasText" unique_id=1617176693]
+visible = false
+offset_left = 228.0
+offset_top = 582.0
+offset_right = 921.0
+offset_bottom = 647.0
+theme_override_colors/font_color = Color(0.21356702, 0.0001975286, 0.6409696, 0.99607843)
+theme_override_colors/font_shadow_color = Color(0.8652415, 0.38606024, 0.04352849, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("60_r17a8")
+theme_override_font_sizes/font_size = 64
+text = "THE BUS IS LEAVING SOON"
 
 [node name="Clock" type="Node3D" parent="UI/CanvasText" unique_id=1780394311]
 
@@ -3323,9 +3516,798 @@ theme_override_fonts/font = ExtResource("60_r17a8")
 theme_override_font_sizes/font_size = 64
 text = "2:00 PM"
 
+[node name="Sky" type="Node3D" parent="." unique_id=1580920201]
+transform = Transform3D(0.308023, 0, 0.3431575, 0, 0.46112388, 0, -0.3431575, 0, 0.308023, -4.3290763, 14.676716, -8.887546)
+
+[node name="Cloud1" type="Sprite3D" parent="Sky" unique_id=801054766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.727264, 0)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud2" type="Sprite3D" parent="Sky" unique_id=659276916]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 49.332535, 18.185146, -26.331146)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud3" type="Sprite3D" parent="Sky" unique_id=401383305]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 97.42149, 17.727264, -69.50328)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud4" type="Sprite3D" parent="Sky" unique_id=380481513]
+transform = Transform3D(-0.12508339, 0, -0.9921462, 0, 1, 0, 0.9921462, 0, -0.12508339, 106.43756, 18.185146, -11.570148)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud5" type="Sprite3D" parent="Sky" unique_id=1927949624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.47589, 17.727264, -105.44801)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud6" type="Sprite3D" parent="Sky" unique_id=1345205684]
+transform = Transform3D(0.23677161, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677161, 153.99458, 17.727264, -117.04187)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud7" type="Sprite3D" parent="Sky" unique_id=747342933]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 217.58145, 23.344498, -177.35376)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud8" type="Sprite3D" parent="Sky" unique_id=2030593708]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 97.42149, 17.727264, -69.50328)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud9" type="Sprite3D" parent="Sky" unique_id=586679966]
+transform = Transform3D(-0.12508339, 0, -0.9921462, 0, 1, 0, 0.9921462, 0, -0.12508339, 34.873703, 18.185146, -84.884476)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud10" type="Sprite3D" parent="Sky" unique_id=767822420]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 161.97295, 22.88662, -225.43222)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud11" type="Sprite3D" parent="Sky" unique_id=767779337]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 125.28789, 17.727264, -38.4583)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud12" type="Sprite3D" parent="Sky" unique_id=745158689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 145.34229, 17.727264, -74.403015)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud13" type="Sprite3D" parent="Sky" unique_id=834048278]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 181.861, 17.727264, -85.9969)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud14" type="Sprite3D" parent="Sky" unique_id=110512409]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 245.44783, 23.344498, -146.30878)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud15" type="Sprite3D" parent="Sky" unique_id=1845710963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 259.01755, 22.88662, -176.43953)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud16" type="Sprite3D" parent="Sky" unique_id=79221300]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 69.11682, 17.727264, -101.0365)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud17" type="Sprite3D" parent="Sky" unique_id=657174311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.1712, 17.727264, -136.9812)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud18" type="Sprite3D" parent="Sky" unique_id=1682805221]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 125.689896, 17.727264, -148.57506)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud19" type="Sprite3D" parent="Sky" unique_id=1707470237]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 140.43379, 23.344498, -189.4948)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud20" type="Sprite3D" parent="Sky" unique_id=359990621]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 120.66797, 22.88662, -215.9771)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud21" type="Sprite3D" parent="Sky" unique_id=1032282524]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 273.76065, 17.727264, -227.78783)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud22" type="Sprite3D" parent="Sky" unique_id=491096938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 293.81503, 17.727264, -263.7325)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud23" type="Sprite3D" parent="Sky" unique_id=1788525802]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 330.3338, 17.727264, -275.3264)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud24" type="Sprite3D" parent="Sky" unique_id=195518587]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 393.92065, 18.185146, -335.63837)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud25" type="Sprite3D" parent="Sky" unique_id=552758232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 407.4904, 17.727264, -365.7691)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud26" type="Sprite3D" parent="Sky" unique_id=1761118334]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 301.62704, 17.727264, -196.74278)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud27" type="Sprite3D" parent="Sky" unique_id=10227635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 321.68146, 17.727264, -232.68753)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud28" type="Sprite3D" parent="Sky" unique_id=1043027262]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 358.2002, 17.727264, -244.28142)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud29" type="Sprite3D" parent="Sky" unique_id=991961987]
+transform = Transform3D(0.9998552, 0, -0.01701358, 0, 1, 0, 0.01701358, 0, 0.9998552, 525.8118, 18.185146, -258.9346)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud30" type="Sprite3D" parent="Sky" unique_id=1690150896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 435.35675, 17.727264, -334.72418)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud31" type="Sprite3D" parent="Sky" unique_id=1360432839]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 123.58293, 17.727264, -263.0866)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud32" type="Sprite3D" parent="Sky" unique_id=662462866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 265.51044, 17.727264, -295.26575)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud33" type="Sprite3D" parent="Sky" unique_id=401101711]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 302.02905, 17.727264, -306.85965)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud34" type="Sprite3D" parent="Sky" unique_id=1326862500]
+transform = Transform3D(0.69808054, 0, 0.7160192, 0, 1, 0, -0.7160192, 0, 0.69808054, 365.7125, 18.185146, -445.43643)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud35" type="Sprite3D" parent="Sky" unique_id=1157769221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 408.35736, 17.727264, -443.17572)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud36" type="Sprite3D" parent="Sky" unique_id=1884567870]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 346.37653, 17.727264, -292.96884)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud37" type="Sprite3D" parent="Sky" unique_id=1345802512]
+transform = Transform3D(0.53313875, 0, 0.8460277, 0, 1, 0, -0.8460277, 0, 0.53313875, 175.30504, 17.727264, -393.42868)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud38" type="Sprite3D" parent="Sky" unique_id=210478103]
+transform = Transform3D(-0.32678387, -0.019855399, -0.9448904, 0.039503887, 0.9986185, -0.03464654, 0.9442729, -0.048648763, -0.3255482, 512.911, 17.727264, -300.1774)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud39" type="Sprite3D" parent="Sky" unique_id=595295017]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 466.5365, 18.185146, -400.8194)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud40" type="Sprite3D" parent="Sky" unique_id=459367325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 480.10614, 17.727264, -430.95007)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud41" type="Sprite3D" parent="Sky" unique_id=1522175898]
+transform = Transform3D(0.9968428, 0, -0.07939839, 0, 1, 0, 0.07939839, 0, 0.9968428, 236.14503, 17.727264, -364.32303)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud42" type="Sprite3D" parent="Sky" unique_id=1025590019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 394.29733, 17.727264, -297.86856)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud43" type="Sprite3D" parent="Sky" unique_id=819345787]
+transform = Transform3D(-0.35469276, 0, -0.9349828, 0, 1, 0, 0.9349828, 0, -0.35469276, 564.6113, 17.727264, -230.63759)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud44" type="Sprite3D" parent="Sky" unique_id=1319787532]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 494.40277, 18.185146, -369.77435)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud45" type="Sprite3D" parent="Sky" unique_id=514233322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 507.97247, 17.727264, -399.90518)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud46" type="Sprite3D" parent="Sky" unique_id=19162200]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 318.0718, 17.727264, -324.502)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud47" type="Sprite3D" parent="Sky" unique_id=1736535800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 338.1263, 17.727264, -360.44678)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud48" type="Sprite3D" parent="Sky" unique_id=1468163821]
+transform = Transform3D(0.7426754, 0, 0.6696513, 0, 1, 0, -0.6696513, 0, 0.7426754, 320.5411, 17.727264, -510.68845)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud49" type="Sprite3D" parent="Sky" unique_id=1483838344]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 438.2318, 18.185146, -432.35245)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud50" type="Sprite3D" parent="Sky" unique_id=323243890]
+transform = Transform3D(0.41721874, 0, 0.9088057, 0, 1, 0, -0.9088057, 0, 0.41721874, 364.528, 17.727264, -693.42554)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud51" type="Sprite3D" parent="Sky" unique_id=160041097]
+transform = Transform3D(-0.3369534, 0, -0.94152117, 0, 1, 0, 0.94152117, 0, -0.3369534, 477.6373, 17.727264, -332.08298)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud52" type="Sprite3D" parent="Sky" unique_id=471514530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 530.0129, 17.727264, -475.74698)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud53" type="Sprite3D" parent="Sky" unique_id=1371329060]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 566.5316, 17.727264, -487.34088)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud54" type="Sprite3D" parent="Sky" unique_id=1121722197]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 597.54254, 18.185146, -518.4122)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud55" type="Sprite3D" parent="Sky" unique_id=1343835219]
+transform = Transform3D(0.84731615, 0, -0.53108865, 0, 1, 0, 0.53108865, 0, 0.84731615, 598.1659, 17.727264, -563.6671)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud56" type="Sprite3D" parent="Sky" unique_id=1136693333]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 537.82477, 17.727264, -408.7573)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud57" type="Sprite3D" parent="Sky" unique_id=136686113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 557.8792, 17.727264, -444.70197)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud58" type="Sprite3D" parent="Sky" unique_id=708221005]
+transform = Transform3D(-0.943055, 0, -0.3326364, 0, 1, 0, 0.3326364, 0, -0.943055, 590.0944, 20.89505, -461.0904)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud59" type="Sprite3D" parent="Sky" unique_id=1673244643]
+transform = Transform3D(-0.6657167, 0, -0.7462039, 0, 1, 0, 0.7462039, 0, -0.6657167, 174.39125, 18.185146, 285.43823)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud60" type="Sprite3D" parent="Sky" unique_id=578092742]
+transform = Transform3D(0.5590689, 0, -0.82912093, 0, 1, 0, 0.82912093, 0, 0.5590689, 664.33905, 17.727264, -585.99475)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud61" type="Sprite3D" parent="Sky" unique_id=1613110729]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 493.36584, 17.727264, -562.71576)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud62" type="Sprite3D" parent="Sky" unique_id=319157811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 513.4203, 17.727264, -598.66046)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud63" type="Sprite3D" parent="Sky" unique_id=1179000439]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 538.2269, 17.727264, -518.874)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud64" type="Sprite3D" parent="Sky" unique_id=1492515891]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 829.3712, 18.185146, -357.69577)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud65" type="Sprite3D" parent="Sky" unique_id=893531854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 561.21204, 17.727264, -560.6915)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud66" type="Sprite3D" parent="Sky" unique_id=157162379]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 189.37856, 18.185146, -152.03845)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud67" type="Sprite3D" parent="Sky" unique_id=14977379]
+transform = Transform3D(-0.35589555, 0, -0.9345257, 0, 1, 0, 0.9345257, 0, -0.35589555, 217.24492, 23.344498, -120.99344)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud68" type="Sprite3D" parent="Sky" unique_id=24096057]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, 161.07384, 18.185146, -183.57158)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud69" type="Sprite3D" parent="Sky" unique_id=1915542987]
+transform = Transform3D(0.969854, 0, 0.24368611, 0, 1, 0, -0.24368611, 0, 0.969854, 708.14233, 18.185146, -336.225)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud70" type="Sprite3D" parent="Sky" unique_id=488262710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 668.86224, 17.727264, -359.33167)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud71" type="Sprite3D" parent="Sky" unique_id=1613291852]
+transform = Transform3D(-0.4157248, 0, -0.9094905, 0, 1, 0, 0.9094905, 0, -0.4157248, 743.20435, 18.185146, -322.31158)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud72" type="Sprite3D" parent="Sky" unique_id=1499646593]
+transform = Transform3D(0.59409857, 0, 0.8043921, 0, 1, 0, -0.8043921, 0, 0.59409857, 662.5052, 17.727264, -420.77994)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud73" type="Sprite3D" parent="Sky" unique_id=250617326]
+transform = Transform3D(0.98845243, 0, 0.15153143, 0, 1, 0, -0.15153143, 0, 0.98845243, 618.7508, 18.185146, -421.34402)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud74" type="Sprite3D" parent="Sky" unique_id=1525662427]
+transform = Transform3D(0.34640065, 0, 0.9380865, 0, 1, 0, -0.9380865, 0, 0.34640065, 625.67773, 17.727264, -461.8081)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud75" type="Sprite3D" parent="Sky" unique_id=48520928]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 81.70624, 22.88662, -314.85452)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud76" type="Sprite3D" parent="Sky" unique_id=941496525]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 60.167088, 23.344498, -278.91708)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud77" type="Sprite3D" parent="Sky" unique_id=179974658]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 92.824554, 22.88662, -246.99641)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud78" type="Sprite3D" parent="Sky" unique_id=1952956016]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 47.07781, 17.727264, -348.31827)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud79" type="Sprite3D" parent="Sky" unique_id=1411048457]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 370.9563, 22.88662, 7.388714)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud80" type="Sprite3D" parent="Sky" unique_id=706329449]
+transform = Transform3D(0.82368034, 0, 0.5670538, 0, 1, 0, -0.5670538, 0, 0.82368034, 535.07965, 23.344498, -32.575245)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud81" type="Sprite3D" parent="Sky" unique_id=936328062]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 329.65137, 22.88662, 16.843838)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud82" type="Sprite3D" parent="Sky" unique_id=948266191]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 332.5663, 17.727264, -30.265644)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud83" type="Sprite3D" parent="Sky" unique_id=2076721453]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, 370.0572, 18.185146, 49.249355)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud84" type="Sprite3D" parent="Sky" unique_id=1113664415]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 290.6896, 22.88662, -82.03357)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud85" type="Sprite3D" parent="Sky" unique_id=437990694]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 269.15042, 23.344498, -46.096104)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud86" type="Sprite3D" parent="Sky" unique_id=997259824]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 249.3846, 22.88662, -72.5784)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud87" type="Sprite3D" parent="Sky" unique_id=1071313646]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 252.29955, 17.727264, -119.68788)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud88" type="Sprite3D" parent="Sky" unique_id=560516423]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 38.053623, 23.344498, -116.88469)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud89" type="Sprite3D" parent="Sky" unique_id=1873874350]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -17.554882, 22.88662, -164.96315)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud90" type="Sprite3D" parent="Sky" unique_id=2004819379]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, -39.094044, 23.344498, -129.02573)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud91" type="Sprite3D" parent="Sky" unique_id=351959127]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -58.85985, 22.88662, -155.50803)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud92" type="Sprite3D" parent="Sky" unique_id=752911010]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, -55.94488, 17.727264, -202.61752)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud93" type="Sprite3D" parent="Sky" unique_id=892921203]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 9.850708, 18.185146, -91.5694)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud94" type="Sprite3D" parent="Sky" unique_id=582452675]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, -18.453999, 18.185146, -123.10249)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud95" type="Sprite3D" parent="Sky" unique_id=1056720736]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -97.82158, 22.88662, -254.38545)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud96" type="Sprite3D" parent="Sky" unique_id=1039946564]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, -119.36073, 23.344498, -218.448)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud97" type="Sprite3D" parent="Sky" unique_id=174839765]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -139.12656, 22.88662, -244.93031)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud98" type="Sprite3D" parent="Sky" unique_id=1678873933]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, -136.2116, 17.727264, -292.03983)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud100" type="Sprite3D" parent="Sky" unique_id=491444596]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 249.28789, 22.88662, 132.31693)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud101" type="Sprite3D" parent="Sky" unique_id=1196781263]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 227.74875, 23.344498, 168.25438)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud102" type="Sprite3D" parent="Sky" unique_id=473310401]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 207.98293, 22.88662, 141.77205)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud103" type="Sprite3D" parent="Sky" unique_id=1185882801]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 210.89789, 17.727264, 94.66254)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud106" type="Sprite3D" parent="Sky" unique_id=576040045]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 169.02121, 22.88662, 42.89464)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud107" type="Sprite3D" parent="Sky" unique_id=2007226194]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 147.48206, 23.344498, 78.8321)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud108" type="Sprite3D" parent="Sky" unique_id=123557753]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 127.71623, 22.88662, 52.349792)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud109" type="Sprite3D" parent="Sky" unique_id=1245120752]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 130.6312, 17.727264, 5.2402687)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud99" type="Sprite3D" parent="Sky" unique_id=734086291]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, -33.416527, 23.344498, 12.715978)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud104" type="Sprite3D" parent="Sky" unique_id=177661168]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -89.02504, 22.88662, -35.362488)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud105" type="Sprite3D" parent="Sky" unique_id=87829049]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, -110.56419, 23.344498, 0.574955)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud110" type="Sprite3D" parent="Sky" unique_id=1465650117]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -130.33002, 22.88662, -25.90736)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud111" type="Sprite3D" parent="Sky" unique_id=1330296368]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, -127.415054, 17.727264, -73.016846)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud112" type="Sprite3D" parent="Sky" unique_id=2053075876]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, -61.619453, 18.185146, 38.03128)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud113" type="Sprite3D" parent="Sky" unique_id=1613530847]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, -89.92415, 18.185146, 6.498192)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud114" type="Sprite3D" parent="Sky" unique_id=205149025]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -169.29172, 22.88662, -124.784775)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud115" type="Sprite3D" parent="Sky" unique_id=1956320514]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, -190.83089, 23.344498, -88.84732)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud116" type="Sprite3D" parent="Sky" unique_id=2004621548]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -210.5967, 22.88662, -115.32959)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud117" type="Sprite3D" parent="Sky" unique_id=783810404]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, -207.68173, 17.727264, -162.43913)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud118" type="Sprite3D" parent="Sky" unique_id=2010561888]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 172.23744, 23.344498, 233.17278)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud119" type="Sprite3D" parent="Sky" unique_id=1214647042]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 116.62897, 22.88662, 185.0943)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud120" type="Sprite3D" parent="Sky" unique_id=1477258341]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 95.08981, 23.344498, 221.03177)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud121" type="Sprite3D" parent="Sky" unique_id=2098458217]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 75.324005, 22.88662, 194.54947)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud122" type="Sprite3D" parent="Sky" unique_id=245317994]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 78.23895, 17.727264, 147.43994)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud123" type="Sprite3D" parent="Sky" unique_id=44690232]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 144.03453, 18.185146, 258.48804)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud124" type="Sprite3D" parent="Sky" unique_id=571090200]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, 115.72983, 18.185146, 226.95499)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud125" type="Sprite3D" parent="Sky" unique_id=334242677]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 36.362286, 22.88662, 95.67204)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud126" type="Sprite3D" parent="Sky" unique_id=68617822]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 14.823135, 23.344498, 131.60948)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud127" type="Sprite3D" parent="Sky" unique_id=1081211661]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, -4.9426765, 22.88662, 105.1272)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud128" type="Sprite3D" parent="Sky" unique_id=1139368437]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, -2.0277348, 17.727264, 58.017677)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud130" type="Sprite3D" parent="Sky" unique_id=1143352580]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 483.34305, 22.88662, -92.761826)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud131" type="Sprite3D" parent="Sky" unique_id=1103359016]
+transform = Transform3D(0.8321834, 0, 0.5544999, 0, 1, 0, -0.5544999, 0, 0.8321834, 646.3425, 23.344498, -144.54724)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud132" type="Sprite3D" parent="Sky" unique_id=640853784]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 442.03806, 22.88662, -83.306656)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud133" type="Sprite3D" parent="Sky" unique_id=946955537]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 444.95306, 17.727264, -130.41618)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud135" type="Sprite3D" parent="Sky" unique_id=1069215221]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, 482.4439, 18.185146, -50.901127)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud136" type="Sprite3D" parent="Sky" unique_id=706628391]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 403.07635, 22.88662, -182.18407)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud137" type="Sprite3D" parent="Sky" unique_id=743365504]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 381.53726, 23.344498, -146.24663)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud138" type="Sprite3D" parent="Sky" unique_id=1413026964]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 361.77142, 22.88662, -172.7289)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud139" type="Sprite3D" parent="Sky" unique_id=11764650]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 364.68637, 17.727264, -219.83846)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud134" type="Sprite3D" parent="Sky" unique_id=982348735]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 456.51752, 22.88662, -648.8341)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud140" type="Sprite3D" parent="Sky" unique_id=1388129208]
+transform = Transform3D(0.99110794, 0, 0.13305813, 0, 1, 0, -0.13305813, 0, 0.99110794, 434.97852, 23.344498, -612.89667)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud141" type="Sprite3D" parent="Sky" unique_id=1912806648]
+transform = Transform3D(0.4850897, 0, 0.87446433, 0, 1, 0, -0.87446433, 0, 0.4850897, 415.21252, 22.88662, -639.3788)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud142" type="Sprite3D" parent="Sky" unique_id=644915134]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 418.12766, 17.727264, -686.4886)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud143" type="Sprite3D" parent="Sky" unique_id=900487298]
+transform = Transform3D(0.89588386, 0, 0.4442882, 0, 1, 0, -0.4442882, 0, 0.89588386, 467.94955, 18.185146, -593.23535)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud144" type="Sprite3D" parent="Sky" unique_id=1522377331]
+transform = Transform3D(0.90363, 0, 0.42831334, 0, 1, 0, -0.42831334, 0, 0.90363, 297.313, 22.88662, -549.16327)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud145" type="Sprite3D" parent="Sky" unique_id=812892347]
+transform = Transform3D(-0.04581514, 0, 0.99894965, 0, 1, 0, -0.99894965, 0, -0.04581514, 329.61032, 23.344498, -470.0922)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud146" type="Sprite3D" parent="Sky" unique_id=93681]
+transform = Transform3D(0.29946196, 0, 0.9541082, 0, 1, 0, -0.9541082, 0, 0.29946196, 258.24268, 22.88662, -554.0621)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud147" type="Sprite3D" parent="Sky" unique_id=1519460550]
+transform = Transform3D(0.99972034, 0, -0.02363953, 0, 1, 0, 0.02363953, 0, 0.99972034, 253.234, 17.727264, -609.9991)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud129" type="Sprite3D" parent="Sky" unique_id=540943534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 513.2556, 17.727264, -82.87221)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud148" type="Sprite3D" parent="Sky" unique_id=2116019892]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 549.7744, 17.727264, -94.466)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud149" type="Sprite3D" parent="Sky" unique_id=1493936739]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 613.3613, 18.185146, -154.77808)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud150" type="Sprite3D" parent="Sky" unique_id=1880136870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 626.931, 17.727264, -184.90883)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud151" type="Sprite3D" parent="Sky" unique_id=867911833]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 565.8171, 17.727264, -112.10849)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud152" type="Sprite3D" parent="Sky" unique_id=2060981009]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 685.9772, 18.185146, -219.95903)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud153" type="Sprite3D" parent="Sky" unique_id=243312377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 699.54675, 17.727264, -250.08983)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud154" type="Sprite3D" parent="Sky" unique_id=1138982523]
+transform = Transform3D(0.9196196, 0, -0.39280978, 0, 1, 0, 0.39280978, 0, 0.9196196, 192.93738, 17.727264, 195.93198)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud155" type="Sprite3D" parent="Sky" unique_id=1897015798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 342.55908, 17.727264, 58.33299)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud156" type="Sprite3D" parent="Sky" unique_id=1416182093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 301.49966, 17.727264, 95.188614)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud157" type="Sprite3D" parent="Sky" unique_id=282697587]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 401.60507, 18.185146, 23.282833)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud158" type="Sprite3D" parent="Sky" unique_id=1431217763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 415.1748, 17.727264, -6.8479652)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud159" type="Sprite3D" parent="Sky" unique_id=1681795789]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 445.02692, 17.727264, -15.700092)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud160" type="Sprite3D" parent="Sky" unique_id=962499662]
+transform = Transform3D(-0.7095811, 0, -0.70462364, 0, 1, 0, 0.70462364, 0, -0.7095811, 278.27655, 23.344498, 191.76472)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud161" type="Sprite3D" parent="Sky" unique_id=909791037]
+transform = Transform3D(0.44144797, 0, -0.8972869, 0, 1, 0, 0.8972869, 0, 0.44144797, 215.88335, 18.185146, 204.60535)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud162" type="Sprite3D" parent="Sky" unique_id=278111009]
+transform = Transform3D(0.83294183, 0, -0.5533601, 0, 1, 0, 0.5533601, 0, 0.83294183, 275.33826, 17.727264, 151.97578)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud163" type="Sprite3D" parent="Sky" unique_id=963423921]
+transform = Transform3D(0.32678223, 0, -0.9450996, 0, 1, 0, 0.9450996, 0, 0.32678223, 365.29315, 23.344498, 89.7823)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud164" type="Sprite3D" parent="Sky" unique_id=187285213]
+transform = Transform3D(0.32678223, 0, -0.9450996, 0, 1, 0, 0.9450996, 0, 0.32678223, 330.75827, 18.185146, 105.39018)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud165" type="Sprite3D" parent="Sky" unique_id=659784242]
+transform = Transform3D(0.75790006, 0, -0.6523702, 0, 1, 0, 0.6523702, 0, 0.75790006, 396.28012, 17.727264, 60.538906)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud166" type="Sprite3D" parent="Sky" unique_id=1503020797]
+transform = Transform3D(0.32678217, 0, -0.9450995, 0, 1, 0, 0.9450995, 0, 0.32678217, 763.1643, 23.344498, -284.88425)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud167" type="Sprite3D" parent="Sky" unique_id=21996869]
+transform = Transform3D(0.32678217, 0, -0.9450995, 0, 1, 0, 0.9450995, 0, 0.32678217, 728.6294, 18.185146, -269.27637)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud168" type="Sprite3D" parent="Sky" unique_id=1545616343]
+transform = Transform3D(0.75790006, 0, -0.6523702, 0, 1, 0, 0.6523702, 0, 0.75790006, 794.15125, 17.727264, -314.12753)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud169" type="Sprite3D" parent="Sky" unique_id=1620840727]
+transform = Transform3D(0.9998552, 0, -0.01701358, 0, 1, 0, 0.01701358, 0, 0.9998552, 525.8118, 18.185146, -258.9346)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud170" type="Sprite3D" parent="Sky" unique_id=1350988526]
+transform = Transform3D(-0.32678387, -0.019855399, -0.9448904, 0.039503887, 0.9986185, -0.03464654, 0.9442729, -0.048648763, -0.3255482, 512.911, 17.727264, -300.1774)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud171" type="Sprite3D" parent="Sky" unique_id=1056471622]
+transform = Transform3D(-0.35469276, 0, -0.9349828, 0, 1, 0, 0.9349828, 0, -0.35469276, 564.6113, 17.727264, -230.63759)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud172" type="Sprite3D" parent="Sky" unique_id=917504473]
+transform = Transform3D(0.7964877, 0, 0.60465395, 0, 1, 0, -0.60465395, 0, 0.7964877, -29.830471, 23.344498, -393.1141)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud173" type="Sprite3D" parent="Sky" unique_id=720233725]
+transform = Transform3D(0.9983146, 0, 0.058033198, 0, 1, 0, -0.058033198, 0, 0.9983146, 22.238575, 18.185146, -383.49387)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud174" type="Sprite3D" parent="Sky" unique_id=264363214]
+transform = Transform3D(0.96625465, 0, -0.2575884, 0, 1, 0, 0.2575884, 0, 0.96625465, 147.10849, 18.185146, -494.84964)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud175" type="Sprite3D" parent="Sky" unique_id=768674217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 177.92015, 17.727264, -526.8206)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud176" type="Sprite3D" parent="Sky" unique_id=956997275]
+transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 214.43893, 17.727264, -538.41437)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud177" type="Sprite3D" parent="Sky" unique_id=546803875]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 278.02588, 18.185146, -598.7263)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud178" type="Sprite3D" parent="Sky" unique_id=748529953]
+transform = Transform3D(0.92007244, 0, -0.39174807, 0, 1, 0, 0.39174807, 0, 0.92007244, 314.40402, 17.727264, -649.33014)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud179" type="Sprite3D" parent="Sky" unique_id=835038828]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 230.48163, 17.727264, -556.0567)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud180" type="Sprite3D" parent="Sky" unique_id=1435072370]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 350.64178, 18.185146, -663.90717)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud181" type="Sprite3D" parent="Sky" unique_id=1993818910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 364.21143, 17.727264, -694.03815)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud182" type="Sprite3D" parent="Sky" unique_id=548373302]
+transform = Transform3D(0.41885912, 0, 0.90805113, 0, 1, 0, -0.90805113, 0, 0.41885912, -23.00845, 17.727264, -358.4787)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud183" type="Sprite3D" parent="Sky" unique_id=1448282717]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, -181.87411, 18.185146, -197.92828)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud184" type="Sprite3D" parent="Sky" unique_id=1035613633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168.30428, 17.727264, -228.05898)
+texture = ExtResource("62_d0215")
+
+[node name="Cloud185" type="Sprite3D" parent="Sky" unique_id=499834219]
+transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 109.69142, 17.727264, -459.64853)
+texture = ExtResource("63_v2wyr")
+
+[node name="Cloud186" type="Sprite3D" parent="Sky" unique_id=2052326198]
+transform = Transform3D(-0.22668052, 0, -0.9739688, 0, 1, 0, 0.9739688, 0, -0.22668052, 28.148716, 23.344498, -307.4789)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud187" type="Sprite3D" parent="Sky" unique_id=1841634877]
+transform = Transform3D(0.73491627, 0, 0.67815727, 0, 1, 0, -0.67815727, 0, 0.73491627, -256.91776, 17.727264, -192.11603)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud188" type="Sprite3D" parent="Sky" unique_id=626469005]
+transform = Transform3D(0.3267821, 0, -0.9450993, 0, 1, 0, 0.9450993, 0, 0.3267821, 427.82898, 23.344498, -728.83246)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud189" type="Sprite3D" parent="Sky" unique_id=1844222208]
+transform = Transform3D(0.3267821, 0, -0.9450993, 0, 1, 0, 0.9450993, 0, 0.3267821, 393.294, 18.185146, -713.2247)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud190" type="Sprite3D" parent="Sky" unique_id=1560731011]
+transform = Transform3D(0.75790006, 0, -0.6523702, 0, 1, 0, 0.6523702, 0, 0.75790006, 458.8158, 17.727264, -758.07574)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud191" type="Sprite3D" parent="Sky" unique_id=1696128895]
+transform = Transform3D(-0.70958096, 0, -0.7046236, 0, 1, 0, 0.7046236, 0, -0.70958096, 404.41968, 23.344498, 78.53688)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud192" type="Sprite3D" parent="Sky" unique_id=1600229353]
+transform = Transform3D(0.79654735, 0, 0.6045757, 0, 1, 0, -0.6045757, 0, 0.79654735, 774.2898, 23.344498, -259.3946)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud193" type="Sprite3D" parent="Sky" unique_id=560367977]
+transform = Transform3D(0.8236802, 0, 0.56705374, 0, 1, 0, -0.56705374, 0, 0.8236802, 112.19951, 23.344498, -503.69095)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud194" type="Sprite3D" parent="Sky" unique_id=438692382]
+transform = Transform3D(0.8321834, 0, 0.5544999, 0, 1, 0, -0.5544999, 0, 0.8321834, 223.46236, 23.344498, -615.6629)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud195" type="Sprite3D" parent="Sky" unique_id=1170594989]
+transform = Transform3D(0.79654735, 0, 0.6045757, 0, 1, 0, -0.6045757, 0, 0.79654735, 351.40964, 23.344498, -730.5103)
+texture = ExtResource("64_70w3k")
+
+[node name="Cloud196" type="Sprite3D" parent="Sky" unique_id=1461888191]
+transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, -69.48858, 18.185146, 75.292046)
+texture = ExtResource("64_70w3k")
+
 [node name="Timer" type="Timer" parent="." unique_id=1102054219]
-wait_time = 120.0
+wait_time = 10.0
 autostart = true
+
+[node name="ControlTimer" type="Timer" parent="." unique_id=730739862]
 
 [connection signal="body_entered" from="Intersections/Checkpoint0" to="Intersections/Checkpoint0" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint1" to="Intersections/Checkpoint1" method="_on_body_entered"]
@@ -3344,6 +4326,14 @@ autostart = true
 [connection signal="body_entered" from="Intersections/Checkpoint14" to="Intersections/Checkpoint14" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint15" to="Intersections/Checkpoint15" method="_on_body_entered"]
 [connection signal="body_entered" from="Intersections/Checkpoint16" to="Intersections/Checkpoint16" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo1" to="Special Conversations/specialConvo1" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo2" to="Special Conversations/specialConvo2" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo3" to="Special Conversations/specialConvo3" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo4" to="Special Conversations/specialConvo4" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo5" to="Special Conversations/specialConvo5" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo6" to="Special Conversations/specialConvo6" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo7" to="Special Conversations/specialConvo7" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/specialConvo8" to="Special Conversations/specialConvo8" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo1" to="Conversations/convo1" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo2" to="Conversations/convo2" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo3" to="Conversations/convo3" method="_on_body_entered"]
@@ -3384,3 +4374,4 @@ autostart = true
 [connection signal="pressed" from="UI/CanvasArrows/DirectionButtons/UpButton" to="UI/CanvasArrows/DirectionButtons/UpButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/CanvasArrows/DirectionButtons/DownButton" to="UI/CanvasArrows/DirectionButtons/DownButton" method="_on_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="ControlTimer" to="." method="_on_control_timer_timeout"]
