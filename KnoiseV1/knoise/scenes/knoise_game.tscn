@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cuiyxmomtvd0d" path="res://assets/images/sprites/KnoiseG Person 2.png" id="10_aw2mq"]
 [ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
 [ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://assets/audios/1-1.wav" id="10_sgfvx"]
+[ext_resource type="Script" uid="uid://dt5jb24prtmn2" path="res://scenes/person_1.gd" id="11_1dv5r"]
 [ext_resource type="Texture2D" uid="uid://vyocclqonih6" path="res://assets/images/sprites/KnoiseG Person 4.png" id="11_8olnv"]
 [ext_resource type="Texture2D" uid="uid://ly8go68hrseh" path="res://scripts/Buildings Background 1.png" id="11_sgfvx"]
 [ext_resource type="Texture2D" uid="uid://dkblauawwy4t6" path="res://assets/images/sprites/KnoiseG Person 5.png" id="12_7c1mp"]
@@ -55,9 +56,17 @@
 [ext_resource type="Texture2D" uid="uid://wbax2ag3yynd" path="res://assets/textures/43rd_Street_Sign.png" id="42_aw2mq"]
 [ext_resource type="AudioStream" uid="uid://cq2kk482fpuoj" path="res://assets/audios/citysounds.wav" id="44_r17a8"]
 [ext_resource type="AudioStream" uid="uid://bcysmjmy8wiox" path="res://assets/audios/Official NBA Horn SFX - Rambie.mp3" id="45_4ej0g"]
-[ext_resource type="AudioStream" uid="uid://b8ej2ssekrk41" path="res://assets/audios/test.mp3" id="46_70w3k"]
+[ext_resource type="AudioStream" uid="uid://bcwkhbj3wixvj" path="res://assets/audios/sp1.wav" id="47_tiyeh"]
+[ext_resource type="AudioStream" uid="uid://dl54ibutdwaub" path="res://assets/audios/sp2.wav" id="48_kyik1"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="49_3noei"]
+[ext_resource type="AudioStream" uid="uid://n5fu2pghe3jq" path="res://assets/audios/sp3.wav" id="49_jajnh"]
+[ext_resource type="AudioStream" uid="uid://b0xaapx854fmp" path="res://assets/audios/sp4.wav" id="50_dj5l5"]
+[ext_resource type="AudioStream" uid="uid://ddgtc53lopgip" path="res://assets/audios/sp5.wav" id="51_lu454"]
+[ext_resource type="AudioStream" uid="uid://st6wewan4uia" path="res://assets/audios/sp6.wav" id="52_82hp8"]
+[ext_resource type="AudioStream" uid="uid://bmn51oj3wbkdr" path="res://assets/audios/sp7.wav" id="53_mbuli"]
+[ext_resource type="AudioStream" uid="uid://dgkbyp6lsu5lv" path="res://assets/audios/sp8.wav" id="54_3mq0c"]
 [ext_resource type="Texture2D" uid="uid://bs7d0qb7dr6xs" path="res://assets/images/sprites/Left_Arrow.png" id="54_r17a8"]
+[ext_resource type="AudioStream" uid="uid://bufchptpor8yg" path="res://assets/audios/spGoblin1.wav" id="55_kyik1"]
 [ext_resource type="Texture2D" uid="uid://c11w3v8wvrrtu" path="res://assets/images/sprites/Right_Arrow.png" id="56_4ej0g"]
 [ext_resource type="Texture2D" uid="uid://bwvx1q6i57f24" path="res://assets/images/sprites/Up_Arrow.png" id="57_d0215"]
 [ext_resource type="Texture2D" uid="uid://vuwta2ftdm5n" path="res://assets/images/sprites/Down_Arrow.png" id="58_iqf7v"]
@@ -229,6 +238,8 @@ size = Vector3(18.5, 1, 18.300001)
 [sub_resource type="BoxShape3D" id="BoxShape3D_kxdhd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g5pv7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_78mld"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iigmh"]
 
@@ -1128,10 +1139,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 12.894864)
 collision_layer = 2
 
 [node name="Special Conversations" type="Node3D" parent="." unique_id=2107535161]
-visible = false
 
 [node name="specialConvo1" type="Area3D" parent="Special Conversations" unique_id=268883062 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.752712, 2.5243498e-05, -121.9125)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1142,7 +1152,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_mqjf0")
 
 [node name="specialConvo2" type="Area3D" parent="Special Conversations" unique_id=575050572 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -144.58974)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1153,7 +1163,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_uqbc0")
 
 [node name="specialConvo3" type="Area3D" parent="Special Conversations" unique_id=1880960081 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(0.9923102, 0.12377582, 0, -0.12377582, 0.9923102, 0, 0, 0, 1, 3.8146973e-06, 0.86764, -235.29669)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1164,18 +1174,18 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_h05kn")
 
 [node name="specialConvo4" type="Area3D" parent="Special Conversations" unique_id=946397512 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1546278, 2.5243498e-05, -319.41406)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
 Convos = NodePath("../../Audios/SPConvo4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/specialConvo4" unique_id=1259292929]
-transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+transform = Transform3D(2.791218, 0.04444532, -0.04121883, -0.043706924, 2.8239932, 0.007807576, 0.05989506, -0.010493537, 1.9265697, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_12pes")
 
 [node name="specialConvo5" type="Area3D" parent="Special Conversations" unique_id=1695207139 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -25.617874)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1186,7 +1196,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_db0mv")
 
 [node name="specialConvo6" type="Area3D" parent="Special Conversations" unique_id=1448235370 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.33554, 2.5243498e-05, -121.996796)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1197,7 +1207,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_m7x4v")
 
 [node name="specialConvo7" type="Area3D" parent="Special Conversations" unique_id=80189180 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.126526, 2.5243498e-05, -199.25916)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1208,7 +1218,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_kxdhd")
 
 [node name="specialConvo8" type="Area3D" parent="Special Conversations" unique_id=1129951290 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.321804, 2.5243498e-05, -199.2506)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1218,14 +1228,33 @@ Convos = NodePath("../../Audios/SPConvo8")
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_g5pv7")
 
+[node name="GoblinConvo" type="Area3D" parent="Special Conversations" unique_id=402379943 node_paths=PackedStringArray("player", "Convos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.854034, 2.5243498e-05, -356.12048)
+collision_mask = 2
+script = ExtResource("10_bcidj")
+player = NodePath("../../PlayerController")
+Convos = NodePath("../../Audios/GoblinConvo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Special Conversations/GoblinConvo" unique_id=1341550012]
+transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
+shape = SubResource("BoxShape3D_78mld")
+
+[node name="Person1" type="Sprite3D" parent="." unique_id=1209015144 node_paths=PackedStringArray("Person1", "player")]
+transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 1.4551915e-11, -0.04226183, 0, 0.09063078, -0.03397107, 0.8000001, -22.376347)
+texture = ExtResource("9_3noei")
+script = ExtResource("11_1dv5r")
+Person1 = NodePath(".")
+player = NodePath("../PlayerController")
+
 [node name="Conversations" type="Node3D" parent="." unique_id=1903218441]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 
-[node name="convo1" type="Area3D" parent="Conversations" unique_id=1972995751 node_paths=PackedStringArray("player", "Convos")]
+[node name="convo1" type="Area3D" parent="Conversations" unique_id=1972995751 node_paths=PackedStringArray("player", "Person1", "Convos")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
+Person1 = NodePath("../../Person1")
 Convos = NodePath("../../Audios/Convo1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo1" unique_id=1489090339]
@@ -2324,10 +2353,7 @@ transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.4611
 texture = ExtResource("13_5n8hj")
 
 [node name="People" type="Node3D" parent="." unique_id=912984898]
-
-[node name="Person1" type="Sprite3D" parent="People" unique_id=1209015144]
-transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 0, -0.042261828, 0, 0.09063078, -2.433, 0.8, -1.1292194)
-texture = ExtResource("9_3noei")
+visible = false
 
 [node name="Person2" type="Sprite3D" parent="People" unique_id=896135506]
 transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -0.83333623)
@@ -8248,77 +8274,77 @@ texture = ExtResource("12_7c1mp")
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 stream = ExtResource("10_sgfvx")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo2" type="AudioStreamPlayer3D" parent="Audios" unique_id=1621176836]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -60.114307)
 stream = ExtResource("14_48sdk")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo3" type="AudioStreamPlayer3D" parent="Audios" unique_id=1398629844]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.1395, -9.313226e-10, -63.102158)
 stream = ExtResource("15_vt3j5")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo4" type="AudioStreamPlayer3D" parent="Audios" unique_id=1848561977]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.10352, -9.313226e-10, -144.91629)
 stream = ExtResource("16_m14ia")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1059411569]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -166.73314)
 stream = ExtResource("17_wc36q")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo6" type="AudioStreamPlayer3D" parent="Audios" unique_id=782251237]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.83652115, -9.313226e-10, -31.647673)
 stream = ExtResource("18_2kb2f")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo7" type="AudioStreamPlayer3D" parent="Audios" unique_id=1911931974]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 1.2994499, -9.313226e-10, -93.53737)
 stream = ExtResource("19_mp16a")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo8" type="AudioStreamPlayer3D" parent="Audios" unique_id=1412209064]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -219.82466)
 stream = ExtResource("20_ntwq1")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1525439834]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -95.644325)
 stream = ExtResource("21_g30va")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo10" type="AudioStreamPlayer3D" parent="Audios" unique_id=2043185183]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.15150642, -9.313226e-10, -136.79982)
 stream = ExtResource("22_gowcq")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo11" type="AudioStreamPlayer3D" parent="Audios" unique_id=1116441418]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -259.96274)
 stream = ExtResource("23_kun8u")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8326,14 +8352,14 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -29.739738, -9.313226e-10, -356.32205)
 stream = ExtResource("24_wm8sv")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.1
 
 [node name="Convo13" type="AudioStreamPlayer3D" parent="Audios" unique_id=1141523376]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.23865, -9.313226e-10, -294.8155)
 stream = ExtResource("25_r8wru")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8341,7 +8367,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36235, -9.313226e-10, -257.47525)
 stream = ExtResource("26_jdr38")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8349,7 +8375,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.51186466, -9.313226e-10, -291.62607)
 stream = ExtResource("27_8wyem")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8357,7 +8383,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -127.94262, -9.313226e-10, -214.97612)
 stream = ExtResource("28_5ba2d")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8365,7 +8391,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36127, -9.313226e-10, -332.08292)
 stream = ExtResource("29_0xego")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8373,7 +8399,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 26.662926, -9.313226e-10, 18.100088)
 stream = ExtResource("30_rymsp")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8381,7 +8407,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 69.740395, -9.313226e-10, -275.1888)
 stream = ExtResource("32_uvsgv")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8389,7 +8415,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 60.783714, -9.313226e-10, -198.41068)
 stream = ExtResource("33_4vm12")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8397,7 +8423,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 103.351204, -9.313226e-10, 17.829153)
 stream = ExtResource("34_6cxk1")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8405,7 +8431,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -11.222839, -9.313226e-10, -274.55444)
 stream = ExtResource("35_jnexy")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8413,7 +8439,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -24.424854, -9.313226e-10, -47.1241)
 stream = ExtResource("36_27mwr")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8421,7 +8447,7 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 72.500786, -9.313226e-10, -121.72415)
 stream = ExtResource("37_3noei")
 attenuation_model = 1
-volume_db = 60.0
+volume_db = 45.0
 unit_size = 0.3
 max_db = 2.64
 
@@ -8429,8 +8455,8 @@ max_db = 2.64
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -50.70317, -9.313226e-10, -199.16724)
 stream = ExtResource("31_rniy1")
 attenuation_model = 1
-volume_db = 60.0
-unit_size = 0.3
+volume_db = 45.0
+unit_size = 0.2
 max_db = 2.64
 
 [node name="KnoiseAmbience" type="AudioStreamPlayer3D" parent="Audios" unique_id=1875249595]
@@ -8540,36 +8566,67 @@ volume_db = -3.0
 unit_size = 100.0
 
 [node name="SPConvo1" type="AudioStreamPlayer3D" parent="Audios" unique_id=145770940]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.106089, 0, -121.66672)
+stream = ExtResource("47_tiyeh")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo2" type="AudioStreamPlayer3D" parent="Audios" unique_id=538989931]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -149.88777)
+stream = ExtResource("48_kyik1")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo3" type="AudioStreamPlayer3D" parent="Audios" unique_id=248634040]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -237.45027)
+stream = ExtResource("49_jajnh")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo4" type="AudioStreamPlayer3D" parent="Audios" unique_id=594279357]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -311.1778)
+stream = ExtResource("50_dj5l5")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1275539593]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.683201)
+stream = ExtResource("51_lu454")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo6" type="AudioStreamPlayer3D" parent="Audios" unique_id=1005152066]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.98913, 0, -124.382965)
+stream = ExtResource("52_82hp8")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo7" type="AudioStreamPlayer3D" parent="Audios" unique_id=777260199]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.96037, 0, -198.8868)
+stream = ExtResource("53_mbuli")
+attenuation_model = 1
+volume_db = -13.0
+unit_size = 3.0
 
 [node name="SPConvo8" type="AudioStreamPlayer3D" parent="Audios" unique_id=464770989]
-stream = ExtResource("46_70w3k")
-volume_db = -10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.3464, 0, -199.0299)
+stream = ExtResource("54_3mq0c")
+attenuation_model = 1
+volume_db = -15.981
+unit_size = 3.0
+
+[node name="GoblinConvo" type="AudioStreamPlayer3D" parent="Audios" unique_id=1323714753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.659588, 0, -356.45685)
+stream = ExtResource("55_kyik1")
+attenuation_model = 1
+volume_db = -15.981
+unit_size = 3.0
 
 [node name="CityAudios" type="Node3D" parent="." unique_id=339632329]
 
@@ -8585,7 +8642,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_mbuli")
 
 [node name="cityAudio2" type="Area3D" parent="CityAudios" unique_id=1395751294 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -39.10695)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8596,7 +8653,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_82hp8")
 
 [node name="cityAudio3" type="Area3D" parent="CityAudios" unique_id=533059056 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15799046, 2.5243498e-05, -45.034386)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8607,7 +8664,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_3mq0c")
 
 [node name="cityAudio4" type="Area3D" parent="CityAudios" unique_id=1096073563 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -54.773224)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8618,7 +8675,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_20hk1")
 
 [node name="cityAudio5" type="Area3D" parent="CityAudios" unique_id=82116153 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3852577, 2.5243498e-05, -48.34111)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8629,7 +8686,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_lu454")
 
 [node name="cityAudio6" type="Area3D" parent="CityAudios" unique_id=1449316575 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05059433, 2.5243498e-05, -33.634163)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8640,7 +8697,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_1vah5")
 
 [node name="cityAudio7" type="Area3D" parent="CityAudios" unique_id=456375649 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6070786, 2.5243498e-05, -47.744057)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8651,7 +8708,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_42cl1")
 
 [node name="cityAudio8" type="Area3D" parent="CityAudios" unique_id=174958768 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 5.388137)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8666,7 +8723,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_b54pv")
 
 [node name="cityAudio9" type="Area3D" parent="CityAudios" unique_id=1929055770 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -52.235676)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8677,7 +8734,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_kpnx3")
 
 [node name="cityAudio10" type="Area3D" parent="CityAudios" unique_id=482580679 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1177063, 2.5243498e-05, -47.482502)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -8688,7 +8745,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_vabu3")
 
 [node name="cityAudio11" type="Area3D" parent="CityAudios" unique_id=1233483070 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, -3.8792584)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3048038, 2.5243498e-05, -47.58551)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -9918,7 +9975,10 @@ autostart = true
 [connection signal="body_entered" from="Special Conversations/specialConvo6" to="Special Conversations/specialConvo6" method="_on_body_entered"]
 [connection signal="body_entered" from="Special Conversations/specialConvo7" to="Special Conversations/specialConvo7" method="_on_body_entered"]
 [connection signal="body_entered" from="Special Conversations/specialConvo8" to="Special Conversations/specialConvo8" method="_on_body_entered"]
+[connection signal="body_entered" from="Special Conversations/GoblinConvo" to="Special Conversations/GoblinConvo" method="_on_body_entered"]
+[connection signal="visibility_changed" from="Person1" to="Conversations/convo1" method="_on_person_1_visibility_changed"]
 [connection signal="body_entered" from="Conversations/convo1" to="Conversations/convo1" method="_on_body_entered"]
+[connection signal="body_entered" from="Conversations/convo1" to="Person1" method="_on_convo_1_body_entered"]
 [connection signal="body_entered" from="Conversations/convo2" to="Conversations/convo2" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo3" to="Conversations/convo3" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo4" to="Conversations/convo4" method="_on_body_entered"]

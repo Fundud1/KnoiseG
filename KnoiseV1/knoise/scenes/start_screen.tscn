@@ -2,8 +2,8 @@
 
 [ext_resource type="AudioStream" uid="uid://dg4bmua158ahq" path="res://assets/audios/trainAnnounce.wav" id="1_hm208"]
 [ext_resource type="AudioStream" uid="uid://x42pl0ee6p2c" path="res://assets/audios/trainStop.wav" id="2_5pab1"]
-[ext_resource type="AudioStream" uid="uid://qte1noojy68l" path="res://assets/audios/hipHop.mp3" id="2_he1sj"]
 [ext_resource type="PackedScene" uid="uid://bvren6jb6bi4i" path="res://scenes/textbox.tscn" id="2_o7i0r"]
+[ext_resource type="AudioStream" uid="uid://b21qac0mmbw3e" path="res://assets/audios/newhiphop.wav" id="3_hm208"]
 [ext_resource type="Texture2D" uid="uid://cjxxivqe46rsq" path="res://assets/images/internet/LIRRtrain.jpg" id="4_r2jwc"]
 
 [node name="StartScreen" type="Node2D" unique_id=730923510]
@@ -22,7 +22,7 @@ volume_db = -5.0
 autoplay = true
 
 [node name="StartMusic" type="AudioStreamPlayer2D" parent="." unique_id=490094138]
-stream = ExtResource("2_he1sj")
+stream = ExtResource("3_hm208")
 volume_db = -5.0
 autoplay = true
 
