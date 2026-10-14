@@ -36,6 +36,9 @@ var controlNumber = 0
 #Sky
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
 
+#Goblin Sprite
+@onready var goblin: Sprite3D = $People/Goblin
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	special_conversations.hide()
@@ -106,6 +109,8 @@ func _on_timer_timeout() -> void:
 		for convo in special_conversations.get_children():
 			if convo is Area3D:
 				convo.monitoring = true
+		
+		goblin.show()
 	
 	if timeNumber == 7:
 		_12_30pm.show()

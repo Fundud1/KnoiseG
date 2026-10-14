@@ -9,6 +9,12 @@ extends Area3D
 #Assign the Dead End text
 @export var dead_end_text: Label
 
+#Assign the timer to this
+@export var time_controller: Node3D
+
+#Bool to not allow all dead ends to be applied to the Regular Ending transition
+@export var use_ending_check: bool = true
+
 
 func _ready():
 	#instead of using the signal we can create a function
@@ -31,3 +37,8 @@ func _on_body_entered(body):
 
 		# Show Dead End text
 		dead_end_text.show()
+		
+		#If the timer hits 2:00PM and you also hit a dead end do this:
+		if use_ending_check and time_controller.timeNumber >= 10:
+			get_tree().change_scene_to_file("res://scenes/regular_ending.tscn")
+			return

@@ -1,0 +1,316 @@
+[gd_scene format=3 uid="uid://diaj6oce473ow"]
+
+[ext_resource type="Script" uid="uid://cvaksocjytxyv" path="res://scripts/GoodEnding.gd" id="1_sq8l2"]
+[ext_resource type="Texture2D" uid="uid://pueyy1u48pms" path="res://assets/images/sprites/Knicks_Bus_Ending.png" id="2_ptln2"]
+[ext_resource type="Texture2D" uid="uid://d21cexnuup81d" path="res://assets/images/sprites/Knicks_Player_Smiling.png" id="3_fsspr"]
+[ext_resource type="Texture2D" uid="uid://cekxuklh7klam" path="res://assets/images/sprites/Eyes_closing.png" id="4_v2ic8"]
+[ext_resource type="Texture2D" uid="uid://cncu6rvvy1f08" path="res://assets/images/sprites/Eyes_closed.png" id="6_bpyh7"]
+[ext_resource type="Texture2D" uid="uid://dwim0yrvxcebe" path="res://assets/images/sprites/Eyes_Opening.png" id="6_ruley"]
+[ext_resource type="Texture2D" uid="uid://cjxxivqe46rsq" path="res://assets/images/internet/LIRRtrain.jpg" id="7_sq8l2"]
+[ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="11_q0vil"]
+[ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="12_017sy"]
+[ext_resource type="Script" uid="uid://co5f8fol8s81d" path="res://scripts/reset_button.gd" id="13_h66rm"]
+[ext_resource type="AudioStream" uid="uid://5821i8bnac6d" path="res://assets/audios/relaxingPiano.mp3" id="14_jnyba"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnkk7"]
+bg_color = Color(0.92602557, 0.3780097, 0.13888192, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.9157694, 0.9157694, 0.91576916, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8q2eg"]
+bg_color = Color(0.1807468, 0.12736064, 0.5988629, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.9254902, 0.3764706, 0.13725491, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="GoodEnding" type="Node2D" unique_id=1153839324]
+script = ExtResource("1_sq8l2")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=374754635]
+visible = false
+
+[node name="gEndingImages" type="CanvasLayer" parent="." unique_id=485870104]
+
+[node name="ColorRect" type="ColorRect" parent="gEndingImages" unique_id=1121620201]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.37949696, 0.6238111, 0.9999961, 1)
+
+[node name="Img1" type="TextureRect" parent="gEndingImages" unique_id=856271494]
+offset_left = -111.0
+offset_top = 3.0
+offset_right = 11064.438
+offset_bottom = 3283.0
+scale = Vector2(0.114, 0.2)
+texture = ExtResource("2_ptln2")
+
+[node name="Img2" type="TextureRect" parent="gEndingImages" unique_id=295397152]
+visible = false
+offset_top = -15.0
+offset_right = 2912.5
+offset_bottom = 1910.7144
+scale = Vector2(0.4, 0.35)
+texture = ExtResource("3_fsspr")
+
+[node name="Img4" type="TextureRect" parent="gEndingImages" unique_id=611763234]
+visible = false
+offset_left = -5.0
+offset_top = -3.0
+offset_right = 2910.0
+offset_bottom = 1885.5714
+scale = Vector2(0.4, 0.35)
+texture = ExtResource("4_v2ic8")
+
+[node name="Img5" type="TextureRect" parent="gEndingImages" unique_id=1561009848]
+visible = false
+offset_left = -291.0
+offset_top = -90.0
+offset_right = 4109.0
+offset_bottom = 2385.0
+scale = Vector2(0.4, 0.35)
+texture = ExtResource("6_bpyh7")
+
+[node name="Img6" type="TextureRect" parent="gEndingImages" unique_id=2084946909]
+visible = false
+offset_left = 1.0
+offset_top = -15.0
+offset_right = 2901.0
+offset_bottom = 1925.0001
+scale = Vector2(0.4, 0.35)
+texture = ExtResource("6_ruley")
+
+[node name="Img7" type="TextureRect" parent="gEndingImages" unique_id=436951020]
+visible = false
+offset_left = -13.0
+offset_top = -1.9999962
+offset_right = 2914.5
+offset_bottom = 1895.1428
+scale = Vector2(0.4, 0.35)
+texture = ExtResource("7_sq8l2")
+
+[node name="gEndingText" type="CanvasLayer" parent="." unique_id=847876172]
+
+[node name="Text1" type="Label" parent="gEndingText" unique_id=1522599214]
+visible = false
+offset_left = 37.0
+offset_top = 211.0
+offset_right = 1109.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "You manage to group up with everyone.
+
+contemplating if you guys should 
+continue walking."
+horizontal_alignment = 1
+
+[node name="Text2" type="Label" parent="gEndingText" unique_id=2082710803]
+visible = false
+offset_left = 37.0
+offset_top = 211.0
+offset_right = 1109.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "for a quick second you managed to get
+glimpse of the bus.
+
+but that was more than enough..."
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text3" type="Label" parent="gEndingText" unique_id=1261598887]
+visible = false
+offset_left = 37.0
+offset_top = 211.0
+offset_right = 1109.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "you and your group decide it's best 
+to  leave and go home"
+horizontal_alignment = 1
+
+[node name="Text4" type="Label" parent="gEndingText" unique_id=835447493]
+visible = false
+offset_left = 37.0
+offset_top = 211.0
+offset_right = 1109.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "Even though it was a long journey.
+
+Waking up early, paying the money to
+get here, and pushing through all of 
+those people..."
+horizontal_alignment = 1
+
+[node name="Text5" type="Label" parent="gEndingText" unique_id=350603278]
+visible = false
+offset_left = 5.0
+offset_top = 226.0
+offset_right = 1149.0
+offset_bottom = 573.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "The idea of seeing that 
+bus was a dream"
+horizontal_alignment = 1
+
+[node name="Text6" type="Label" parent="gEndingText" unique_id=997704044]
+visible = false
+offset_left = 16.0
+offset_top = 148.0
+offset_right = 1152.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "what made it fun and exciting?
+
+maybe it was that vision in all of our
+heads.
+
+and the journey that helped fuel 
+that excitement"
+horizontal_alignment = 1
+
+[node name="Text7" type="Label" parent="gEndingText" unique_id=325051063]
+visible = false
+offset_left = 37.0
+offset_top = 211.0
+offset_right = 1109.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "so what if we didn't see jalen brunson
+
+or kat or anyone..."
+horizontal_alignment = 1
+
+[node name="Text8" type="Label" parent="gEndingText" unique_id=788452205]
+visible = false
+offset_left = 37.0
+offset_top = 420.0
+offset_right = 1133.0
+offset_bottom = 617.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "a lot of these people also felt the
+same. Just happy and enjoying the time
+they had. it was a special moment."
+horizontal_alignment = 1
+
+[node name="Text9" type="Label" parent="gEndingText" unique_id=237984638]
+visible = false
+offset_left = 20.0
+offset_top = 415.0
+offset_right = 1140.0
+offset_bottom = 612.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "millions came, and a few saw. 
+that small glimpse was so special,
+it kept that hope and excitement alive."
+horizontal_alignment = 1
+
+[node name="Text10" type="Label" parent="gEndingText" unique_id=1530863849]
+visible = false
+offset_left = 19.0
+offset_top = 380.0
+offset_right = 1139.0
+offset_bottom = 577.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 128
+text = "it was fun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text11" type="Label" parent="gEndingText" unique_id=141683592]
+visible = false
+offset_left = 20.0
+offset_top = 413.0
+offset_right = 1140.0
+offset_bottom = 610.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "you still have a lot of time left..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text12" type="Label" parent="gEndingText" unique_id=1944698112]
+visible = false
+offset_left = 20.0
+offset_top = 434.0
+offset_right = 1140.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 64
+text = "you and your friends enjoy
+the rest of the day in the city."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text13" type="Label" parent="gEndingText" unique_id=1254230042]
+visible = false
+offset_left = -318.0
+offset_top = 490.0
+offset_right = 802.0
+offset_bottom = 687.0
+theme_override_colors/font_color = Color(0.18533331, 1.92523e-06, 0.8910019, 1)
+theme_override_colors/font_shadow_color = Color(1.2704552, 0.41334787, 0, 1)
+theme_override_fonts/font = ExtResource("12_017sy")
+theme_override_font_sizes/font_size = 64
+text = "Regular ending"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="CanvasLayer" parent="." unique_id=2141915796]
+
+[node name="ResetButton" type="Button" parent="Buttons" unique_id=1365657686]
+visible = false
+z_index = 4
+offset_left = 830.0
+offset_top = 532.0
+offset_right = 1135.0
+offset_bottom = 628.0
+theme_override_colors/font_color = Color(0.16623667, 0.14788255, 0.6336847, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(10.079237, 4.2727933, 0, 1)
+theme_override_fonts/font = ExtResource("12_017sy")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_pnkk7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8q2eg")
+text = "Complete"
+script = ExtResource("13_h66rm")
+
+[node name="ImageTimer" type="Timer" parent="." unique_id=1473222866]
+wait_time = 6.0
+autostart = true
+
+[node name="TextTimer" type="Timer" parent="." unique_id=1729166747]
+wait_time = 6.0
+
+[node name="CutsceneTimer" type="Timer" parent="." unique_id=99233315]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="." unique_id=1212835863]
+stream = ExtResource("14_jnyba")
+autoplay = true
+
+[connection signal="pressed" from="Buttons/ResetButton" to="Buttons/ResetButton" method="_on_pressed"]

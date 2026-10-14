@@ -19,6 +19,9 @@ extends Area3D
 @export var show_up = []
 @export var show_down = []
 
+#Used for Good Ending Check
+@export var time_controller: Node
+@export var is_heart_avenue_41st: bool = false
 
 func _ready():
 	body_entered.connect(_on_body_entered)
@@ -26,8 +29,16 @@ func _ready():
 
 func _on_body_entered(body):
 	if body == player: #if the body detected is the player run this code:
-
+	
 		print("Player is coming from: ", player.current_road)
+	
+		#the bool is gonna be checked only for checkpoint 13 
+		#time controller can't be empty
+		#of course the timeNumber needs to be 8 so it matches with 1:00 PM
+		if is_heart_avenue_41st and time_controller != null and time_controller.timeNumber == 8:
+			get_tree().change_scene_to_file("res://scenes/good_ending.tscn")
+			player.release_mouse()
+			return
 
 		#Find which road the player is coming from
 		var road_number = coming_from.find(player.current_road)

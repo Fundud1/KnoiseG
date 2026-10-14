@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1paq0so8bf2y"
-path="res://.godot/imported/Cloud_3.png-8d7b5d2eab41b1fc152bb6d78c4f0360.ctex"
+uid="uid://b8abuecabin25"
+path="res://.godot/imported/Knicks1.jpg-0d0f57601d0f7851a7179a2a9376e283.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Cloud_3.png"
-dest_files=["res://.godot/imported/Cloud_3.png-8d7b5d2eab41b1fc152bb6d78c4f0360.ctex"]
+source_file="res://assets/images/internet/Knicks1.jpg"
+dest_files=["res://.godot/imported/Knicks1.jpg-0d0f57601d0f7851a7179a2a9376e283.ctex"]
 
 [params]
 

@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cuiyxmomtvd0d" path="res://assets/images/sprites/KnoiseG Person 2.png" id="10_aw2mq"]
 [ext_resource type="Script" uid="uid://dixo70w5e4jbf" path="res://scripts/Convserations.gd" id="10_bcidj"]
 [ext_resource type="AudioStream" uid="uid://b0rvfuckf5rvh" path="res://assets/audios/1-1.wav" id="10_sgfvx"]
-[ext_resource type="Script" uid="uid://dt5jb24prtmn2" path="res://scenes/person_1.gd" id="11_1dv5r"]
 [ext_resource type="Texture2D" uid="uid://vyocclqonih6" path="res://assets/images/sprites/KnoiseG Person 4.png" id="11_8olnv"]
 [ext_resource type="Texture2D" uid="uid://ly8go68hrseh" path="res://scripts/Buildings Background 1.png" id="11_sgfvx"]
 [ext_resource type="Texture2D" uid="uid://dkblauawwy4t6" path="res://assets/images/sprites/KnoiseG Person 5.png" id="12_7c1mp"]
@@ -26,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cy7vvnx2orbpq" path="res://assets/images/sprites/KnoiseG Person 9.png" id="17_v2wyr"]
 [ext_resource type="AudioStream" uid="uid://cseoqlrygpjid" path="res://assets/audios/5.wav" id="17_wc36q"]
 [ext_resource type="AudioStream" uid="uid://bduyqpcsc6yn8" path="res://assets/audios/6.wav" id="18_2kb2f"]
+[ext_resource type="Texture2D" uid="uid://cwtp0bu08fmp1" path="res://assets/images/sprites/Goblin.png" id="19_kyik1"]
 [ext_resource type="AudioStream" uid="uid://wx6jfga4kl2w" path="res://assets/audios/7.wav" id="19_mp16a"]
 [ext_resource type="AudioStream" uid="uid://doi0sfvgy7140" path="res://assets/audios/8.wav" id="20_ntwq1"]
 [ext_resource type="AudioStream" uid="uid://dkrt70eg4pfd0" path="res://assets/audios/9.wav" id="21_g30va"]
@@ -812,7 +812,7 @@ shape = SubResource("BoxShape3D_q6neq")
 
 [node name="Intersections" type="Node3D" parent="." unique_id=1790978274]
 
-[node name="Checkpoint0" type="Area3D" parent="Intersections" unique_id=53247657 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint0" type="Area3D" parent="Intersections" unique_id=53247657 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, 17.999998)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -823,12 +823,13 @@ show_left = [true, true, false]
 show_right = [true, false, true]
 show_up = [false, true, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint0" unique_id=897487540]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_uq3f1")
 
-[node name="Checkpoint1" type="Area3D" parent="Intersections" unique_id=563403689 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint1" type="Area3D" parent="Intersections" unique_id=563403689 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -47.600002)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -839,12 +840,13 @@ show_left = [true, true, true, true]
 show_right = [true, true, true, true]
 show_up = [true, true, true, true]
 show_down = [true, true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint1" unique_id=1111601432]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_wqlpf")
 
-[node name="Checkpoint2" type="Area3D" parent="Intersections" unique_id=1308822640 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint2" type="Area3D" parent="Intersections" unique_id=1308822640 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -121.799995)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -855,12 +857,13 @@ show_left = [true, true, true, true]
 show_right = [true, true, true, true]
 show_up = [true, true, true, true]
 show_down = [true, true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint2" unique_id=1672296257]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_48sdk")
 
-[node name="Checkpoint3" type="Area3D" parent="Intersections" unique_id=1909552381 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint3" type="Area3D" parent="Intersections" unique_id=1909552381 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.1, -198.85)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -871,12 +874,13 @@ show_left = [true, true, true, true]
 show_right = [true, true, true, true]
 show_up = [true, true, true, true]
 show_down = [true, true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint3" unique_id=865755629]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
 shape = SubResource("BoxShape3D_vt3j5")
 
-[node name="Checkpoint4" type="Area3D" parent="Intersections" unique_id=1917386998 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint4" type="Area3D" parent="Intersections" unique_id=1917386998 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.10000005, -275.2)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -887,12 +891,13 @@ show_left = [true, true, true, true]
 show_right = [true, true, true, true]
 show_up = [true, true, true, true]
 show_down = [true, true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint4" unique_id=550730505]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_m14ia")
 
-[node name="Checkpoint5" type="Area3D" parent="Intersections" unique_id=1729606922 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint5" type="Area3D" parent="Intersections" unique_id=1729606922 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.1, -356.4)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -903,12 +908,13 @@ show_left = [true, true, true, true]
 show_right = [true, true, true, true]
 show_up = [true, true, true, true]
 show_down = [true, true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint5" unique_id=1879083837]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
 shape = SubResource("BoxShape3D_wc36q")
 
-[node name="Checkpoint6" type="Area3D" parent="Intersections" unique_id=1845340851 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint6" type="Area3D" parent="Intersections" unique_id=1845340851 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, 17.999998)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -919,12 +925,13 @@ show_left = [true, false]
 show_right = [false, true]
 show_up = [false, false]
 show_down = [true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint6" unique_id=209763126]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_2kb2f")
 
-[node name="Checkpoint7" type="Area3D" parent="Intersections" unique_id=1769777801 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint7" type="Area3D" parent="Intersections" unique_id=1769777801 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -47.600002)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -935,12 +942,13 @@ show_left = [true, true, false]
 show_right = [false, true, true]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint7" unique_id=1995424164]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099990845)
 shape = SubResource("BoxShape3D_mp16a")
 
-[node name="Checkpoint8" type="Area3D" parent="Intersections" unique_id=116872878 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint8" type="Area3D" parent="Intersections" unique_id=116872878 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -121.799995)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -951,12 +959,13 @@ show_left = [true, true, false]
 show_right = [false, true, true]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint8" unique_id=174731862]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_ntwq1")
 
-[node name="Checkpoint9" type="Area3D" parent="Intersections" unique_id=1395093865 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint9" type="Area3D" parent="Intersections" unique_id=1395093865 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, 0.1, -199)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -967,12 +976,13 @@ show_left = [true, true, false]
 show_right = [false, true, true]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint9" unique_id=95890236]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.675)
 shape = SubResource("BoxShape3D_g30va")
 
-[node name="Checkpoint10" type="Area3D" parent="Intersections" unique_id=406529593 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint10" type="Area3D" parent="Intersections" unique_id=406529593 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, -0.10000005, -275.18002)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -983,12 +993,13 @@ show_left = [true, true, false]
 show_right = [false, true, true]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint10" unique_id=1516901843]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0)
 shape = SubResource("BoxShape3D_gowcq")
 
-[node name="Checkpoint11" type="Area3D" parent="Intersections" unique_id=443041415 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint11" type="Area3D" parent="Intersections" unique_id=443041415 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.3, 0.1, -356.4)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -999,12 +1010,13 @@ show_left = [true, true, false]
 show_right = [false, true, true]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint11" unique_id=1357779298]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
 shape = SubResource("BoxShape3D_kun8u")
 
-[node name="Checkpoint12" type="Area3D" parent="Intersections" unique_id=837640579 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint12" type="Area3D" parent="Intersections" unique_id=837640579 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -199)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -1015,12 +1027,13 @@ show_left = [false, true]
 show_right = [true, false]
 show_up = [false, false]
 show_down = [true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint12" unique_id=968448213]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.7)
 shape = SubResource("BoxShape3D_wm8sv")
 
-[node name="Checkpoint13" type="Area3D" parent="Intersections" unique_id=1817674053 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint13" type="Area3D" parent="Intersections" unique_id=1817674053 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, -0.10000005, -275.2)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -1031,12 +1044,14 @@ show_left = [false, true, true]
 show_right = [true, true, false]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
+is_heart_avenue_41st = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint13" unique_id=624536601]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_3gyim")
 
-[node name="Checkpoint14" type="Area3D" parent="Intersections" unique_id=1851962556 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint14" type="Area3D" parent="Intersections" unique_id=1851962556 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -356.4)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -1047,12 +1062,13 @@ show_left = [false, true, true]
 show_right = [true, true, false]
 show_up = [true, false, true]
 show_down = [true, true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint14" unique_id=831858351]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.099998474)
 shape = SubResource("BoxShape3D_6fpxm")
 
-[node name="Checkpoint15" type="Area3D" parent="Intersections" unique_id=1812533632 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint15" type="Area3D" parent="Intersections" unique_id=1812533632 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.40001, -0.10000005, 17.999998)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -1063,12 +1079,13 @@ show_left = [false, true]
 show_right = [true, false]
 show_up = [false, false]
 show_down = [true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint15" unique_id=686758624]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0.099998474)
 shape = SubResource("BoxShape3D_sruvg")
 
-[node name="Checkpoint16" type="Area3D" parent="Intersections" unique_id=557845682 node_paths=PackedStringArray("player", "direction_buttons")]
+[node name="Checkpoint16" type="Area3D" parent="Intersections" unique_id=557845682 node_paths=PackedStringArray("player", "direction_buttons", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.40001, -0.10000005, -47.600002)
 collision_mask = 2
 script = ExtResource("1_fdc70")
@@ -1079,6 +1096,7 @@ show_left = [false, true]
 show_right = [true, false]
 show_up = [false, false]
 show_down = [true, true]
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Intersections/Checkpoint16" unique_id=1139332760]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.099998474)
@@ -1086,49 +1104,54 @@ shape = SubResource("BoxShape3D_2h45r")
 
 [node name="DeadEnds" type="Node3D" parent="." unique_id=1089339235]
 
-[node name="deadEnd1" type="Area3D" parent="DeadEnds" unique_id=620670045 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text")]
+[node name="deadEnd1" type="Area3D" parent="DeadEnds" unique_id=620670045 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -380.36)
 collision_mask = 2
 script = ExtResource("3_27mwr")
 player = NodePath("../../PlayerController")
 direction_buttons = NodePath("../../UI/CanvasArrows/DirectionButtons")
 dead_end_text = NodePath("../../UI/CanvasText/DeadEndTEXT")
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd1" unique_id=1243899154]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 3.2999268)
 shape = SubResource("BoxShape3D_3noei")
 
-[node name="deadEnd2" type="Area3D" parent="DeadEnds" unique_id=765228615 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text")]
+[node name="deadEnd2" type="Area3D" parent="DeadEnds" unique_id=765228615 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.19999695, 0.1, -381.25998)
 collision_mask = 2
 script = ExtResource("3_27mwr")
 player = NodePath("../../PlayerController")
 direction_buttons = NodePath("../../UI/CanvasArrows/DirectionButtons")
 dead_end_text = NodePath("../../UI/CanvasText/DeadEndTEXT")
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd2" unique_id=2140208581]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.8, 0, 6.5)
 shape = SubResource("BoxShape3D_aw2mq")
 
-[node name="deadEnd3" type="Area3D" parent="DeadEnds" unique_id=1283177549 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text")]
+[node name="deadEnd3" type="Area3D" parent="DeadEnds" unique_id=1283177549 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 128.4, 0.1, -379.75998)
 collision_mask = 2
 script = ExtResource("3_27mwr")
 player = NodePath("../../PlayerController")
 direction_buttons = NodePath("../../UI/CanvasArrows/DirectionButtons")
 dead_end_text = NodePath("../../UI/CanvasText/DeadEndTEXT")
+time_controller = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd3" unique_id=1021685504]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.39996338, 0, 0.5)
 shape = SubResource("BoxShape3D_hreg7")
 
-[node name="deadEnd4" type="Area3D" parent="DeadEnds" unique_id=1225134023 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text")]
+[node name="deadEnd4" type="Area3D" parent="DeadEnds" unique_id=1225134023 node_paths=PackedStringArray("player", "direction_buttons", "dead_end_text", "time_controller")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -128.3, 0.1, -121.759964)
 collision_mask = 2
 script = ExtResource("3_27mwr")
 player = NodePath("../../PlayerController")
 direction_buttons = NodePath("../../UI/CanvasArrows/DirectionButtons")
 dead_end_text = NodePath("../../UI/CanvasText/DeadEndTEXT")
+time_controller = NodePath("../..")
+use_ending_check = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DeadEnds/deadEnd4" unique_id=2046775662]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.4125366, 0, 0.012420654)
@@ -1229,7 +1252,7 @@ transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9
 shape = SubResource("BoxShape3D_g5pv7")
 
 [node name="GoblinConvo" type="Area3D" parent="Special Conversations" unique_id=402379943 node_paths=PackedStringArray("player", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.854034, 2.5243498e-05, -356.12048)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.28604, 2.5243498e-05, -368.02768)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
@@ -1239,22 +1262,15 @@ Convos = NodePath("../../Audios/GoblinConvo")
 transform = Transform3D(2.7922027, 0, 0, 0, 2.8243628, -2.3283064e-10, 0, 0, 1.9270264, 0, 1.3240188, -0.0018720627)
 shape = SubResource("BoxShape3D_78mld")
 
-[node name="Person1" type="Sprite3D" parent="." unique_id=1209015144 node_paths=PackedStringArray("Person1", "player")]
-transform = Transform3D(0.09063078, 0, 0.042261828, 0, 0.1, 1.4551915e-11, -0.04226183, 0, 0.09063078, -0.03397107, 0.8000001, -22.376347)
-texture = ExtResource("9_3noei")
-script = ExtResource("11_1dv5r")
-Person1 = NodePath(".")
-player = NodePath("../PlayerController")
-
 [node name="Conversations" type="Node3D" parent="." unique_id=1903218441]
 transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
 
 [node name="convo1" type="Area3D" parent="Conversations" unique_id=1972995751 node_paths=PackedStringArray("player", "Person1", "Convos")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5243498e-05, 0.017852783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0062151356, 4.395606)
 collision_mask = 2
 script = ExtResource("10_bcidj")
 player = NodePath("../../PlayerController")
-Person1 = NodePath("../../Person1")
+Person1 = NodePath("")
 Convos = NodePath("../../Audios/Convo1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Conversations/convo1" unique_id=1489090339]
@@ -2353,7 +2369,6 @@ transform = Transform3D(-2.0156358e-08, 0, 0.46112376, 0, 0.46112376, 0, -0.4611
 texture = ExtResource("13_5n8hj")
 
 [node name="People" type="Node3D" parent="." unique_id=912984898]
-visible = false
 
 [node name="Person2" type="Sprite3D" parent="People" unique_id=896135506]
 transform = Transform3D(-0.07071068, 0, -0.070710674, 0, 0.1, 0, 0.070710674, 0, -0.07071068, -3.366943, 0.8, -0.83333623)
@@ -2469,7 +2484,6 @@ texture = ExtResource("12_7c1mp")
 
 [node name="Person28" type="Sprite3D" parent="People" unique_id=566500106]
 transform = Transform3D(0.09085082, 0, -0.041786708, 0, 0.1, 0, 0.041786708, 0, 0.09085082, 3.3535361, 0.8, -31.682184)
-visible = false
 texture = ExtResource("11_8olnv")
 
 [node name="Person29" type="Sprite3D" parent="People" unique_id=1057460837]
@@ -8053,7 +8067,6 @@ texture = ExtResource("12_7c1mp")
 
 [node name="Person1394" type="Sprite3D" parent="People" unique_id=1689616489]
 transform = Transform3D(-0.04229235, 0, -0.09061655, 0, 0.1, 0, 0.09061655, 0, -0.04229235, -18.614937, 0.8, -352.58087)
-visible = false
 texture = ExtResource("11_8olnv")
 
 [node name="Person1395" type="Sprite3D" parent="People" unique_id=722675090]
@@ -8267,6 +8280,11 @@ texture = ExtResource("12_7c1mp")
 [node name="Person1447" type="Sprite3D" parent="People" unique_id=907512439]
 transform = Transform3D(0.07031554, 0, -0.07110363, 0, 0.09999997, 0, 0.07110363, 0, 0.07031554, -19.493355, 0.8, -358.84213)
 texture = ExtResource("12_7c1mp")
+
+[node name="Goblin" type="Sprite3D" parent="People" unique_id=2088152221]
+transform = Transform3D(0.061811015, 0, -0.4470238, 0, 0.07356388, 0, 0.030889113, 0, 0.8945221, -126.63679, 0.8221564, -371.16855)
+visible = false
+texture = ExtResource("19_kyik1")
 
 [node name="Audios" type="Node3D" parent="." unique_id=1680836133]
 
@@ -8622,11 +8640,11 @@ volume_db = -15.981
 unit_size = 3.0
 
 [node name="GoblinConvo" type="AudioStreamPlayer3D" parent="Audios" unique_id=1323714753]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.659588, 0, -356.45685)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.90616, 0, -368.63745)
 stream = ExtResource("55_kyik1")
 attenuation_model = 1
 volume_db = -15.981
-unit_size = 3.0
+unit_size = 10.45
 
 [node name="CityAudios" type="Node3D" parent="." unique_id=339632329]
 
@@ -9257,7 +9275,7 @@ transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59
 texture = ExtResource("64_70w3k")
 
 [node name="Cloud25" type="Sprite3D" parent="Sky" unique_id=552758232]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 407.4904, 17.727264, -365.7691)
+transform = Transform3D(0.8511604, 0, -0.5249056, 0, 1, 0, 0.5249056, 0, 0.8511604, 407.4904, 17.727264, -365.7691)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud26" type="Sprite3D" parent="Sky" unique_id=1761118334]
@@ -9317,7 +9335,7 @@ transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59
 texture = ExtResource("64_70w3k")
 
 [node name="Cloud40" type="Sprite3D" parent="Sky" unique_id=459367325]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 480.10614, 17.727264, -430.95007)
+transform = Transform3D(0.8900391, 0, -0.4558841, 0, 1, 0, 0.4558841, 0, 0.8900391, 480.10617, 17.727264, -430.95004)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud41" type="Sprite3D" parent="Sky" unique_id=1522175898]
@@ -9325,7 +9343,7 @@ transform = Transform3D(0.9968428, 0, -0.07939839, 0, 1, 0, 0.07939839, 0, 0.996
 texture = ExtResource("63_v2wyr")
 
 [node name="Cloud42" type="Sprite3D" parent="Sky" unique_id=1025590019]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 394.29733, 17.727264, -297.86856)
+transform = Transform3D(0.28677028, 0, -0.95799935, 0, 1, 0, 0.95799935, 0, 0.28677028, 394.29733, 17.727264, -297.86856)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud43" type="Sprite3D" parent="Sky" unique_id=819345787]
@@ -9333,19 +9351,19 @@ transform = Transform3D(-0.35469276, 0, -0.9349828, 0, 1, 0, 0.9349828, 0, -0.35
 texture = ExtResource("64_70w3k")
 
 [node name="Cloud44" type="Sprite3D" parent="Sky" unique_id=1319787532]
-transform = Transform3D(0.59713113, 0, -0.80214363, 0, 1, 0, 0.80214363, 0, 0.59713113, 494.40277, 18.185146, -369.77435)
+transform = Transform3D(0.09467083, 0, -0.9955087, 0, 1, 0, 0.9955087, 0, 0.09467083, 494.40277, 18.185146, -369.77435)
 texture = ExtResource("64_70w3k")
 
 [node name="Cloud45" type="Sprite3D" parent="Sky" unique_id=514233322]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 507.97247, 17.727264, -399.90518)
+transform = Transform3D(0.33097026, 0, -0.94364107, 0, 1, 0, 0.94364107, 0, 0.33097026, 507.97247, 17.727264, -399.90518)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud46" type="Sprite3D" parent="Sky" unique_id=19162200]
-transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 318.0718, 17.727264, -324.502)
+transform = Transform3D(0.97120893, 0, -0.23822895, 0, 1, 0, 0.23822895, 0, 0.97120893, 318.0718, 17.727264, -324.502)
 texture = ExtResource("63_v2wyr")
 
 [node name="Cloud47" type="Sprite3D" parent="Sky" unique_id=1736535800]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 338.1263, 17.727264, -360.44678)
+transform = Transform3D(0.97101426, 0, -0.23902154, 0, 1, 0, 0.23902154, 0, 0.97101426, 338.1263, 17.727264, -360.44678)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud48" type="Sprite3D" parent="Sky" unique_id=1468163821]
@@ -9365,7 +9383,7 @@ transform = Transform3D(-0.3369534, 0, -0.94152117, 0, 1, 0, 0.94152117, 0, -0.3
 texture = ExtResource("63_v2wyr")
 
 [node name="Cloud52" type="Sprite3D" parent="Sky" unique_id=471514530]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 530.0129, 17.727264, -475.74698)
+transform = Transform3D(0.9155469, 0, -0.40221122, 0, 1, 0, 0.40221122, 0, 0.9155469, 530.0129, 17.727264, -475.74698)
 texture = ExtResource("62_d0215")
 
 [node name="Cloud53" type="Sprite3D" parent="Sky" unique_id=1371329060]
@@ -9401,7 +9419,7 @@ transform = Transform3D(0.5590689, 0, -0.82912093, 0, 1, 0, 0.82912093, 0, 0.559
 texture = ExtResource("62_d0215")
 
 [node name="Cloud61" type="Sprite3D" parent="Sky" unique_id=1613110729]
-transform = Transform3D(0.46428233, 0, -0.88568723, 0, 1, 0, 0.88568723, 0, 0.46428233, 493.36584, 17.727264, -562.71576)
+transform = Transform3D(-0.24865884, 0, -0.968591, 0, 1, 0, 0.968591, 0, -0.24865884, 493.36584, 17.727264, -562.7157)
 texture = ExtResource("63_v2wyr")
 
 [node name="Cloud62" type="Sprite3D" parent="Sky" unique_id=319157811]
@@ -9409,7 +9427,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 513.4203, 17.727264, -598.660
 texture = ExtResource("62_d0215")
 
 [node name="Cloud63" type="Sprite3D" parent="Sky" unique_id=1179000439]
-transform = Transform3D(0.23677158, 0, -0.97156525, 0, 1, 0, 0.97156525, 0, 0.23677158, 538.2269, 17.727264, -518.874)
+transform = Transform3D(-0.12016106, 0, -0.99275434, 0, 1, 0, 0.99275434, 0, -0.12016106, 538.22687, 17.727264, -518.87396)
 texture = ExtResource("64_70w3k")
 
 [node name="Cloud64" type="Sprite3D" parent="Sky" unique_id=1492515891]
@@ -9976,9 +9994,7 @@ autostart = true
 [connection signal="body_entered" from="Special Conversations/specialConvo7" to="Special Conversations/specialConvo7" method="_on_body_entered"]
 [connection signal="body_entered" from="Special Conversations/specialConvo8" to="Special Conversations/specialConvo8" method="_on_body_entered"]
 [connection signal="body_entered" from="Special Conversations/GoblinConvo" to="Special Conversations/GoblinConvo" method="_on_body_entered"]
-[connection signal="visibility_changed" from="Person1" to="Conversations/convo1" method="_on_person_1_visibility_changed"]
 [connection signal="body_entered" from="Conversations/convo1" to="Conversations/convo1" method="_on_body_entered"]
-[connection signal="body_entered" from="Conversations/convo1" to="Person1" method="_on_convo_1_body_entered"]
 [connection signal="body_entered" from="Conversations/convo2" to="Conversations/convo2" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo3" to="Conversations/convo3" method="_on_body_entered"]
 [connection signal="body_entered" from="Conversations/convo4" to="Conversations/convo4" method="_on_body_entered"]

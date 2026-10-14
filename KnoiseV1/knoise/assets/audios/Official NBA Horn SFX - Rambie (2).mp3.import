@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfe4t2ub10qut"
+path="res://.godot/imported/Official NBA Horn SFX - Rambie (2).mp3-f2770876b117b913822940094e788cab.mp3str"
+
+[deps]
+
+source_file="res://assets/audios/Official NBA Horn SFX - Rambie (2).mp3"
+dest_files=["res://.godot/imported/Official NBA Horn SFX - Rambie (2).mp3-f2770876b117b913822940094e788cab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
