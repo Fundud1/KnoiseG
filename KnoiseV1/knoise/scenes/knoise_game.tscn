@@ -16139,7 +16139,7 @@ texture = ExtResource("19_kyik1")
 [node name="Audios" type="Node3D" parent="." unique_id=1680836133]
 
 [node name="Convo1" type="AudioStreamPlayer3D" parent="Audios" unique_id=1892116433]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, -6.2078257)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0, -9.313226e-10, 0.68446255)
 stream = ExtResource("10_sgfvx")
 attenuation_model = 1
 volume_db = 50.0
@@ -16160,28 +16160,28 @@ volume_db = 55.0
 unit_size = 0.1
 
 [node name="Convo4" type="AudioStreamPlayer3D" parent="Audios" unique_id=1848561977]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.10352, -9.313226e-10, -144.91629)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.10352, -9.313226e-10, -137.58444)
 stream = ExtResource("16_m14ia")
 attenuation_model = 1
 volume_db = 50.0
 unit_size = 0.1
 
 [node name="Convo5" type="AudioStreamPlayer3D" parent="Audios" unique_id=1059411569]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -166.73314)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.49731, -9.313226e-10, -186.08832)
 stream = ExtResource("17_wc36q")
 attenuation_model = 1
 volume_db = 47.0
 unit_size = 0.1
 
 [node name="Convo6" type="AudioStreamPlayer3D" parent="Audios" unique_id=782251237]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.83652115, -9.313226e-10, -31.647673)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 0.83652115, -9.313226e-10, -34.44541)
 stream = ExtResource("18_2kb2f")
 attenuation_model = 1
 volume_db = 48.0
 unit_size = 0.1
 
 [node name="Convo7" type="AudioStreamPlayer3D" parent="Audios" unique_id=1911931974]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 1.2994499, -9.313226e-10, -93.53737)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 1.2994499, -9.313226e-10, -106.10491)
 stream = ExtResource("19_mp16a")
 attenuation_model = 1
 volume_db = 50.0
@@ -16195,7 +16195,7 @@ volume_db = 48.0
 unit_size = 0.1
 
 [node name="Convo9" type="AudioStreamPlayer3D" parent="Audios" unique_id=1525439834]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -95.644325)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.8246, -9.313226e-10, -106.39195)
 stream = ExtResource("21_g30va")
 attenuation_model = 1
 volume_db = 47.0
@@ -16232,7 +16232,7 @@ unit_size = 0.3
 max_db = 2.64
 
 [node name="Convo14" type="AudioStreamPlayer3D" parent="Audios" unique_id=1360049485]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36235, -9.313226e-10, -257.47525)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36235, -9.313226e-10, -244.09306)
 stream = ExtResource("26_jdr38")
 attenuation_model = 1
 volume_db = 45.0
@@ -16256,7 +16256,7 @@ unit_size = 0.3
 max_db = 2.64
 
 [node name="Convo17" type="AudioStreamPlayer3D" parent="Audios" unique_id=185545122]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36127, -9.313226e-10, -332.08292)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, 128.36127, -9.313226e-10, -350.16122)
 stream = ExtResource("29_0xego")
 attenuation_model = 1
 volume_db = 45.0
@@ -16296,7 +16296,7 @@ unit_size = 0.3
 max_db = 2.64
 
 [node name="Convo22" type="AudioStreamPlayer3D" parent="Audios" unique_id=1470362800]
-transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -11.222839, -9.313226e-10, -274.55444)
+transform = Transform3D(1, 0, 0, 0, 0.99999905, -0.0014139414, 0, 0.0014139414, 0.999999, -16.88216, -9.313226e-10, -274.55444)
 stream = ExtResource("35_jnexy")
 attenuation_model = 1
 volume_db = 45.0
@@ -16355,10 +16355,10 @@ autoplay = true
 max_distance = 4096.0
 
 [node name="KnoiseAmbience4" type="AudioStreamPlayer3D" parent="Audios" unique_id=116490172]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.08655, 0, 11.788216)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.08655, 0, -6.231312)
 stream = ExtResource("44_r17a8")
 attenuation_model = 1
-unit_size = 4.0
+unit_size = 11.47
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
@@ -16377,6 +16377,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.48384, 0, -105.95707)
 stream = ExtResource("44_r17a8")
 attenuation_model = 1
 unit_size = 4.0
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="Audios/KnoiseAmbience6" unique_id=142915059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.57614, 0, -23.584312)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 6.8
+pitch_scale = 1.04
+autoplay = true
+max_distance = 4096.0
+
+[node name="KnoiseAmbience6" type="AudioStreamPlayer3D" parent="Audios/KnoiseAmbience6/KnoiseAmbience6" unique_id=1821571609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.90229, 0, 17.972816)
+stream = ExtResource("44_r17a8")
+attenuation_model = 1
+unit_size = 6.8
 pitch_scale = 1.04
 autoplay = true
 max_distance = 4096.0
