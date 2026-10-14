@@ -9,8 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://cjxxivqe46rsq" path="res://assets/images/internet/LIRRtrain.jpg" id="7_sq8l2"]
 [ext_resource type="FontFile" uid="uid://6053khtwxdou" path="res://assets/fonts/NESCyrillic.ttf" id="11_q0vil"]
 [ext_resource type="FontFile" uid="uid://43o5hndadqb7" path="res://assets/fonts/NBA Knicks.ttf" id="12_017sy"]
+[ext_resource type="AudioStream" uid="uid://dr6rydkjedj02" path="res://assets/audios/HappyJingle.wav" id="12_v2ic8"]
 [ext_resource type="Script" uid="uid://co5f8fol8s81d" path="res://scripts/reset_button.gd" id="13_h66rm"]
+[ext_resource type="AudioStream" uid="uid://c7bvsaeak3aee" path="res://assets/audios/TapeStop.wav" id="13_ruley"]
 [ext_resource type="AudioStream" uid="uid://5821i8bnac6d" path="res://assets/audios/relaxingPiano.mp3" id="14_jnyba"]
+[ext_resource type="AudioStream" uid="uid://c61wf4ujrt1kw" path="res://assets/audios/subwayLeave.wav" id="14_ptln2"]
+[ext_resource type="AudioStream" uid="uid://bgb2aifdmmj7c" path="res://assets/audios/cityCrowd.wav" id="15_iirum"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnkk7"]
 bg_color = Color(0.92602557, 0.3780097, 0.13888192, 1)
@@ -70,9 +74,9 @@ texture = ExtResource("3_fsspr")
 
 [node name="Img4" type="TextureRect" parent="gEndingImages" unique_id=611763234]
 visible = false
-offset_left = -5.0
-offset_top = -3.0
-offset_right = 2910.0
+offset_left = -9.0
+offset_top = -2.9999998
+offset_right = 2921.0
 offset_bottom = 1885.5714
 scale = Vector2(0.4, 0.35)
 texture = ExtResource("4_v2ic8")
@@ -87,10 +91,9 @@ scale = Vector2(0.4, 0.35)
 texture = ExtResource("6_bpyh7")
 
 [node name="Img6" type="TextureRect" parent="gEndingImages" unique_id=2084946909]
-visible = false
-offset_left = 1.0
+offset_left = -5.0
 offset_top = -15.0
-offset_right = 2901.0
+offset_right = 2910.0
 offset_bottom = 1925.0001
 scale = Vector2(0.4, 0.35)
 texture = ExtResource("6_ruley")
@@ -114,10 +117,9 @@ offset_right = 1109.0
 offset_bottom = 408.0
 theme_override_fonts/font = ExtResource("11_q0vil")
 theme_override_font_sizes/font_size = 64
-text = "You manage to group up with everyone.
-
-contemplating if you guys should 
-continue walking."
+text = "No way!
+WE ACTUALLY MADE IT TO
+THE BUS!"
 horizontal_alignment = 1
 
 [node name="Text2" type="Label" parent="gEndingText" unique_id=2082710803]
@@ -128,158 +130,91 @@ offset_right = 1109.0
 offset_bottom = 408.0
 theme_override_fonts/font = ExtResource("11_q0vil")
 theme_override_font_sizes/font_size = 64
-text = "for a quick second you managed to get
-glimpse of the bus.
+text = "this is INSANEE!!
 
-but that was more than enough..."
+THERE'S THE TEAM RIGHT
+THERE"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Text3" type="Label" parent="gEndingText" unique_id=1261598887]
 visible = false
 offset_left = 37.0
-offset_top = 211.0
+offset_top = 220.0
 offset_right = 1109.0
-offset_bottom = 408.0
+offset_bottom = 417.0
 theme_override_fonts/font = ExtResource("11_q0vil")
 theme_override_font_sizes/font_size = 64
-text = "you and your group decide it's best 
-to  leave and go home"
+text = "maybe this was worth it 
+after all!
+
+wait..."
 horizontal_alignment = 1
 
 [node name="Text4" type="Label" parent="gEndingText" unique_id=835447493]
 visible = false
 offset_left = 37.0
-offset_top = 211.0
+offset_top = 234.0
 offset_right = 1109.0
-offset_bottom = 408.0
+offset_bottom = 431.0
 theme_override_fonts/font = ExtResource("11_q0vil")
 theme_override_font_sizes/font_size = 64
-text = "Even though it was a long journey.
-
-Waking up early, paying the money to
-get here, and pushing through all of 
-those people..."
+text = "one of the players is
+smiling at me..."
 horizontal_alignment = 1
 
-[node name="Text5" type="Label" parent="gEndingText" unique_id=350603278]
-visible = false
-offset_left = 5.0
-offset_top = 226.0
-offset_right = 1149.0
-offset_bottom = 573.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "The idea of seeing that 
-bus was a dream"
-horizontal_alignment = 1
-
-[node name="Text6" type="Label" parent="gEndingText" unique_id=997704044]
-visible = false
-offset_left = 16.0
-offset_top = 148.0
-offset_right = 1152.0
-offset_bottom = 495.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "what made it fun and exciting?
-
-maybe it was that vision in all of our
-heads.
-
-and the journey that helped fuel 
-that excitement"
-horizontal_alignment = 1
-
-[node name="Text7" type="Label" parent="gEndingText" unique_id=325051063]
+[node name="Text5" type="Label" parent="gEndingText" unique_id=381756309]
 visible = false
 offset_left = 37.0
-offset_top = 211.0
+offset_top = 117.0
 offset_right = 1109.0
-offset_bottom = 408.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "so what if we didn't see jalen brunson
-
-or kat or anyone..."
-horizontal_alignment = 1
-
-[node name="Text8" type="Label" parent="gEndingText" unique_id=788452205]
-visible = false
-offset_left = 37.0
-offset_top = 420.0
-offset_right = 1133.0
-offset_bottom = 617.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "a lot of these people also felt the
-same. Just happy and enjoying the time
-they had. it was a special moment."
-horizontal_alignment = 1
-
-[node name="Text9" type="Label" parent="gEndingText" unique_id=237984638]
-visible = false
-offset_left = 20.0
-offset_top = 415.0
-offset_right = 1140.0
-offset_bottom = 612.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "millions came, and a few saw. 
-that small glimpse was so special,
-it kept that hope and excitement alive."
-horizontal_alignment = 1
-
-[node name="Text10" type="Label" parent="gEndingText" unique_id=1530863849]
-visible = false
-offset_left = 19.0
-offset_top = 380.0
-offset_right = 1139.0
-offset_bottom = 577.0
+offset_bottom = 405.0
 theme_override_fonts/font = ExtResource("11_q0vil")
 theme_override_font_sizes/font_size = 128
-text = "it was fun"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "
 
-[node name="Text11" type="Label" parent="gEndingText" unique_id=141683592]
+huh"
+horizontal_alignment = 1
+
+[node name="Text6" type="Label" parent="gEndingText" unique_id=1720296236]
 visible = false
-offset_left = 20.0
-offset_top = 413.0
-offset_right = 1140.0
-offset_bottom = 610.0
+offset_left = 37.0
+offset_top = 117.0
+offset_right = 1109.0
+offset_bottom = 405.0
 theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "you still have a lot of time left..."
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 128
+text = "
 
-[node name="Text12" type="Label" parent="gEndingText" unique_id=1944698112]
-visible = false
-offset_left = 20.0
-offset_top = 434.0
-offset_right = 1140.0
-offset_bottom = 631.0
-theme_override_fonts/font = ExtResource("11_q0vil")
-theme_override_font_sizes/font_size = 64
-text = "you and your friends enjoy
-the rest of the day in the city."
+no!"
 horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="Text13" type="Label" parent="gEndingText" unique_id=1254230042]
+[node name="Text7" type="Label" parent="gEndingText" unique_id=1254230042]
 visible = false
-offset_left = -318.0
-offset_top = 490.0
-offset_right = 802.0
-offset_bottom = 687.0
-theme_override_colors/font_color = Color(0.18533331, 1.92523e-06, 0.8910019, 1)
-theme_override_colors/font_shadow_color = Color(1.2704552, 0.41334787, 0, 1)
+offset_left = -357.0
+offset_top = 499.0
+offset_right = 763.0
+offset_bottom = 696.0
+theme_override_colors/font_color = Color(0.89940935, 0.29196182, 0.070499726, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 18.04701, 0.9882353)
 theme_override_fonts/font = ExtResource("12_017sy")
 theme_override_font_sizes/font_size = 64
-text = "Regular ending"
+text = "Good ending?"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Text8" type="Label" parent="gEndingText" unique_id=639566758]
+visible = false
+offset_left = 4.0
+offset_top = 117.0
+offset_right = 1156.0
+offset_bottom = 405.0
+theme_override_fonts/font = ExtResource("11_q0vil")
+theme_override_font_sizes/font_size = 112
+text = "
+In reality...
+that never happened"
+horizontal_alignment = 1
 
 [node name="Buttons" type="CanvasLayer" parent="." unique_id=2141915796]
 
@@ -301,16 +236,33 @@ text = "Complete"
 script = ExtResource("13_h66rm")
 
 [node name="ImageTimer" type="Timer" parent="." unique_id=1473222866]
-wait_time = 6.0
+wait_time = 3.0
 autostart = true
 
-[node name="TextTimer" type="Timer" parent="." unique_id=1729166747]
-wait_time = 6.0
-
-[node name="CutsceneTimer" type="Timer" parent="." unique_id=99233315]
+[node name="ControlTimer" type="Timer" parent="." unique_id=973617008]
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="." unique_id=1212835863]
 stream = ExtResource("14_jnyba")
+volume_db = -10.0
+
+[node name="HappyJingle" type="AudioStreamPlayer2D" parent="." unique_id=1575497701]
+stream = ExtResource("12_v2ic8")
 autoplay = true
 
+[node name="TapeStop" type="AudioStreamPlayer2D" parent="." unique_id=1186381671]
+stream = ExtResource("13_ruley")
+volume_db = 10.0
+pitch_scale = 0.45
+
+[node name="TrainLeave" type="AudioStreamPlayer2D" parent="." unique_id=341692584]
+stream = ExtResource("14_ptln2")
+volume_db = 5.0
+pitch_scale = 0.45
+
+[node name="CrowdTalk" type="AudioStreamPlayer2D" parent="." unique_id=678648193]
+stream = ExtResource("15_iirum")
+volume_db = 1.0
+
 [connection signal="pressed" from="Buttons/ResetButton" to="Buttons/ResetButton" method="_on_pressed"]
+[connection signal="timeout" from="ImageTimer" to="." method="_on_image_timer_timeout"]
+[connection signal="timeout" from="ControlTimer" to="." method="_on_control_timer_timeout"]
